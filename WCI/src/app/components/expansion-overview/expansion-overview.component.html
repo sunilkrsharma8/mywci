@@ -1,0 +1,21 @@
+<mat-accordion [multi]="false">
+  <table matSort (matSortChange)="sortData($event)" class="table">
+    <thead>
+      <tr style="background-color: #4f4f4f ; color: var(--text-55);">
+        <th (click)="removeClass($event)" class="{{appModuleName}}" *ngFor="let columnHeader of displayedHeaderColumns" mat-sort-header={{columnHeader.value}}>
+            {{columnHeader.headerCol}}
+        </th>
+      </tr>
+    </thead>
+    <tbody class="exprassion-scroll" style="height: 325px !important;width:100%;">
+          <tr *ngFor="let data of sortedData; let i = index" >
+              <app-manage-integration-item [data]="data" [manageIntegrationComp]=parrentComponent [parrentComponent]=this *ngIf="appModuleName == 'manageIntegration'"></app-manage-integration-item>
+              <app-instrument-item [data]="data" [instrumentComp]=parrentComponent [parrentComponent]=this *ngIf="appModuleName == 'instruments'"></app-instrument-item>
+              <app-cannedcomment-item [data]="data" [cannedCommentComp]=parrentComponent [parrentComponent]=this *ngIf="appModuleName == 'canned-comments'"></app-cannedcomment-item>
+              <app-customtiles-item [data]="data" [customTileComp]=parrentComponent [parrentComponent]=this *ngIf="appModuleName == 'customtiles'"></app-customtiles-item>
+          </tr>
+    </tbody>
+  </table>
+</mat-accordion>
+
+<app-alertbox *ngIf="isShowAlertBox" [modelHeaderContent]=modelHeaderContent [modelBodyContent]=modelBodyContent  maxHeight="190px" minHeight="190px" maxWidth="450px" minWidth="450px" marginLeft="31%" marginTop="3%" shIcon="false" (onDiscardChanges)="discardChanges($event)" (onCancelEvent)="cancelEvent($event)"></app-alertbox>

@@ -1,0 +1,27 @@
+<sh-modal class="modal" modalHeight="200px" modalWidth="200px">
+  <sh-grid>
+    <sh-card cardHeight="30%" label="title">
+      <table style="width: 200px;">
+        <tr>
+          <td>
+            <sh-input-number #myminutes style="padding: 5px; background-color: #383838;" label="Minute(s)" (keyup)="minutes = myminutes.value"
+              (click)="minutes = myminutes.value" min="0" [value]="minutes"></sh-input-number>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <sh-input-number #myhours style="padding: 5px; background-color: #383838;" label="Hour(s)" (keyup)="minutes = myminutes.value"
+              (click)="hours = myhours.value" min="0" [value]="hours"></sh-input-number>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <sh-input-number #mydays style="padding: 5px; background-color: #383838;" label="Day(s)" (keyup)="minutes = myminutes.value"
+              (click)="days = mydays.value" min="0" [value]="days"></sh-input-number>
+          </td>
+        </tr>
+      </table>
+    </sh-card>
+  </sh-grid>
+  <sh-button label="OK" (click)="setDuration($event)" style="margin-top: 8px;"></sh-button>
+</sh-modal>

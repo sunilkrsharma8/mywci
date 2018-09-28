@@ -1,0 +1,50 @@
+<div class="tool-bar">
+    <sh-dropdown label="New Rule" style="width: 350px; height: 20px;" (click)="createNewRule($event)"> 
+        <sh-menu-item label="Ancillary Reagent Inventory Levels Alert Rule" icon="done"></sh-menu-item> 
+        <sh-menu-item label="Calibration Expiration Alert Rule" icon="done"></sh-menu-item> 
+        <sh-menu-item label="Communication Alert Escalation Rule" icon="done"></sh-menu-item> 
+        <sh-menu-item label="Consumable Inventory Levels Alert Rule" icon="done"></sh-menu-item> 
+        <sh-menu-item label="Instrument Event Alert Rule" icon="done"></sh-menu-item> 
+        <sh-menu-item label="Reagent Expiration Alert Rule" icon="done"></sh-menu-item> 
+        <sh-menu-item label="Reagent Inventory Levels Alert Rule" icon="done"></sh-menu-item> 
+        <sh-menu-item label="System Alert Escalation Rule" icon="done"></sh-menu-item> 
+        <sh-menu-item label="User-Defined Alert Rule" icon="done"></sh-menu-item> 
+        <sh-menu-item label="Waste Inventory Levels Alert Rule" icon="done"></sh-menu-item> 
+    </sh-dropdown>
+    <sh-button label="Default Sort" (click)="defaultSort($event)"></sh-button>
+    <sh-button label="Copy Rule" (click)="copyRule($event)"></sh-button>
+    <sh-button label="Delete Rule" (click)="deleteRule($event)"></sh-button>
+</div>
+<div style="height: 35%;">
+    <table #ruletable class="tableBodyScroll">
+        <thead>
+            <tr>
+                <th style="padding-left: 50px;" (click)="sortRules(0)">Enabled</th>
+                <th style="padding-left: -200px;" (click)="sortRules(1)">Title</th>
+                <th (click)="sortRules(2)">Rule Type</th>
+            </tr>
+        </thead>
+        <tbody #ruleTableBody>
+            <tr *ngFor="let ruledata of rulesData | async; let i = index" (click)="ruleSelect($event, ruledata, i)" [class.selected]="ruledata.Id == currentRule">
+                <td style="padding-left: 60px;"><input type="checkbox" [(ngModel)]="ruledata.Enabled" [name]="ruledata.Id"></td>
+                <td style="padding-left: -180px;">{{ruledata.Name}}</td>
+                <td >{{ruledata.TypeDescription}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<div style="height: 1px;"></div>
+<div style="height: 45%; overflow-y:scroll; background-color: #ffffff; color:#000000;">
+    <app-consumableinventorylevel #consILComponent *ngIf="isConsumableWasteIL" [ruleData]="currentrulesData" [emailsList]="emailsList" [isNewRule]="isNewCreatedRule"></app-consumableinventorylevel>
+    <app-reagentinventorylevel #reagentILComponent *ngIf="isAncillaryReagentIL" [ruleData]="currentrulesData" [emailsList]="emailsList" [isNewRule]="isNewCreatedRule"></app-reagentinventorylevel>
+    <app-calibrationexpiration #calExpComponent *ngIf="isCalibrationExpiration" [ruleData]="currentrulesData" [emailsList]="emailsList" [isNewRule]="isNewCreatedRule"></app-calibrationexpiration>
+    <app-reagentexpiration #reAgentExpComponent *ngIf="isReagentExpiration" [ruleData]="currentrulesData" [emailsList]="emailsList" [isNewRule]="isNewCreatedRule"></app-reagentexpiration>
+    <app-userdefined #userdefinedComponent *ngIf="isUserDefined" [ruleData]="currentrulesData" [emailsList]="emailsList" [isNewRule]="isNewCreatedRule"></app-userdefined>
+    <app-instrumentevent #instrueventComponent *ngIf="isInstrumentEvent" [ruleData]="currentrulesData" [emailsList]="emailsList" (onRuleChange)="updateRuleChangeFlag($event)" [isNewRule]="isNewCreatedRule"></app-instrumentevent>
+    <app-communicationescalation #commescalationComponent *ngIf="isCommAlertEscalation" [ruleData]="currentrulesData" [emailsList]="emailsList" [isNewRule]="isNewCreatedRule"></app-communicationescalation>
+    <app-systemescalation #sysescalationComponent *ngIf="isSysAlertEscalation" [ruleData]="currentrulesData" [emailsList]="emailsList" [isNewRule]="isNewCreatedRule"></app-systemescalation>
+</div>
+<div class="action-bar">
+    <sh-button label="Save Rule" (click)="saveRule($event)"></sh-button>
+    <sh-button label="Cancel" (click)="cancelRule($event)"></sh-button>
+</div>

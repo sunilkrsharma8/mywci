@@ -1,0 +1,18 @@
+<!--<div tabindex="-1" (blur)="handleFocusOut($event)">-->
+<div>
+    <p style="color:#000000; margin-left:10px;">
+    Apply this rule to <a [class.newrule]="instruments[0] == -1" (click)="naturalLanguageTextConfigurator('instrument')"> {{instrumentText}} </a>
+    <br><br>
+    Starting on <a [class.newrule]="alertTimeinMS == -1" (click)="naturalLanguageTextConfigurator('alerttime')"> {{alertTimeText}} </a>, generate <a (click)="naturalLanguageTextConfigurator('alertseverity')"> {{alertSeverityText}} </a> on the instrument(s) with the message:<a [class.newrule]="message == ''" (click)="naturalLanguageTextConfigurator('message')"> {{messageText}} </a>
+    <br><br>
+    Generate this alert <a [class.newrule]="recurrencePatternText == ''" (click)="naturalLanguageTextConfigurator('recurrencepattern')"> {{recurrencePatternText}} </a>
+    <br>
+    <app-sharedruleparams #srpComponent [ruleData]="ruleData" [emailsList]="emailsList" (onChange)="onSharedRuleParamsChange($event)" [isNewRule]="isNewRule"></app-sharedruleparams>
+    </p>
+    <app-instrumentconfigurator *ngIf="isShowAssetModal" (onInstrumentSet)="updateInstruments($event)" [instruments]="allInstruments"></app-instrumentconfigurator>
+    <app-severityconfigurator *ngIf="isShowSeverityModal" (onSeveritySet)="updateSeverity($event)"></app-severityconfigurator>
+    <app-alertbox *ngIf="isShowAlertBox" (onDiscardChanges)="discardChanges($event)" (onCancelEvent)="cancelEvent($event)"></app-alertbox>
+    <app-datetimeconfigurator *ngIf="isShowDatePickerModal" (onAlertDateTimeSelection)="setAlertDateTime($event)"></app-datetimeconfigurator>
+    <app-descriptionconfigurator *ngIf="isShowTextMessageModal" (onTextSubmit)="setTextMessage($event)" [message]="messageText"></app-descriptionconfigurator>
+    <app-occurrencepatternconfigurator *ngIf="isShowRecurrencePatternModal" (onRecurrencePatternSelection)="setRecurrencePattern($event)" [occurencePattern]="recurrencePattern"></app-occurrencepatternconfigurator>
+</div>

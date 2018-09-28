@@ -1,0 +1,105 @@
+<!--<sh-card slot="content">-->
+  <div style="width: 100%; height:400px;; background:#3c3c3c; margin-top: 10px;">
+  <split  direction="horizontal" gutterSize=7>
+    <split-area size="68" >
+      <div class="tool-bar">
+        <sh-button label="Default Sort" tooltip="Reverts to the default sorting order for this screen" (click)="defaultSort($event)"></sh-button>
+        <sh-button shape=square class="sq-button" tooltip="Alert Auto-filter settings. Adjust when new instrument events will create events. Select and instrument alert to jump to the related event in the settings screen" icon="filter" (click)="redirectToAutoFilter()" label=""></sh-button>
+      </div>
+      <split style="max-height: 90% !important;" direction="vertical" gutterSize=7>
+        <split-area size="60">
+          <sh-card>
+          <sh-table #alertCtrl> 
+            <sh-table-row slot=header> 
+              <sh-table-head columns=1 (click)="sortAlerts('new')">*</sh-table-head> 
+              <sh-table-head columns=1 (click)="sortAlerts('HasBeenEscalated')">!</sh-table-head> 
+              <sh-table-head columns=1 (click)="sortAlerts('Type')">Type</sh-table-head> 
+              <sh-table-head columns=4 (click)="sortAlerts('Message')">Message</sh-table-head> 
+              <sh-table-head columns=2 (click)="sortAlerts('EquipmentName')">Equipment</sh-table-head> 
+              <sh-table-head columns=2 (click)="sortAlerts('Time')">Occured</sh-table-head> 
+              <sh-table-head columns=2 (click)="sortAlerts('ElapsedTime')">Elapsed Time</sh-table-head> 
+              <sh-table-head columns=2 (click)="sortAlerts('Status')">Status</sh-table-head> 
+            </sh-table-row> 
+             <sh-table-row *ngFor="let ura of unresolvedAlertData | async" (click)="selectAlert(ura)"> 
+              <sh-table-cell columns=1 >{{""}}</sh-table-cell> 
+              <sh-table-cell columns=1>{{ura.HasBeenEscalated ? "!" : ""}}</sh-table-cell> 
+                <sh-table-cell columns=1>
+                  <div id="Severity-{{ura.Severity}}-background">
+                    <span class="Severity-{{ura.Type}}-foreground"></span>
+                  </div>
+                </sh-table-cell>
+              <sh-table-cell columns=4>{{ura.Message}}</sh-table-cell> 
+              <sh-table-cell columns=2>{{getInstrumentName(ura.EquipmentId)}}</sh-table-cell> 
+              <sh-table-cell columns=2>{{getDateTime(ura.Time)}}</sh-table-cell> 
+              <sh-table-cell columns=2>{{getElapsedTime(ura.Time)}}</sh-table-cell> 
+              <sh-table-cell columns=2>{{getStatusText(ura.Status)}}</sh-table-cell> 
+            </sh-table-row>
+          </sh-table>
+          </sh-card>
+        </split-area>
+        <split-area size="40">
+          <sh-card label="Recently Resolved Alerts">
+          <sh-table> 
+            <sh-table-row slot=header> 
+
+              <sh-table-head columns=1></sh-table-head> 
+              <sh-table-head columns=1 (click)="sortResolvedAlerts('Type')">Type</sh-table-head> 
+              <sh-table-head columns=4 (click)="sortResolvedAlerts('Message')">Message</sh-table-head> 
+              <sh-table-head columns=2 (click)="sortResolvedAlerts('EquipmentName')">Equipment</sh-table-head> 
+              <sh-table-head columns=2 (click)="sortResolvedAlerts('Time')">Occured</sh-table-head> 
+              <sh-table-head columns=2 (click)="sortResolvedAlerts('ElapsedTime')">Elapsed Time</sh-table-head> 
+              <sh-table-head columns=2 (click)="sortResolvedAlerts('ResolvedTime')">Resolved</sh-table-head> 
+            </sh-table-row> 
+             <sh-table-row *ngFor="let ura of recentlyresolvedAlertData | async"> 
+              <sh-table-cell columns=1></sh-table-cell> 
+              <sh-table-cell columns=1>
+                  <div id="Severity-{{ura.Severity}}-background">
+                    <span class="Severity-{{ura.Type}}-foreground"></span>
+                  </div>
+                </sh-table-cell>
+              <sh-table-cell columns=4>{{ura.Message}}</sh-table-cell> 
+              <sh-table-cell columns=2>{{getInstrumentName(ura.EquipmentId)}}</sh-table-cell> 
+              <sh-table-cell columns=2>{{getDateTime(ura.Time)}}</sh-table-cell> 
+              <sh-table-cell columns=2>{{getElapsedTime(ura.Time, ura.ResolvedTime)}}</sh-table-cell> 
+              <sh-table-cell columns=2>{{getDateTime(ura.ResolvedTime)}}</sh-table-cell> 
+            </sh-table-row>
+          </sh-table>
+          </sh-card>
+        </split-area>
+      </split>
+    </split-area>
+    <split-area size="32">
+      <sh-pane slot=right label=Notes >
+        <div style="display: flex; margin-bottom: 10px; width:100%;">
+          <sh-dropdown #mynotes label="Note Text">
+            <sh-menu-item  label={{getNoteText(note)}} *ngFor="let note of noteTemplate" (clicked)="selectNote(note)" [disabled]="selectedAlert.Id == null"></sh-menu-item>
+          </sh-dropdown>
+          <sh-button #myaddnote shape="circle" tooltip='Add Note' [disabled]="selectedAlert.Id == null" icon="new-document" Label="" (click)="addNote($event)">
+          </sh-button>
+        </div>
+        <table  class="tableBodyScroll">
+          <ng-template ngFor let-note [ngForOf]="selectedAlert.Notes">
+            <tr>
+              <td style="width:70%;">
+                  <div>{{getDateTime(note.Time)}}</div>
+              </td>
+              <td>
+                {{note.CreatedBy}}
+              </td>
+            </tr>
+            <tr>
+              <td colspan="2">
+                <div>{{note.Note}}</div>
+              </td>
+            </tr>
+          </ng-template>
+          
+        </table>
+        <sh-button   Label="Acknowledge" [disabled]="selectedAlert.Id == null" (click)="acknowledgeAlert($event)">
+        </sh-button>
+      </sh-pane>
+
+    </split-area>
+  </split>
+  </div>
+<!--</sh-card>-->

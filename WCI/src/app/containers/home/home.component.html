@@ -1,0 +1,8 @@
+<sh-card slot='content'>
+  <sh-nav-bar>
+    <sh-tabs slot='tabs'>
+      <sh-tab-item *ngFor="let route of navRoutes" [routerLink]="[{outlets: {'home' : [route.path]}}]" label='{{route.data.title}}' id='nav{{route.data.routeId}}'></sh-tab-item>
+    </sh-tabs>
+  </sh-nav-bar>
+  <router-outlet name="home"></router-outlet>
+</sh-card>

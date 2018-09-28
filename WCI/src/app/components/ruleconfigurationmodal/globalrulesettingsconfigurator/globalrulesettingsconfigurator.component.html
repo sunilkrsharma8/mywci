@@ -1,0 +1,41 @@
+<sh-modal class="modal" style="width:500px;" modalWidth="800px: position: relative;">
+  <div style="display: flex; background-color: rgba(30,30,30,1);">
+    <img src="..\..\..\..\..\assets\imgs\information-icon.png" style="width:25px; height: 25px; margin-top: 7px; margin-left: 7px;"> 
+    <span style="margin-left:auto; margin-right:auto;">Set Global Turnaround Time Tracking Start/Stop Events</span>
+  </div>
+  <div style="margin-top: 10px;">
+    <span>Select the appropriate start and stop events for tracking STAT and Routine tests: </span>
+    <div  style="margin-top:10px; width: 90%; font-size: 18px;">
+        <span style="font-size: 16px;">For "STAT" Tests -</span>
+        <div style="display:flex; margin-left: 100px;">
+          <span style="font-size: 16px; width: 235px; ">Start turnaround time tracking at</span>
+          <sh-dropdown label="" style="width: 300px; height: 20px;" (click)="setGRSettingforSTAT($event)"> 
+              <sh-menu-item label="Test Order Received And Sample Loaded"></sh-menu-item>
+              <sh-menu-item label="Test Order Received"></sh-menu-item>
+          </sh-dropdown>
+        </div>
+        <div style="display:flex; margin-left: 100px;">
+          <span style="font-size: 16px; width: 235px;">End turnaround time tracking at</span>
+          <span style="font-size: 16px; width: 200px;">'Test Result Released'</span>
+        </div>
+    </div>
+    <div  style="width: 90%; margin-top: 5px;">
+        <span style="font-size: 16px;" >For "Routine" Tests -</span>
+        <div style="display:flex; margin-left: 100px;">
+          <span style="font-size: 16px; width: 235px;">Start turnaround time tracking at</span>
+          <sh-dropdown label="" style="width: 300px; height: 20px;" (click)="setGRSettingforRoutine($event)"> 
+            <sh-menu-item label="Test Order Received And Sample Loaded" ></sh-menu-item>
+            <sh-menu-item label="Test Order Received" active=""></sh-menu-item>
+          </sh-dropdown>
+        </div>
+        <div style="display:flex; margin-left: 100px;">
+          <span style="font-size: 16px; width: 235px;">End turnaround time tracking at</span>
+          <span style="font-size: 16px; width: 200px;">'Test Result Released'</span>
+        </div>
+    </div>
+  </div>
+  <div style="display: flex;">
+    <sh-button label="Save" (click)="saveGLSettings($event)"></sh-button>
+    <sh-button style="margin-left:10px;" label="Cancel" (click)="cancelGLSettings()"></sh-button>
+  </div>
+</sh-modal>

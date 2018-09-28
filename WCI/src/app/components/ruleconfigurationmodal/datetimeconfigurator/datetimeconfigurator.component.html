@@ -1,0 +1,20 @@
+<sh-modal class="modal">
+    <div style="display: flex;">
+      <div class="ngbDatepicker-input-wrapper">
+        <input  name="date"
+                [(ngModel)]="alertDate"
+                (ngModelChange)="pickDate($event)"
+                ngbDatepicker
+                #d="ngbDatepicker">
+        <div (click)="d.toggle()" >
+              <sh-icon icon=date-range id=date-range button=""></sh-icon>
+          </div>
+      </div>
+      <div class="time-input-wrapper">
+        <input #time type="time" style="width: 80px;"
+                [(ngModel)]="alertTime"
+                >
+      </div>
+    </div>
+    <sh-button label="OK" (click)="setAlertDateTime($event)"></sh-button>
+</sh-modal>

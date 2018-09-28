@@ -1,0 +1,29 @@
+<sh-modal class="modal" #modalPopup>
+  <div style="display: flex; background-color: rgba(30,30,30,1);">
+    <img src="..\..\..\..\..\assets\imgs\question-icon.png" style="width:25px; height: 25px; margin-top: 7px; margin-left: 7px;">
+    <!--<img src="..\..\..\..\..\assets\imgs\information-icon.png" style="width:25px; height: 25px;">-->
+    <span *ngIf="modelHeaderContent; else noModelHeaderContent" style="margin-left:auto; margin-right:auto; word-wrap: break-word; white-space: normal;">
+      {{modelHeaderContent}}
+    </span>
+    <ng-template #noModelHeaderContent>
+      <span style="margin-left:auto; margin-right:auto;">
+        Discard Changes?
+      </span>
+    </ng-template>
+  </div>
+
+  <div *ngIf="modelBodyContent; else noModelBodyContent" style="height: 60px; word-wrap: break-word; white-space: normal;">
+    {{modelBodyContent}}
+  </div>
+  <ng-template #noModelBodyContent>
+    <div style="height: 60px;">
+      <p>This action will discard your unsaved rule changes.</p>
+      <p>What would you like to do?</p>
+    </div>
+  </ng-template>
+
+  <div style="margin-left:auto; margin-right:0; display: flex;">
+    <sh-button label="Discard Changes" (click)="discardChanges($event)" style="margin-right:20px;"></sh-button>
+    <sh-button label="Cancel" (click)="cancelEvent($event)" style="margin-right:20px;"></sh-button>
+  </div>
+</sh-modal>

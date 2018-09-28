@@ -1,0 +1,85 @@
+<mat-expansion-panel hideToggle="true" id="matPanelExpansion{{data.Id}}"  #matPanelExpansion class="matPanelExpansion" 
+  [(expanded)]="data.isExpanded" style="width:130%;">
+  <mat-expansion-panel-header style="padding-left:0px !important;" (click)="expandCollapse(data,matPanelExpansion)">
+    <td style="margin-left: -5px;padding:0.75rem 0rem 0.75rem 0rem;">
+      <mat-panel-title>
+        <mat-icon style="color: #A6A6A6; margin-top: 5px;font-size: 30px;" *ngIf="!matPanelExpansion.expanded"> keyboard_arrow_right</mat-icon>
+        <mat-icon style="color: #A6A6A6; margin-top: 5px;font-size: 30px;" *ngIf="matPanelExpansion.expanded">keyboard_arrow_down</mat-icon>
+      </mat-panel-title>
+    </td>
+    <td style="margin-left: -5px;padding:0.75rem 0rem 0.75rem 0rem;width:57px;">
+      <mat-panel-title>
+        <span *ngIf="data.Icon ||imageLoaded ==true"><img [src]="imgURL" style="height:25px;width:25px;"></span>
+      </mat-panel-title>
+    </td>
+    <td style="margin-left: -5px;padding:0.75rem 0rem 0.75rem 0rem;">
+      <mat-panel-title>
+        <span style="vertical-align: top; margin-left: -4px;width:140px;">{{data.Title}}</span>
+      </mat-panel-title>
+    </td>
+    <td style="padding:0.75rem 0rem 0.75rem 1.5rem;">
+      <mat-panel-title>
+        <span style="vertical-align: top;">{{data.Type==1?'Web':data.Type==0?'Program':'Web'}}</span>
+      </mat-panel-title>
+    </td>
+    <td>
+      <mat-panel-title>
+        <span style="vertical-align: top; margin-left: 150px;width:150px;">{{data.Uri}}</span>
+      </mat-panel-title>
+    </td>
+  </mat-expansion-panel-header>
+  <div *ngIf="true">
+    <div>
+      <div style="display:flex; margin-bottom: 5px;">
+        <sh-dropdown label="Type" #type [value]="data.Type=='1'?'Web':'Program'" style="margin-left: 50px;width: 120px;">
+          <sh-menu-item label="Web" value="Web" (click)="selectedType(1)"></sh-menu-item>
+          <sh-menu-item label="Program" value="Program" (click)="selectedType(0)"></sh-menu-item>
+        </sh-dropdown>
+      </div>
+    </div>
+    <div>
+      <div style="display:flex; margin-bottom: 5px;">
+        <sh-input-text label="Name" [value]="data.Title" style="margin-left: 50px;width: 250px;" #inputName [value]="data.Title"
+          (keyup)="data.Title=inputName.value;onKeyUpNameValidation(data.Uri)"></sh-input-text>
+      </div>
+    </div>
+    <div>
+      <div style="display:flex; margin-bottom: 5px;" *ngIf="type.value=='Web'">
+        <sh-input-text label="Website URL" style="margin-left: 50px;width: 550px;" #inputUri [value]="data.Uri" (keyup)="data.Uri=inputUri.value;onKeyUpURLValidation(data.Uri)"></sh-input-text>
+      </div>
+      <div style="display:flex; margin-bottom: 5px;" *ngIf="type.value=='Program'">
+        <sh-input-text label="Executable" style="margin-left: 50px;width: 450px;" #inputURL [value]="data.Uri" (keyup)="data.Uri=inputURL.value;onKeyUpURLValidation(data.Uri)"></sh-input-text>
+        <sh-button label="Browse..." style="margin-left:10px;" (click)="openExecutableFile()"></sh-button>
+        <input type="file" #ExecutableUpload id="ExecutableUpload{{data.Id}}" accept=".exe" style="display: none" (change)="executableFileChanged($event)"
+        />
+      </div>
+    </div>
+    <div>
+      <div style="display:flex; margin-bottom: 5px;margin-top: 10px;">
+        <span style="margin-top: 25px;"> Image</span>
+        <img id="{{data.Id}}" #Img [src]="imgURL" class="questionIcon" (load)="imageLoadComplete()" (error)="imageLoadError=null" crossOrigin="Anonymous">
+        <sh-button label="Fetch Icon" style="margin-right: 10px; margin-left: 6px;margin-top: 35px;" (click)="fetchIcon()" [disabled]="disableFetchImageButton"></sh-button>
+        <sh-button label="Browse..." style="margin-right: 10px;margin-top: 35px;" (click)="openFileUpload()"></sh-button>
+        <input type="file" #FileUpload id="FileUpload{{data.Id}}" style="display: none" accept="image/*" (change)="imageFileChanged($event)"
+        />
+        <sh-button label="Clear Image" style="margin-top: 35px;" (click)="clearImage()" [disabled]="disableClearImageButton"></sh-button>
+      </div>
+    </div>
+    <span *ngIf="urlFormatError"> <div id="Severity-200-background">
+        <div class="Severity-200-foreground"></div>
+      </div>The web page URL that you entered does not appear to be formatted correctly. Please ensure that the URL starts with
+        http:// or https://</span>
+    <span *ngIf="noIconError==true && iconLoaded==false"> <div id="Severity-200-background">
+        <div class="Severity-200-foreground"></div>
+      </div>Failed to fetch website icon. Check the URL and make sure the website has an icon before trying again.</span>
+  </div>
+  <div class="row" style="flex-direction: row-reverse;">
+    <div class="col-xs-5">
+      <div style="display:flex; width:310px; margin-left: 18px;margin-top: 5px; margin-bottom: -10px;">
+        <sh-button label="Save" style="margin-right: 10px; margin-left: 6px;" (click)="saveCustomTile(data)" [disabled]="disableSaveButton"></sh-button>
+        <sh-button label="Cancel" style="margin-right: 10px;" (click)="cancel()" [disabled]="disableCancelButton"></sh-button>
+        <sh-button label="Delete" (click)="delete(data)" [disabled]="disableDeleteButton"></sh-button>
+      </div>
+    </div>
+  </div>
+</mat-expansion-panel>

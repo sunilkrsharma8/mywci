@@ -1,0 +1,21 @@
+<sh-modal label="Select one or more items from the list" class="modal" modalHeight="200px" modalWidth="200px">
+  <sh-grid>
+    <sh-card cardHeight="50%">
+      <sh-table #tableEmail>
+        <sh-table-row *ngFor="let email of emails">
+          <sh-table-cell columns=8 style="height: 40px; margin-top: -6px;">
+            <sh-checkbox id="chkbox_all" label={{email.id}} style="padding: 0px;"></sh-checkbox>
+          </sh-table-cell>
+        </sh-table-row>
+      </sh-table>
+    </sh-card>
+    <sh-checkbox id="chkbox_all" label="Select All" active=true></sh-checkbox>
+    <sh-card label="Enter a new Email address" cardHeight="20%">
+      <sh-input-text #myNewEmail style="width:300px; height: 20px;margin:auto; display:block;" label="Email Address" [ngClass]="invalidEmail==true?'emailError':'removeEmailError'"
+        (keyup)="newEmail = myNewEmail.value" [value]="newEmail"></sh-input-text>
+
+      <sh-button label="Add email address to list" (click)="addEmail($event)" style="margin:auto; display:block;"></sh-button>
+    </sh-card>
+  </sh-grid>
+  <sh-button label="OK" (click)="setEmail($event)" style="margin-top: 8px;"></sh-button>
+</sh-modal>

@@ -1,0 +1,8 @@
+<p style="color:#000000; margin-left:10px;">
+Apply this escalation rule when a system alert is generated.
+
+The “PM Server” instrument must be added to a zone for system alert escalation to be displayed in the Atellica® PM client.  Occurrence and escalation emails, if configured, will be generated regardless of “PM Server” instrument zone inclusion.
+<br><br>
+<app-sharedruleparams #srpComponent [ruleData]="ruleData" [emailsList]="emailsList" (onChange)="onSharedRuleParamsChange($event)" [isNewRule]="isNewRule"></app-sharedruleparams>
+</p>
+<app-instrumentconfigurator *ngIf="isShowAssetModal" (onInstrumentSet)="updateInstruments($event)" [instruments]="allInstruments"></app-instrumentconfigurator>

@@ -1,0 +1,5 @@
+<div class="main">
+  <div #colboxval class="colorval" [class.displayCol]="displayCol" (click)="openCloseColorPalette()"></div>
+  <canvas width="142" height="162" #canvasval class="hideData" [class.displayData]="displayData" (click)="getPixel($event)">
+  </canvas>
+</div>

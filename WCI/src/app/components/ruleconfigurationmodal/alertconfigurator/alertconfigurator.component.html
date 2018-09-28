@@ -1,0 +1,11 @@
+<sh-modal class="modal">
+  <sh-radio-group (click)="handleRadioClick($event)">
+    <div style="display:flex;">
+      <sh-radio-button id="chbx_generate" label="{{configurabletext1}}" style="width: auto;"></sh-radio-button>
+      <sh-input-number style="width: 15%;padding-left:30px;" #myalertvalue label="{{configurabletext2}}" (keyup)="alertValue = myalertvalue.value"
+        (click)="alertValue = myalertvalue.value" [value]="alertValue" [disabled]=isInputTextDisabled *ngIf="isShowTextBox"></sh-input-number>
+    </div>
+    <sh-radio-button id="chbx_donotgenerate" active=true label="{{configurabletext3}}"></sh-radio-button>
+  </sh-radio-group>
+  <sh-button label="OK" (click)="setAlert($event)"></sh-button>
+</sh-modal>

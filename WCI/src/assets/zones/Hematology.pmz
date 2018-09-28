@@ -1,0 +1,644 @@
+﻿[
+  {
+    "Name": "Hematology",
+    "Length": 20.0,
+    "Width": 42.0,
+    "Rotation": -212.629,
+    "Pitch": 314.847,
+    "IsMetricFloorSize": false,
+    "Color": [
+      0.77647058823529413,
+      0.83137254901960789,
+      0.85098039215686272,
+      1.0
+    ],
+    "Walls": [
+      {
+        "PositionStart": [
+          -6.35532,
+          2.95778
+        ],
+        "PositionEnd": [
+          -6.35532,
+          -3.04328
+        ],
+        "Color": [
+          0.50196078431372548,
+          0.50196078431372548,
+          0.50196078431372548,
+          1.0
+        ]
+      },
+      {
+        "PositionStart": [
+          -3.52505,
+          3.01021
+        ],
+        "PositionEnd": [
+          -0.917196,
+          3.01021
+        ],
+        "Color": [
+          0.89411764705882357,
+          0.88627450980392153,
+          0.77254901960784317,
+          1.0
+        ]
+      },
+      {
+        "PositionStart": [
+          6.35128,
+          1.68373
+        ],
+        "PositionEnd": [
+          6.35128,
+          -2.93893
+        ],
+        "Color": [
+          0.89411764705882357,
+          0.88627450980392153,
+          0.77254901960784317,
+          1.0
+        ]
+      },
+      {
+        "PositionStart": [
+          6.3334,
+          2.96691
+        ],
+        "PositionEnd": [
+          6.3334,
+          2.71075
+        ],
+        "Color": [
+          0.89411764705882357,
+          0.88627450980392153,
+          0.77254901960784317,
+          1.0
+        ]
+      },
+      {
+        "PositionStart": [
+          2.86725,
+          1.32553
+        ],
+        "PositionEnd": [
+          0.124142,
+          1.32553
+        ],
+        "Color": [
+          0.89411764705882357,
+          0.88627450980392153,
+          0.77254901960784317,
+          1.0
+        ]
+      },
+      {
+        "PositionStart": [
+          0.142234,
+          1.3151
+        ],
+        "PositionEnd": [
+          0.142234,
+          -2.94035
+        ],
+        "Color": [
+          0.89411764705882357,
+          0.88627450980392153,
+          0.77254901960784317,
+          1.0
+        ]
+      },
+      {
+        "PositionStart": [
+          -5.36231,
+          3.00918
+        ],
+        "PositionEnd": [
+          -6.38731,
+          3.00918
+        ],
+        "Color": [
+          0.89411764705882357,
+          0.88627450980392153,
+          0.77254901960784317,
+          1.0
+        ]
+      },
+      {
+        "PositionStart": [
+          6.30734,
+          1.33823
+        ],
+        "PositionEnd": [
+          3.80565,
+          1.33823
+        ],
+        "Color": [
+          0.89411764705882357,
+          0.88627450980392153,
+          0.77254901960784317,
+          1.0
+        ]
+      },
+      {
+        "PositionStart": [
+          0.0437448,
+          2.99393
+        ],
+        "PositionEnd": [
+          2.10337,
+          2.99393
+        ],
+        "Color": [
+          0.89411764705882357,
+          0.88627450980392153,
+          0.77254901960784317,
+          1.0
+        ]
+      },
+      {
+        "PositionStart": [
+          4.89097,
+          2.99143
+        ],
+        "PositionEnd": [
+          3.10984,
+          2.99143
+        ],
+        "Color": [
+          0.89411764705882357,
+          0.88627450980392153,
+          0.77254901960784317,
+          1.0
+        ]
+      },
+      {
+        "PositionStart": [
+          5.87945,
+          3.00196
+        ],
+        "PositionEnd": [
+          6.39284,
+          3.00196
+        ],
+        "Color": [
+          0.89411764705882357,
+          0.88627450980392153,
+          0.77254901960784317,
+          1.0
+        ]
+      },
+      {
+        "PositionStart": [
+          6.4071,
+          -3.00397
+        ],
+        "PositionEnd": [
+          -6.37069,
+          -3.00397
+        ],
+        "Color": [
+          0.50196078431372548,
+          0.50196078431372548,
+          0.50196078431372548,
+          1.0
+        ]
+      }
+    ],
+    "ZoneEquipment": [
+      {
+        "Name": "LIS 3",
+        "ModelName": "Desktop Computer",
+        "SerialNumber": "",
+        "Active": true,
+        "RcMethod": 0,
+        "RcThumbnailUpdateMode": 1,
+        "Position": [
+          -6.03322,
+          0.0,
+          0.142908
+        ],
+        "Rotation": [
+          0.0,
+          1.5707963267948966,
+          0.0
+        ]
+      },
+      {
+        "Name": "Beckman Coulter LH750 A",
+        "ModelName": "Generic Tabletop Instrument",
+        "SerialNumber": "",
+        "Active": true,
+        "RcMethod": 0,
+        "RcThumbnailUpdateMode": 1,
+        "Position": [
+          -3.91062,
+          0.0,
+          -2.66619
+        ],
+        "Rotation": [
+          0.0,
+          3.1415926535897931,
+          0.0
+        ]
+      },
+      {
+        "Name": "Beckman Coulter LH750 B",
+        "ModelName": "Generic Tabletop Instrument",
+        "SerialNumber": "",
+        "Active": true,
+        "RcMethod": 0,
+        "RcThumbnailUpdateMode": 1,
+        "Position": [
+          -6.14976,
+          0.0,
+          -0.566826
+        ],
+        "Rotation": [
+          0.0,
+          1.5707963267948966,
+          0.0
+        ]
+      },
+      {
+        "Name": "LIS 6",
+        "ModelName": "Desktop Computer",
+        "SerialNumber": "",
+        "Active": true,
+        "RcMethod": 0,
+        "RcThumbnailUpdateMode": 1,
+        "Position": [
+          -0.123861,
+          0.0,
+          -0.336081
+        ],
+        "Rotation": [
+          0.0,
+          -1.5707963267948966,
+          0.0
+        ]
+      },
+      {
+        "Name": "Advia 2120",
+        "ModelName": "ADVIA 2120i",
+        "SerialNumber": "",
+        "Active": true,
+        "RcMethod": 0,
+        "RcThumbnailUpdateMode": 1,
+        "Position": [
+          -2.75938,
+          0.0,
+          -2.54131
+        ],
+        "Rotation": [
+          0.0,
+          3.1415926535897931,
+          0.0
+        ]
+      },
+      {
+        "Name": "Advia 120",
+        "ModelName": "ADVIA 120",
+        "SerialNumber": "",
+        "Active": true,
+        "RcMethod": 0,
+        "RcThumbnailUpdateMode": 1,
+        "Position": [
+          -1.5608,
+          0.0,
+          -2.60395
+        ],
+        "Rotation": [
+          0.0,
+          -3.1415926535897931,
+          0.0
+        ]
+      },
+      {
+        "Name": "Advia Dual Hematology Module",
+        "ModelName": "ADVIA Dual Hematology Module",
+        "SerialNumber": "",
+        "Active": true,
+        "RcMethod": 0,
+        "RcThumbnailUpdateMode": 1,
+        "Position": [
+          -3.58191,
+          0.0,
+          -0.0612356
+        ],
+        "Rotation": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "Name": "Advia Autoslide",
+        "ModelName": "ADVIA Autoslide",
+        "SerialNumber": "",
+        "Active": true,
+        "RcMethod": 0,
+        "RcThumbnailUpdateMode": 1,
+        "Position": [
+          -6.05555,
+          0.0,
+          -1.64275
+        ],
+        "Rotation": [
+          0.0,
+          1.5707963267948966,
+          0.0
+        ]
+      },
+      {
+        "Name": "Clinitek Atlas",
+        "ModelName": "CLINITEK Novus",
+        "SerialNumber": "",
+        "Active": true,
+        "RcMethod": 0,
+        "RcThumbnailUpdateMode": 1,
+        "Position": [
+          -6.03053,
+          0.0,
+          1.48426
+        ],
+        "Rotation": [
+          0.0,
+          1.5707963267948966,
+          0.0
+        ]
+      },
+      {
+        "Name": "Table",
+        "ModelName": "Table",
+        "SerialNumber": "",
+        "Active": true,
+        "RcMethod": 0,
+        "RcThumbnailUpdateMode": 1,
+        "Position": [
+          2.46553,
+          0.0,
+          -0.498191
+        ],
+        "Rotation": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "Name": "Table 1",
+        "ModelName": "Table",
+        "SerialNumber": "",
+        "Active": true,
+        "RcMethod": 0,
+        "RcThumbnailUpdateMode": 1,
+        "Position": [
+          3.90734,
+          0.0,
+          -0.498191
+        ],
+        "Rotation": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "Name": "Table 2",
+        "ModelName": "Table",
+        "SerialNumber": "",
+        "Active": true,
+        "RcMethod": 0,
+        "RcThumbnailUpdateMode": 1,
+        "Position": [
+          2.46553,
+          0.0,
+          -1.10415
+        ],
+        "Rotation": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "Name": "Table 3",
+        "ModelName": "Table",
+        "SerialNumber": "",
+        "Active": true,
+        "RcMethod": 0,
+        "RcThumbnailUpdateMode": 1,
+        "Position": [
+          3.89106,
+          0.0,
+          -1.10415
+        ],
+        "Rotation": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "Name": "Bench - 30x48 1",
+        "ModelName": "Bench - 30x48",
+        "SerialNumber": "",
+        "Active": true,
+        "RcMethod": 0,
+        "RcThumbnailUpdateMode": 1,
+        "Position": [
+          -2.39452,
+          0.0,
+          -2.64405
+        ],
+        "Rotation": [
+          0.0,
+          3.1415926535897931,
+          0.0
+        ]
+      },
+      {
+        "Name": "Refrigerator - 1 Door",
+        "ModelName": "Refrigerator - 1 Door",
+        "SerialNumber": "",
+        "Active": true,
+        "RcMethod": 0,
+        "RcThumbnailUpdateMode": 1,
+        "Position": [
+          -0.253032,
+          0.0,
+          0.570892
+        ],
+        "Rotation": [
+          0.0,
+          -1.5707963267948966,
+          0.0
+        ]
+      },
+      {
+        "Name": "Bench - 30x48 3",
+        "ModelName": "Bench - 30x48",
+        "SerialNumber": "",
+        "Active": true,
+        "RcMethod": 0,
+        "RcThumbnailUpdateMode": 1,
+        "Position": [
+          -3.36777,
+          0.0,
+          -2.64405
+        ],
+        "Rotation": [
+          0.0,
+          3.1415926535897931,
+          0.0
+        ]
+      },
+      {
+        "Name": "Bench - 30x48 4",
+        "ModelName": "Bench - 30x48",
+        "SerialNumber": "",
+        "Active": true,
+        "RcMethod": 0,
+        "RcThumbnailUpdateMode": 1,
+        "Position": [
+          -4.34191,
+          0.0,
+          -2.62246
+        ],
+        "Rotation": [
+          0.0,
+          3.1415926535897931,
+          0.0
+        ]
+      },
+      {
+        "Name": "Bench - 30x48 5",
+        "ModelName": "Bench - 30x48",
+        "SerialNumber": "",
+        "Active": true,
+        "RcMethod": 0,
+        "RcThumbnailUpdateMode": 1,
+        "Position": [
+          -5.33559,
+          0.0,
+          -2.62246
+        ],
+        "Rotation": [
+          0.0,
+          3.1415926535897931,
+          0.0
+        ]
+      },
+      {
+        "Name": "Desk - Medium",
+        "ModelName": "Desk",
+        "SerialNumber": "",
+        "Active": true,
+        "RcMethod": 0,
+        "RcThumbnailUpdateMode": 1,
+        "Position": [
+          -0.195,
+          0.0,
+          -0.579161
+        ],
+        "Rotation": [
+          0.0,
+          -1.5707963267948966,
+          0.0
+        ]
+      },
+      {
+        "Name": "Bench - 30x48 6",
+        "ModelName": "Bench - 30x48",
+        "SerialNumber": "",
+        "Active": true,
+        "RcMethod": 0,
+        "RcThumbnailUpdateMode": 1,
+        "Position": [
+          -6.02862,
+          0.0,
+          0.497009
+        ],
+        "Rotation": [
+          0.0,
+          1.5707963267948966,
+          0.0
+        ]
+      },
+      {
+        "Name": "Bench - 30x48 7",
+        "ModelName": "Bench - 30x48",
+        "SerialNumber": "",
+        "Active": true,
+        "RcMethod": 0,
+        "RcThumbnailUpdateMode": 1,
+        "Position": [
+          -6.0034,
+          0.0,
+          -0.489374
+        ],
+        "Rotation": [
+          0.0,
+          1.5707963267948966,
+          0.0
+        ]
+      },
+      {
+        "Name": "Bench - 30x48 8",
+        "ModelName": "Bench - 30x48",
+        "SerialNumber": "",
+        "Active": true,
+        "RcMethod": 0,
+        "RcThumbnailUpdateMode": 1,
+        "Position": [
+          -6.00383,
+          0.0,
+          -1.46416
+        ],
+        "Rotation": [
+          0.0,
+          1.5707963267948966,
+          0.0
+        ]
+      },
+      {
+        "Name": "Bench - 30x48 9",
+        "ModelName": "Bench - 30x48",
+        "SerialNumber": "",
+        "Active": true,
+        "RcMethod": 0,
+        "RcThumbnailUpdateMode": 1,
+        "Position": [
+          -1.42638,
+          0.0,
+          -2.64171
+        ],
+        "Rotation": [
+          0.0,
+          3.1415926535897931,
+          0.0
+        ]
+      },
+      {
+        "Name": "Bench - 30x48 10",
+        "ModelName": "Bench - 30x48",
+        "SerialNumber": "",
+        "Active": true,
+        "RcMethod": 0,
+        "RcThumbnailUpdateMode": 1,
+        "Position": [
+          -2.45065,
+          0.0,
+          2.66549
+        ],
+        "Rotation": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    ]
+  }
+]

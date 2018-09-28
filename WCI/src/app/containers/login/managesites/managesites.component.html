@@ -1,0 +1,31 @@
+<sh-modal #manageSitesModal active>
+    <sh-card label="Manage Sites" class="sites-card">
+        <sh-dropdown #siteControl label="Site" [value]="selectedSite.name" style="width: auto;" class="group">
+            <sh-menu-item label="<new site>" (click)="selectSite(-1)"></sh-menu-item>
+            <ng-template ngFor let-site [ngForOf]="sites" let-i="index">
+                <sh-menu-item label={{site.name}} (click)="selectSite(i)"></sh-menu-item>
+            </ng-template>
+        </sh-dropdown>
+        <div #newSiteControl class="group" *ngIf="isNewSite">
+            <sh-input-text #mynewsite label="New Site" (keyup)="selectedSite.name = mynewsite.value" [value]="selectedSite.name"></sh-input-text>
+        </div>
+        <div #ipAddControl class="group">
+            <sh-input-text #myIP label="IP Address" (keyup)="selectedSite.ipAddress = myIP.value" [value]="selectedSite.ipAddress"></sh-input-text>
+        </div>
+        <div #portControl style="display: flex;">
+            <div class="group">
+                <sh-input-number #myport label="Port" value=2514 (keyup)="selectedSite.port = myport.value" [value]="selectedSite.port"></sh-input-number>
+            </div>
+            <sh-button class="button group" [disabled]="isSiteFormValid()" Label="Test Connection" (click)="addSite($event)">
+            </sh-button>
+        </div>
+        <div style="display: flex; margin-top:20px;">
+            <sh-button class="button group" [disabled]="!canDelete" Label="Delete" (click)="deleteSite($event)">
+            </sh-button>
+            <sh-button class="button group" Label="Cancel" (click)="cancelSite($event)">
+            </sh-button>
+            <sh-button class="button group" [disabled]="!isSiteFormValid()" Label="Save" (click)="addSite($event)">
+            </sh-button>
+        </div>
+    </sh-card>
+</sh-modal>

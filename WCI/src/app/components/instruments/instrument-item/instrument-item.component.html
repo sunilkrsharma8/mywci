@@ -1,0 +1,139 @@
+<mat-expansion-panel hideToggle="true" id="matPanelExpansion{{data.Id}}" class="matPanelExpansion" #matPanelExpansion  [(expanded)]="data.isExpanded">
+  <mat-expansion-panel-header (click)=expandCollapse(data,matPanelExpansion)>
+    <td style="width: 320px !important; margin-left: -5px;">
+      <mat-panel-title>
+        <mat-icon style="color: #A6A6A6; margin-top: 5px;font-size: 30px;" *ngIf="!matPanelExpansion.expanded"> keyboard_arrow_right</mat-icon>
+        <mat-icon style="color: #A6A6A6; margin-top: 5px;font-size: 30px;" *ngIf="matPanelExpansion.expanded">keyboard_arrow_down</mat-icon>
+        <span>
+          <sh-icon *ngIf="icon" style="margin-left: -6px;" icon={{icon}}></sh-icon>
+          <span style="vertical-align: top; margin-left: -4px;">{{data.Name}}</span>
+        </span>
+      </mat-panel-title>
+    </td>
+
+    <td style="width: 100px !important; margin-left: -60px;">
+      <mat-panel-title style="padding: 8px;">
+        <i *ngIf="data.RemoteControl; else rcSupport" style="font-size:16px; color:#A6A6A6;" [ngClass]="{'fa fa-check':!!data.RemoteControl.ConnectionString}"></i>
+        <ng-template #rcSupport>
+          <i style="font-size:16px; color:#A6A6A6;" [ngClass]="{'fa fa-check':false}"></i>
+        </ng-template>
+      </mat-panel-title>
+    </td>
+
+    <td style="width: 75px !important; margin-left: 6px;">
+      <mat-panel-title style="padding: 8px;">
+        <i style="font-size:16px; color: #A6A6A6;" [ngClass]="{'fa fa-check':data.SupportsInventory}"></i>
+      </mat-panel-title>
+    </td>
+
+    <td style="width: 75px !important;margin-left: 90px;">
+      <mat-panel-title style="padding: 8px;">
+        <i style="font-size:16px; color: #A6A6A6;" [ngClass]="{'fa fa-check':data.Active}"></i>
+      </mat-panel-title>
+    </td>
+
+    <td style="min-width: 333px;">
+      <mat-panel-title>
+        <span *ngFor="let zone of data.zones; let i = index">
+          <ng-container *ngIf="i==0; else notZeroZone">{{zone.Name}}</ng-container>
+          <ng-template #notZeroZone>
+            <span style="margin-left: -25px; margin-right: -9px;">,&nbsp;&nbsp;{{zone.Name}}</span>
+          </ng-template>
+        </span>
+      </mat-panel-title>
+    </td>
+
+  </mat-expansion-panel-header>
+  <div *ngIf="data.isExpanded">
+
+    <div class="row">
+      <div class="col-md-4">
+        <sh-icon #instumentIcon size="l" icon={{icon}}></sh-icon>
+      </div>
+
+      <div class="col-xs-5">
+        <div style="display:flex; margin-bottom: 5px;">
+          <sh-input-text style="width:310px;" #equipmentName label="Name" (keyup)="data.Name = equipmentName.value; isCancelDisabled=false" [value]="data.Name"></sh-input-text>
+        </div>
+
+        <div style="display:flex; margin-bottom: 5px;">
+          <sh-input-text style="width:310px;" #equipmentSerialNo label="Serial Number" (keyup)="data.SerialNumber = equipmentSerialNo.value; isCancelDisabled=false"
+            [value]="data.SerialNumber"></sh-input-text>
+        </div>
+
+        <div style="display:flex; margin-bottom: 5px;">
+          <sh-dropdown #equipmentModelTypeId [value]="data.equipmentmodel.DisplayName" label="Type" style="width:310px;" ngDefaultControl>
+            <sh-menu-item *ngFor="let item of instrumentComp.allEquipmentModelsSubscribedResult;" label={{item.DisplayName}} value={{item.Type}} (click)="data.equipmentmodel=item ; data.EquipmentModelId=item.Id; isCancelDisabled=false"></sh-menu-item>
+          </sh-dropdown>
+        </div>
+
+        <div style="display:flex;">
+          <sh-checkbox style="width:310px;" #equipmentActiveId (click)="data.Active = !equipmentActiveId.active; isCancelDisabled=false" label="Disabled" [active]="data.Active"
+            ngDefaultControl></sh-checkbox>
+        </div>
+      </div>
+
+
+      <div class="col-xs-5">
+        <div style="display:flex; margin-bottom: 5px;">
+          <sh-dropdown #remoteControlMethodId (change)="remoteControlType = remoteControlMethodId.label; isCancelDisabled=false" [value]="remoteControlType"
+            *ngIf="data.equipmentmodel && data.equipmentmodel.Type===4 ; else remoteControlMethod" label="RC Method" style="width:310px; margin-left: 15px;"
+            ngDefaultControl>
+            <sh-menu-item label="Remote Desktop" value=3 (click)="data.RemoteControl.Method = 3 && isRcDisabled=false"></sh-menu-item>
+            <sh-menu-item label="VNC" value=1 (click)="data.RemoteControl.Method = 1 && isRcDisabled=true"></sh-menu-item>
+            <sh-menu-item label="None" value=0 (click)="data.RemoteControl.Method = 0 && isRcDisabled=false"></sh-menu-item>
+          </sh-dropdown>
+
+          <ng-template #remoteControlMethod>
+            <sh-dropdown #remoteControlMethodId label="RC Method" style="width:310px; margin-left: 15px;" (change)="remoteControlType = remoteControlMethodId.label; isCancelDisabled=false"
+              [value]="remoteControlType" ngDefaultControl>
+              <sh-menu-item label="VNC" value=1 (click)="data.RemoteControl.Method = 1 && isRcDisabled=true"></sh-menu-item>
+              <sh-menu-item label="None" value=0 (click)="data.RemoteControl.Method = 0 && isRcDisabled=false"></sh-menu-item>
+            </sh-dropdown>
+          </ng-template>
+
+        </div>
+
+       <div style="display:flex; margin-bottom: 5px;">
+          <sh-input-text style="width:310px; margin-left: 15px;" #rcNetworkAddress label="RC Network Address" (keyup)="data.RemoteControl.Address = rcNetworkAddress.value; isCancelDisabled=false"
+            [value]="data.RemoteControl.Address"></sh-input-text>
+        </div>
+
+       <div style="display:flex; margin-bottom: 5px;">
+          <sh-input-text style="width:310px; margin-left: 15px;" #rcPort label="RC Port" (keyup)="data.RemoteControl.Port = rcPort.value; isCancelDisabled=false"
+            [value]="data.RemoteControl.Port"></sh-input-text>
+        </div>
+
+        <div style="display:flex; margin-bottom: 5px;">
+          <sh-input-text style="width:310px; margin-left: 15px;" #rcPassword (ngAfterViewInit)="rcPassword.shadowRoot.children['1'].firstElementChild.setAttribute('type',  'password')"
+            label="RC Password" (keyup)="data.RemoteControl.Password = rcPassword.value; isCancelDisabled=false" [value]="data.RemoteControl.Password" [disabled]="isRcDisabled"></sh-input-text>
+        </div>
+
+        <div style="display:flex;  margin-bottom: 5px;">
+          <sh-dropdown #remoteControlThumbUpdateId *ngIf="data.RemoteControl; else remoteControlThumbUpdate" label="RC Thumbnail Updates"
+            style="width:310px; margin-left: 15px;" (change)="rCThumbnailUpdate = remoteControlThumbUpdateId.label; isCancelDisabled=false" [value]="rCThumbnailUpdate"
+            [disabled]="!data.RemoteControl.Method">
+            <sh-menu-item label="Always" value=0 (click)="data.RemoteControl.ThumbnailUpdateMode = 0"></sh-menu-item>
+            <sh-menu-item label="Never" value=2 (click)="data.RemoteControl.ThumbnailUpdateMode = 2"></sh-menu-item>
+            <sh-menu-item label="When User Is Logged In" value=1 (click)="data.RemoteControl.ThumbnailUpdateMode = 1"></sh-menu-item>
+          </sh-dropdown>
+          <ng-template #remoteControlThumbUpdate>
+            <sh-dropdown #remoteControlThumbUpdateId label="RC Thumbnail Updates" style="width:310px; margin-left: 15px;" (change)="rCThumbnailUpdate = remoteControlThumbUpdateId.label; isCancelDisabled=false"
+              [value]="rCThumbnailUpdate">
+              <sh-menu-item label='When User Is Logged In' value=1 [disabled]="!data.RemoteControl"></sh-menu-item>
+            </sh-dropdown>
+          </ng-template>
+        </div>
+
+        <div style="display:flex; width:310px; margin-left: 18px;margin-top: 5px; margin-bottom: -10px;">
+          <sh-button label="Save" style="margin-right: 10px; margin-left: 6px;" (click)="save(data)"></sh-button>
+          <sh-button label="Cancel" style="margin-right: 10px;" (click)="cancel()" [disabled]="isCancelDisabled"></sh-button>
+          <sh-button label="Delete" (click)="delete(data)" [disabled]="data.Id===0"></sh-button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</mat-expansion-panel>
+
+<!--[disabled]="!isDataChanged"-->

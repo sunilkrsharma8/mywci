@@ -1,0 +1,8 @@
+<div class="tool-bar">
+    <sh-button label="Default Sort" (click)="defaultSort($event)"></sh-button>
+    <sh-button label="Add New" (click)="addNewCustomTile($event)"></sh-button>
+</div>
+<div>
+    <app-expansion-overview #expansionOverviewComp [appModuleName]="appModuleName" [displayedHeaderColumns]="displayedColumns"
+        [(dataList)]="allCustomTileSubscribedResult" [parrentComponent]=this></app-expansion-overview>
+</div>

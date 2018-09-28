@@ -1,0 +1,78 @@
+span{
+    font-family: calibri,sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    color:rgba(255,255,255,.9);
+    padding: 8px;
+}
+
+input[type="number"]:disabled {
+background: #dddddd;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+/* display: none; <- Crashes Chrome on hover */
+-webkit-appearance: none;
+margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+input{
+outline:0px;
+border: 0px;
+background-color: #383838;
+color: #A6A6A6;
+}
+
+.table thead th {
+border-bottom: 0px;
+height: 30px;
+}
+
+.table td, .table th {
+padding: 0px;
+}
+
+th{
+border: 0px;
+}
+
+td{
+border: 0px;
+}
+
+.questionIcon{
+   width:100px; 
+   height:100px;
+   border-style: solid;
+   border-color: white;
+}
+
+#Severity-200-background{
+	display: inline-block;
+	background-image:url(../../../../../assets/imgs/FlagTextures_enus.png);
+    background-position: -2px -7px; 
+    clip-path: polygon(56% 22%, 23% 85%, 86% 86%);
+    width: 24px;
+    height: 24px;
+	z-index: -1;
+}
+
+#Severity-200-background .Severity-200-foreground{
+	display: inline-block;
+	background-image:url(../../../../../assets/imgs/FlagTextures_enus.png);
+    background-position: -328px -167px;
+    width: 22px;
+    height: 21px;
+	position: relative;
+	z-index: 2;
+}
+
+/*.backgroundQuestionImg{
+    display: inline-block;
+	background-image:url(../../../../../assets/imgs/question-icon-small-size.png);
+	z-index: 2;
+ width:100px; 
+   height:100px;
+}*/

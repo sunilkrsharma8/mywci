@@ -1,0 +1,52 @@
+
+        span{
+            font-family: calibri,sans-serif;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            color:rgba(255,255,255,.9);
+            padding: 8px;
+        }
+
+input[type="number"]:disabled {
+    background: #dddddd;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+textarea {
+   resize: none;
+}
+
+input[type="number"]:disabled {
+    background: #dddddd;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+input{
+    outline:0px;
+    border: 0px;
+    background-color: #383838;
+    color: #A6A6A6;
+}
+
+.action-bar
+{
+	height: 40px;
+	width: 100%;
+	background-color: #3c3c3c;
+	display: flex;
+	float: right;
+    flex-direction: row-reverse;
+}

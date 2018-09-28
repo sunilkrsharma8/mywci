@@ -1,0 +1,12 @@
+<p style="color:#000000; margin-left:10px;">
+Apply this rule for the following consumable inventory: <a [class.newrule]="itemsNames[0] == -1" (click)="naturalLanguageTextConfigurator('consumable')"> {{consumableText}} </a> when loaded on <a [class.newrule]="instruments[0] == -1" (click)="naturalLanguageTextConfigurator('instrument')"> {{instrumentText}} </a>.
+<br><br>
+Show a warning alert if the consumable inventory level:  <a [class.newrule]="warningLevel == -2" (click)="naturalLanguageTextConfigurator('warninginventorylevel')"> {{warningILText}} </a>
+<br>
+Show a critical alert if the consumable inventory level: <a [class.newrule]="criticalLevel == -2" (click)="naturalLanguageTextConfigurator('criticalinventorylevel')"> {{criticalILText}} </a>
+<br><br>
+<app-sharedruleparams #srpComponent [ruleData]="ruleData" [emailsList]="emailsList" (onChange)="onSharedRuleParamsChange($event)" [isNewRule]="isNewRule"></app-sharedruleparams>
+</p>
+<app-assetconfigurator *ngIf="isShowInventoryModal" (onAssetSelection)="updateInventory($event)"></app-assetconfigurator>
+<app-assetconfigurator *ngIf="isShowInstrumentModal" (onAssetSelection)="updateInstrument($event)"></app-assetconfigurator>
+<app-alertconfigurator *ngIf="isShowAlertModal" (onAlertSelection)="updateAlerts($event)" [configurabletext1]="configurabletext1" [configurabletext2]="configurabletext2" [configurabletext3]="configurabletext3" [alertType]="alertType" [isShowTextBox]="isShowAlertInputText"></app-alertconfigurator>

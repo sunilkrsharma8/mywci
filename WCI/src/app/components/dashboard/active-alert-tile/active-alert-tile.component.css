@@ -1,0 +1,93 @@
+
+.criticalAlert{
+    background: url('./../../../../assets/imgs/FlagTextures_enus.png') 56px 7px repeat-x;
+    animation: criticalAlertPlay 1.75s steps(12) infinite;
+    height: 66px;
+    width: 51px;
+ }
+
+    @keyframes criticalAlertPlay {
+    0% {
+        background-position: 56px 7px;
+    }
+        100% {
+            background-position: 715px 7px;
+        }
+    }
+
+.warningAlert{
+    background: url('./../../../../assets/imgs/FlagTextures_enus.png') -56px -60px repeat-x;
+    animation: warningAlertPlay 1.75s steps(12) infinite;
+    height: 47px;
+    width: 51px;
+}
+
+@keyframes warningAlertPlay {
+    0% {
+        background-position: 56px -60px;
+    }
+        100% {
+            background-position: 715px -60px;
+        }
+    }
+
+.infoAlert{
+    background: url('./../../../../assets/imgs/FlagTextures_enus.png') -56px -116px repeat-x;
+    animation: infoAlertPlay 1.75s steps(12) infinite;
+    height: 47px;
+    width: 51px;
+    }
+
+    @keyframes infoAlertPlay {
+        0% {
+            background-position: 56px -116px;
+        }
+            100% {
+                background-position: 715px -116px;
+            }
+        }
+
+
+    
+    .noAlert{
+        height: 60px;
+         width: 52px; 
+    }
+
+   .alertMsg{
+    margin-left: 14px;
+    display: block;
+    font-size: 33px;
+    font-weight: bold;
+   }
+   .alertTooltip{
+    display: block;
+    font-size: 17px;
+    font-weight: bolder;
+    margin-left: 21px;
+    margin-top: -18px;
+    color: var(--text-90);
+    height: 24px;
+   }
+   .txtColorWhite{
+    color: var(--text-90);
+   }
+   .criticalTxtPng{
+    padding-top: 22px;
+   }
+   .criticalNoTxtPng{
+    padding-top: 13px;
+   }
+   .warningTxtPng{
+    padding-top: 11px;
+   }
+   .warningNoTxtPng{
+    padding-top: 13px;
+   }
+   .infoTxtPng{
+    padding-top: 10px;
+   }
+   .infoNoTxtPng{
+    padding-top: 8px;
+   }
+

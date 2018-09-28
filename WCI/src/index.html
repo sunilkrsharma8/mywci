@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>APM</title>
+  <base href="/">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"> 
+  <link href="https://pro.fontawesome.com/releases/v5.1.1/css/all.css" data-prerender="keep" rel="stylesheet">
+  <script src="assets/shui/bundle.js"></script>
+  <link type="text/css" href="assets/css/bootstrap.min.css" rel="stylesheet">
+  <script type="text/javascript" src="assets/js/jquery.min.js"></script>
+  <script type="text/javascript" src="assets/js/popper.min.js"></script>
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+  
+       <script id="vertexShader" type="x-shader/x-fragment"> 
+             // create two shared variable for the VS and FS containing the normal and the uv coords 
+             varying vec3         vNormal; 
+             varying vec2         vUv; 
+             attribute float      displacement; 
+             uniform float        amplitude; 
+          
+             void main() { 
+                 // set the variables passed (behind the scenes) by three.js to our 
+                 // "varying" variables, which makes them available to the other shader 
+                 vNormal = normal; 
+                 vUv = uv; 
+                 // find the position of the vertex as a function of its current position 
+                 // and the displacement * amplitude - which makes it wave 
+                 vec3 newPosition = position + normal * vec3(displacement * amplitude); 
+                 gl_Position = projectionMatrix * modelViewMatrix * vec4(newPosition, 1.0); 
+             } 
+    </script> 
+              
+    <script id="fragmentShader" type="x-shader/x-vertex"> 
+             // create the shared variables. which are set in the fragment shader 
+             varying vec3         vNormal; 
+             varying vec2         vUv; 
+             //uniform sampler2D     texImage; 
+             uniform sampler2D tOne;
+            uniform sampler2D tSec; 
+      
+             void main(void) { 
+                  
+                //gl_FragColor =     (texImage, vUv); 
+                vec3 c;
+                vec4 Ca = texture2D(tOne, vUv);
+                vec4 Cb = texture2D(tSec, vUv);
+                c = Ca.rgb * Ca.a + Cb.rgb * Cb.a * (1.0 - Ca.a);  // blending equation
+                gl_FragColor= vec4(c, 1.0);
+            } 
+    </script>
+
+</head>
+
+<body>
+  <app-root></app-root>
+</body>
+
+</html>

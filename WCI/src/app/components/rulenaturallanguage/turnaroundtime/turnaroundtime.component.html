@@ -1,0 +1,24 @@
+<p style="color:#000000; margin-left:10px;">
+<span *ngIf="ruleData.AtRiskDuration != null && ruleData.OverdueDuration != null">
+Track turnaround time for <a (click)="naturalLanguageTextConfigurator('tests')"> {{testText}} </a> that are <a (click)="naturalLanguageTextConfigurator('prioritymask')"> {{priorityMaskText}} </a>  from <a (click)="naturalLanguageTextConfigurator('location')"> {{locationText}} </a>.
+<br><br>
+The turnaround time for these tests is <a [class.newrule]="overdueDuration == -1" (click)="naturalLanguageTextConfigurator('overdueduration')"> {{overDueDurationText}} </a>; after which time the test(s) will be 'Overdue.'
+<br>
+These test(s) will be 'At Risk' if 'Test Result Released' is not reached within <a [class.newrule]="atRiskDuration == -1" (click)="naturalLanguageTextConfigurator('atriskduration')"> {{atRiskDurationText}} </a> after turnaround time tracking starts.
+</span>
+<span *ngIf="ruleData.AtRiskDuration == null && ruleData.OverdueDuration == null">
+Apply ths rule to <a (click)="naturalLanguageTextConfigurator('tests')"> {{testText}} </a> that are STAT and originate from <a (click)="naturalLanguageTextConfigurator('location')"> {{locationText}} </a> and are not covered by a turnaround time rule.
+<br>
+Track these tests according to the global STAT turnaround time start and end events.
+</span>
+<br><br>
+When this rule is applied, the associated tests will be displayed in each of the following zones: <a (click)="naturalLanguageTextConfigurator('zone')"> {{zonesText}} </a>.
+<br><br>
+This rule is titled <a [class.newrule]="titleText == 'unspecified title'" (click)="naturalLanguageTextConfigurator('title')"> {{titleText}} </a> and is <a (click)="naturalLanguageTextConfigurator('enabled')"> {{enabledText}} </a>.
+</p>
+<app-titleconfigurator *ngIf="isShowTitleModal" (onTitleSelection)="updateTitle($event)" [title]="titleText"></app-titleconfigurator>
+<app-enableconfigurator *ngIf="isShowEnableModal" (onEnable)="updateRuleEnable($event)" [ruleEnabled]="ruleEnabled"></app-enableconfigurator>
+<app-instrumentconfigurator *ngIf="isShowTestModal" (onInstrumentSet)="updateTests($event)" [instruments]="allTests"></app-instrumentconfigurator>
+<app-instrumentconfigurator *ngIf="isShowLocationModal" (onInstrumentSet)="updateLocations($event)" [instruments]="allLocations"></app-instrumentconfigurator>
+<app-eventsconfigurator *ngIf="isShowZoneModal" (onEventsSet)="updateZones($event)" [deviceEvents]="allZones"></app-eventsconfigurator>
+<app-durationconfigurator *ngIf="isShowDurationModal" (onDurationSet)="setDuration($event)" [title]="durationConfiguratorTitle"></app-durationconfigurator>

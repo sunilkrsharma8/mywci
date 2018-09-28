@@ -1,0 +1,14 @@
+<!--<div tabindex="-1" (blur)="handleFocusOut($event)">-->
+<div>
+    <p style="color:#000000; margin-left:10px;">
+    Apply this rule when <a [class.newrule]="deviceEvents[0] == -1"(click)="naturalLanguageTextConfigurator('deviceevent')"> {{deviceEventText}} </a> arrives from <a [class.newrule]="instruments[0] == -1" (click)="naturalLanguageTextConfigurator('instrument')"> {{instrumentText}} </a>
+    <br><br>
+    Display <a (click)="naturalLanguageTextConfigurator('alertseverity')"> {{alertSeverityText}} </a> within Atellica™ PM.
+    <br>
+    <app-sharedruleparams #srpComponent [ruleData]="ruleData" [emailsList]="emailsList" (onChange)="onSharedRuleParamsChange($event)" [isNewRule]="isNewRule"></app-sharedruleparams>
+    </p>
+    <app-instrumentconfigurator *ngIf="isShowAssetModal" (onInstrumentSet)="updateInstruments($event)" [instruments]="allInstruments"></app-instrumentconfigurator>
+    <app-eventsconfigurator *ngIf="isShowEventModal" (onEventsSet)="updateEvents($event)" [deviceEvents]="allDeviceEvents"></app-eventsconfigurator>
+    <app-severityconfigurator *ngIf="isShowSeverityModal" (onSeveritySet)="updateSeverity($event)"></app-severityconfigurator>
+    <app-alertbox *ngIf="isShowAlertBox" (onDiscardChanges)="discardChanges($event)" (onCancelEvent)="cancelEvent($event)"></app-alertbox>
+</div>

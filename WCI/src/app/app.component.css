@@ -1,0 +1,64 @@
+.logout-button{
+    position: absolute;
+    z-index: 8;
+    margin-left: 92%;
+    margin-top: 4%;
+}
+/* To be uncommented later
+.error-bar{
+    background-color: red;
+    height: 5%;
+    width: 40%;
+    position: absolute;
+    z-index: 8;
+    margin-left: 30%;
+    color:white;
+    font-size: initial;
+    text-align: -webkit-center;
+ 
+}
+
+#Severity-200-background{
+	display: inline-block;
+	background-image:url(../assets/imgs/FlagTextures_enus.png);
+    background-position: -2px -7px; 
+    width: 22px;
+    height: 21px;
+	z-index: -1;
+}
+
+#Severity-200-background .Severity-200-foreground{
+	display: inline-block;
+	background-image:url(../assets/imgs/FlagTextures_enus.png);
+    background-position: -329px -224px; 
+    width: 22px;
+    height: 21px;
+	position: relative;
+	z-index: 2;
+}
+
+@media only screen and (max-width:600px) {
+
+  .error-bar {
+    height: 5%;
+    width: 55%;
+    margin-left: 30%;
+    font-size: 2vw;
+    color:white;
+    text-align: -webkit-center;
+ 
+  }
+}
+
+@media only screen and (min-width:600px) {
+
+  .error-bar {
+    height: 5%;
+    width: 40%;
+    margin-left: 25%;
+
+    color:white;
+    text-align: -webkit-center;
+ 
+  }
+}*/

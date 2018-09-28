@@ -1,0 +1,13 @@
+<sh-modal class="modal" modalHeight="200px" modalWidth="200px">
+  <sh-grid>
+    <sh-card cardHeight="50%">
+      <sh-radio-group #groupSeverity> 
+        <sh-radio-button label="No Alert"></sh-radio-button> 
+        <sh-radio-button label="an Information Alert"></sh-radio-button> 
+        <sh-radio-button label="a Warning Alert"></sh-radio-button> 
+        <sh-radio-button active="true" label="a Critical Alert"></sh-radio-button> 
+      </sh-radio-group>      
+    </sh-card>
+  </sh-grid>
+  <sh-button label="OK" (click)="setSeverity($event)" style="margin-top: 8px;"></sh-button>
+</sh-modal>

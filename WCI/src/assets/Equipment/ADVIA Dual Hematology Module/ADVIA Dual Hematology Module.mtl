@@ -1,0 +1,176 @@
+newmtl mat1
+map_Kd mat1.png
+Ks 1.0000 1.0000 1.0000
+Ns 100.0000
+Ni 1
+Tf 1 1 1
+illum 2
+newmtl mat2
+map_Kd mat2.png
+Ks 1.0000 1.0000 1.0000
+Ns 100.0000
+Ni 1
+Tf 1 1 1
+illum 2
+newmtl mat3
+map_Kd mat3.png
+Ks 1.0000 1.0000 1.0000
+Ns 100.0000
+Ni 1
+Tf 1 1 1
+illum 2
+newmtl mat4
+map_Kd mat4.png
+Ks 1.0000 1.0000 1.0000
+Ns 100.0000
+Ni 1
+Tf 1 1 1
+illum 2
+newmtl mat5
+map_Kd mat5.png
+Ks 1.0000 1.0000 1.0000
+Ns 100.0000
+Ni 1
+Tf 1 1 1
+illum 2
+newmtl mat6
+map_Kd mat6.png
+Ks 1.0000 1.0000 1.0000
+Ns 100.0000
+Ni 1
+Tf 1 1 1
+illum 2
+newmtl mat7
+map_Kd mat7.png
+Ks 1.0000 1.0000 1.0000
+Ns 100.0000
+Ni 1
+Tf 1 1 1
+illum 2
+newmtl mat8
+map_Kd mat8.png
+Ks 1.0000 1.0000 1.0000
+Ns 100.0000
+Ni 1
+Tf 1 1 1
+illum 2
+newmtl mat9
+map_Kd mat9.png
+Ks 1.0000 1.0000 1.0000
+Ns 100.0000
+Ni 1
+Tf 1 1 1
+illum 2
+newmtl mat10
+map_Kd mat10.png
+Ks 1.0000 1.0000 1.0000
+Ns 100.0000
+Ni 1
+Tf 1 1 1
+illum 2
+newmtl mat11
+map_Kd mat11.png
+Ks 1.0000 1.0000 1.0000
+Ns 100.0000
+Ni 1
+Tf 1 1 1
+illum 2
+newmtl mat12
+map_Kd mat12.png
+Ks 1.0000 1.0000 1.0000
+Ns 100.0000
+Ni 1
+Tf 1 1 1
+illum 2
+newmtl mat13
+map_Kd mat13.png
+Ks 1.0000 1.0000 1.0000
+Ns 100.0000
+Ni 1
+Tf 1 1 1
+illum 2
+newmtl mat14
+map_Kd mat14.png
+Ks 1.0000 1.0000 1.0000
+Ns 100.0000
+Ni 1
+Tf 1 1 1
+illum 2
+newmtl mat15
+map_Kd mat15.png
+Ks 1.0000 1.0000 1.0000
+Ns 100.0000
+Ni 1
+Tf 1 1 1
+illum 2
+newmtl mat16
+map_Kd mat16.png
+Ks 1.0000 1.0000 1.0000
+Ns 100.0000
+Ni 1
+Tf 1 1 1
+illum 2
+newmtl mat17
+map_Kd mat17.png
+Ks 1.0000 1.0000 1.0000
+Ns 100.0000
+Ni 1
+Tf 1 1 1
+illum 2
+newmtl mat18
+map_Kd mat18.png
+Ks 1.0000 1.0000 1.0000
+Ns 100.0000
+Ni 1
+Tf 1 1 1
+illum 2
+newmtl mat19
+map_Kd mat19.png
+Ks 1.0000 1.0000 1.0000
+Ns 100.0000
+Ni 1
+Tf 1 1 1
+illum 2
+newmtl mat20
+map_Kd mat20.png
+Ks 1.0000 1.0000 1.0000
+Ns 100.0000
+Ni 1
+Tf 1 1 1
+illum 2
+newmtl mat21
+Kd 0.0000 0.0000 0.0000
+Tr 1.0000
+Ks 1.0000 1.0000 1.0000
+Ns 100.0000
+Ni 1
+Tf 1 1 1
+illum 2
+newmtl mat22
+map_Kd mat22.png
+Ks 1.0000 1.0000 1.0000
+Ns 100.0000
+Ni 1
+Tf 1 1 1
+illum 2
+newmtl mat23
+map_Kd mat23.png
+Ks 1.0000 1.0000 1.0000
+Ns 100.0000
+Ni 1
+Tf 1 1 1
+illum 2
+newmtl mat24
+map_Kd mat24.png
+Ks 1.0000 1.0000 1.0000
+Ns 100.0000
+Ni 1
+Tf 1 1 1
+illum 2
+newmtl mat25
+map_Kd mat25.png
+Ks 1.0000 1.0000 1.0000
+Ns 100.0000
+Ni 1
+Tf 1 1 1
+illum 2

@@ -1,0 +1,24 @@
+<sh-modal class="modal" style="width:500px;" modalWidth="800px: position: relative;">
+  <div style="display: flex; background-color: rgba(30,30,30,1);">
+    <img src="..\..\..\..\..\assets\imgs\information-icon.png" style="width:25px; height: 25px; margin-top: 7px; margin-left: 7px;"> 
+    <span style="margin-left:auto; margin-right:auto;">Set Global Data Router Settings</span>
+  </div>
+  <div style="margin-top: 10px;">
+    <span>Enter the configuration information for the data router</span>
+    <div  style="margin-top:10px; width: 90%; font-size: 18px;">
+        <div style="display:flex; margin-left: 25px;">
+          <span style="font-size: 16px; width: 80px; ">IP</span>
+          <input style="width:200px; height: 40px; padding: 5px; background-color: #383838;" type="text" [(ngModel)]="IP">
+        </div>
+        <div style="height: 10px;"></div>
+        <div style="display:flex; margin-left: 25px;">
+          <span style="font-size: 16px; width: 80px; ">Port</span>
+          <input style="width:200px; height: 40px; padding: 5px; background-color: #383838;" type="text" [(ngModel)]="port">
+        </div>
+    </div>
+  </div>
+  <div style="display: flex;">
+    <sh-button label="Save" (click)="saveGDRSettings($event)"></sh-button>
+    <sh-button style="margin-left:10px;" label="Cancel" (click)="cancelGDRSettings()"></sh-button>
+  </div>
+</sh-modal>

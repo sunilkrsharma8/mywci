@@ -1,0 +1,15 @@
+<sh-modal label="Select one or more items from the list below. You may enter keywords in a textbox below to filter the list." class="modal" modalHeight="200px" modalWidth="200px">
+  <sh-grid>
+      <sh-card>
+        <sh-input-text #instrumentInput instrumentInput label="Type Instrument Name" (input)="filterItem(instrumentInput.value)"></sh-input-text>
+        <sh-table #tableInstrument>
+          <sh-table-row *ngFor="let instruments of filteredItems">
+            <sh-table-cell columns=8 style="height: 40px; margin-top: -6px;">
+              <sh-checkbox id="chkbox_all" label={{instruments.Name}} style="padding: 0px;"></sh-checkbox>
+            </sh-table-cell>
+          </sh-table-row>
+        </sh-table>
+      </sh-card>
+  </sh-grid>
+  <sh-button label="OK" (click)="setInstrument($event)" style="margin-top: 8px;"></sh-button>
+</sh-modal>

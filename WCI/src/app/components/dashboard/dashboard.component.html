@@ -1,0 +1,129 @@
+<div class="menucontainer" *ngIf="isShowContextMenu" (mouseleave)="isShowContextMenu=false;">
+  <ul class="dropdown-menu multi-level" role="menu" aria-labelledby="dropdownMenu" style="display:block;">
+    <!--<li class="dropdown-item" (click)="selectMenuItem('Reset','Reset')">
+      <a href="#" data-toggle="dropdown">Reset</a>
+    </li>-->
+    <ng-container *ngFor="let child1 of menuItems">
+      <ng-container *ngIf="!(addTileMenuItems.length==0 && child1.menuLabel=='Add Tile')">
+        <li *ngIf="!isOutSidecontextMenu || child1.menuLabel=='Add Tile' || child1.menuLabel=='Edit Dashboard Layout'" [ngClass]="{active: isActive(child1.menuLabel), 'dropdown-submenu': child1.subMenuLabel.length}"
+          class="dropdown-item" (click)="selectMenuItem(child1, child1.menuLabel)">
+          <a href="#" data-toggle="dropdown">{{child1.menuLabel}}</a>
+          <ng-container *ngIf="child1.subMenuLabel.length">
+            <ul class="dropdown-menu">
+              <li *ngFor="let child2 of child1.subMenuLabel" [ngClass]="{'dropdown-submenu': child2.subMenuLabel.length}" class="dropdown-item"
+                (click)="selectMenuItem(child2, child1.menuLabel)">
+                <a href="#" data-toggle="dropdown">{{child2.menuLabel}}</a>
+                <ng-container *ngIf="child2.subMenuLabel.length">
+                  <ul class="dropdown-menu">
+                    <li *ngFor="let child3 of child2.subMenuLabel" [ngClass]="{'dropdown-submenu': child3.subMenuLabel.length}" class="dropdown-item"
+                      (click)="selectMenuItem(child3, child1.menuLabel)">
+                      <a href="#" data-toggle="dropdown">{{child3.menuLabel}}</a>
+                    </li>
+                  </ul>
+                </ng-container>
+              </li>
+            </ul>
+          </ng-container>
+        </li>
+      </ng-container>
+    </ng-container>
+  </ul>
+</div>
+
+<div class="addtilemenucontainer" *ngIf="isShowAddTileMenu" (mouseleave)="isShowAddTileMenu=false;">
+  <ul class="dropdown-menu multi-level" role="menu" aria-labelledby="dropdownMenu" style="display:block;">
+    <li *ngFor="let child1 of addTileMenuItems" [ngClass]="{active: isActive(child1.menuLabel), 'dropdown-submenu': child1.subMenuLabel.length}"
+      class="dropdown-item" (click)="addTileMenuItem(child1)">
+      <a href="#" data-toggle="dropdown">{{child1.menuLabel}}</a>
+      <ng-container *ngIf="child1.subMenuLabel.length">
+        <ul class="dropdown-menu">
+          <li *ngFor="let child2 of child1.subMenuLabel" [ngClass]="{'dropdown-submenu': child2.subMenuLabel.length}" class="dropdown-item"
+            (click)="addTileMenuItem(child2)">
+            <a href="#" data-toggle="dropdown">{{child2.menuLabel}}</a>
+          </li>
+        </ul>
+      </ng-container>
+    </li>
+  </ul>
+</div>
+
+
+
+<sh-pane>
+  <sh-card #dashboardshcard style='height: 100%'>
+    <!--<div *ngIf="!isEditDashboard; else elseEditDashboard">-->
+    <div style="display:flex; margin-bottom: 8px; background: rgba(125,125,125,1); height: 20%">
+      <sh-dropdown *ngIf="selectedZone" #zonesDropDown label="Zone" [value]="selectedZone.Name" ngDefaultControl>
+        <sh-menu-item *ngFor="let zoneItem of allZonesSubscribedResult;" label={{zoneItem.Name}} value={{zoneItem.Id}} (click)="setZone(zoneItem)"></sh-menu-item>
+      </sh-dropdown>
+    </div>
+    <div id="dashboardshcardOutDiv" (contextmenu)="outSidecontextMenuHandler($event)" oncontextmenu="return false;" style="height: 80%;">
+      <div id="dashboardshcard" [dragula]='"bag-allDashboardItems"' class="dashboard-scroll" style="overflow-y: auto; overflow-x: hidden; height: 320px !important;"
+        [dragulaModel]='allDashboardItems' (mousewheel)="onMousewheel($event)">
+        <i class="fas fa-caret-up" id="dashboardUpArrow" style="font-size:80px; position: fixed; margin-left: 95px; color: #686363; cursor: pointer; margin-top: -20px;"
+          (click)="scrollWinUp($event)"></i>
+        <div *ngFor="let item of allDashboardItems; let i = index">
+          <app-active-alert-tile *ngIf="item.ref_component=='Active Alerts'" [(activeAlerts)]="item.ref_data" [(criticalAlert)]="criticalAlert"
+            [(warningAlert)]="warningAlert" [(infoAlert)]="infoAlert" (contextmenu)="contextMenuHandler($event, item)" oncontextmenu="return false;"></app-active-alert-tile>
+
+          <div *ngIf="item.ref_component=='3D View'" style=" background: rgba(125,125,125,1); width: 100%; margin-top: 5px; height: 100px;"
+            (contextmenu)="contextMenuHandler($event, item)" oncontextmenu="return false;">
+            <h3 style="color: var(--text-90);">3D View Works!</h3>
+          </div>
+
+          <div *ngIf="item.ref_component=='Priority Samples'" style=" background: rgba(125,125,125,1); width: 100%; margin-top: 5px; height: 100px;"
+            (contextmenu)="contextMenuHandler($event, item)" oncontextmenu="return false;">
+            <h3 style="color: var(--text-90);">Priority Samples Works!</h3>
+          </div>
+
+          <div *ngIf="item.ref_component=='Analog Clock'" style=" background: rgba(125,125,125,1); width: 100%; margin-top: 5px; height: 100px;"
+            (contextmenu)="contextMenuHandler($event, item)" oncontextmenu="return false;">
+            <h3 style="color: var(--text-90);">Analog Clock Works!</h3>
+          </div>
+
+          <div *ngIf="item.ref_component=='Digital Clock'" style=" background: rgba(125,125,125,1); width: 100%; margin-top: 5px; height: 100px;"
+            (contextmenu)="contextMenuHandler($event, item)" oncontextmenu="return false;">
+            <h3 style="color: var(--text-90);">Digital Clock Works!</h3>
+          </div>
+
+          <div *ngIf="item.ref_component=='Integrations'" style=" background: rgba(125,125,125,1); width: 100%; margin-top: 5px; height: 100px;"
+            (contextmenu)="contextMenuHandler($event, item)" oncontextmenu="return false;">
+            <h3 style="color: var(--text-90);">Integrations Works!</h3>
+          </div>
+
+          <div *ngIf="item.ref_component=='Remote Control'" style=" background: rgba(125,125,125,1); width: 100%; margin-top: 5px; height: 100px;"
+            (contextmenu)="contextMenuHandler($event, item)" oncontextmenu="return false;">
+            <h3 style="color: var(--text-90);">Remote Control Works!</h3>
+          </div>
+
+          <div *ngIf="item.ref_component=='Custom Tiles'" style=" background: rgba(125,125,125,1); width: 100%; margin-top: 5px; height: 100px;"
+            (contextmenu)="contextMenuHandler($event, item)" oncontextmenu="return false;">
+            <h3 style="color: var(--text-90);">Custom Tiles Works!</h3>
+          </div>
+        </div>
+
+      </div>
+      <i class="fas fa-caret-down" id="dashboardDownArrow" style="font-size:80px; position: fixed; margin-left: 95px; color:  #686363; bottom: 15%; cursor: pointer; display: none; margin-bottom: -20px;"
+        (click)="scrollWinDown($event)"></i>
+    </div>
+    <!--  <div class='card-wrapper' style='display:inline-flex' slot='footer'>-->
+    <div class='card-wrapper' style='display:inline-flex'>
+      <sh-button shape='square' color='transparent' label='Help' icon='help-outline' tooltip='Get Help'></sh-button>
+      <sh-button shape='square' color='transparent' label='Add Tile' icon='add-library' tooltip='Add a tile to the dashboard' (click)="addTile($event)"
+        [disabled]="!addTileMenuItems.length"></sh-button>
+      <sh-button shape='square' color='transparent' label='Edit' icon='dashboard' tooltip='Edit the dashboard' (click)="editDashboard($event)"></sh-button>
+      <sh-button shape='square' color='transparent' label='Display' icon='show' tooltip='Show/hide the dashboard'></sh-button>
+    </div>
+    <!--</div>-->
+    <!--<ng-template #elseEditDashboard>
+      <div style="align-self: center; font-size: 22px; color: var(--text-90); overflow-y: auto; overflow-x: hidden; min-height: 360px !important;">
+          Layout Editor
+          <div class='card-wrapper' style='display:inline-flex'>
+              <sh-button shape='square' color='transparent' label='Save' icon='save' tooltip='Save' (click)="saveDashboard($event)"></sh-button>
+              <sh-button shape='square' color='transparent' label='Cancel' icon='cancel' tooltip='Cancel' (click)="cancelDashboard($event)"></sh-button>
+              
+            </div>
+      </div>
+    </ng-template>-->
+  </sh-card>
+</sh-pane>

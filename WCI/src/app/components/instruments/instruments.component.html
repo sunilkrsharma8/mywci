@@ -1,0 +1,9 @@
+<div>
+    <div class="tool-bar">
+    <sh-button label="Default Sort" (click)="defaultSort($event)" style="margin: 4px;"></sh-button>
+
+    <sh-button label="Add New " (click)="addNewInstrument($event)" style="margin: 4px;" [disabled]="isNewDisabled()"></sh-button>
+  </div>
+  <app-expansion-overview #expansionOverviewComp [appModuleName]="appModuleName" [displayedHeaderColumns]="displayedColumns"
+    [(dataList)]="allInstrumentsSubscribedResult" [parrentComponent]=this></app-expansion-overview>
+</div>

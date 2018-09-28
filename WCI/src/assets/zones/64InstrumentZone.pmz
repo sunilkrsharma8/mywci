@@ -1,0 +1,2300 @@
+﻿[
+  {
+    "Name": "Core Lab",
+    "Length": 50.0,
+    "Width": 70.0,
+    "Rotation": -28.7128,
+    "Pitch": 324.0,
+    "IsMetricFloorSize": false,
+    "Color": [
+      0.77647058823529413,
+      0.83137254901960789,
+      0.85098039215686272,
+      1.0
+    ],
+    "Walls": [
+      {
+        "PositionStart": [
+          -10.6683,
+          -7.63639
+        ],
+        "PositionEnd": [
+          -10.6683,
+          7.6701
+        ],
+        "Color": [
+          0.50196078431372548,
+          0.50196078431372548,
+          0.50196078431372548,
+          1.0
+        ]
+      },
+      {
+        "PositionStart": [
+          -10.6157,
+          -7.57478
+        ],
+        "PositionEnd": [
+          5.70522,
+          -7.57478
+        ],
+        "Color": [
+          0.50196078431372548,
+          0.50196078431372548,
+          0.50196078431372548,
+          1.0
+        ]
+      },
+      {
+        "PositionStart": [
+          10.6364,
+          7.68276
+        ],
+        "PositionEnd": [
+          10.6364,
+          -7.55086
+        ],
+        "Color": [
+          0.50196078431372548,
+          0.50196078431372548,
+          0.50196078431372548,
+          1.0
+        ]
+      },
+      {
+        "PositionStart": [
+          10.616,
+          7.63937
+        ],
+        "PositionEnd": [
+          -6.29325,
+          7.63937
+        ],
+        "Color": [
+          0.50196078431372548,
+          0.50196078431372548,
+          0.50196078431372548,
+          1.0
+        ]
+      },
+      {
+        "PositionStart": [
+          7.53723,
+          -7.56671
+        ],
+        "PositionEnd": [
+          10.6682,
+          -7.56671
+        ],
+        "Color": [
+          0.50196078431372548,
+          0.50196078431372548,
+          0.50196078431372548,
+          1.0
+        ]
+      },
+      {
+        "PositionStart": [
+          -10.645,
+          7.64691
+        ],
+        "PositionEnd": [
+          -8.28058,
+          7.64691
+        ],
+        "Color": [
+          0.50196078431372548,
+          0.50196078431372548,
+          0.50196078431372548,
+          1.0
+        ]
+      },
+      {
+        "PositionStart": [
+          -0.115957,
+          4.34285
+        ],
+        "PositionEnd": [
+          -0.115958,
+          -1.5865
+        ],
+        "Color": [
+          0.70980392156862748,
+          0.82745098039215681,
+          0.71372549019607845,
+          1.0
+        ]
+      },
+      {
+        "PositionStart": [
+          -7.64771,
+          -1.62969
+        ],
+        "PositionEnd": [
+          -5.03986,
+          -1.62969
+        ],
+        "Color": [
+          0.89411764705882357,
+          0.88627450980392153,
+          0.77254901960784317,
+          1.0
+        ]
+      },
+      {
+        "PositionStart": [
+          2.24957,
+          -7.50521
+        ],
+        "PositionEnd": [
+          2.24957,
+          -2.92817
+        ],
+        "Color": [
+          0.89411764705882357,
+          0.88627450980392153,
+          0.77254901960784317,
+          1.0
+        ]
+      },
+      {
+        "PositionStart": [
+          2.2566,
+          -1.66649
+        ],
+        "PositionEnd": [
+          2.2566,
+          -1.92265
+        ],
+        "Color": [
+          0.89411764705882357,
+          0.88627450980392153,
+          0.77254901960784317,
+          1.0
+        ]
+      },
+      {
+        "PositionStart": [
+          -4.01321,
+          -3.34586
+        ],
+        "PositionEnd": [
+          -1.31584,
+          -3.34586
+        ],
+        "Color": [
+          0.89411764705882357,
+          0.88627450980392153,
+          0.77254901960784317,
+          1.0
+        ]
+      },
+      {
+        "PositionStart": [
+          -4.01213,
+          -3.32266
+        ],
+        "PositionEnd": [
+          -4.01213,
+          -7.52954
+        ],
+        "Color": [
+          0.89411764705882357,
+          0.88627450980392153,
+          0.77254901960784317,
+          1.0
+        ]
+      },
+      {
+        "PositionStart": [
+          8.81277,
+          -1.60649
+        ],
+        "PositionEnd": [
+          10.5985,
+          -1.60649
+        ],
+        "Color": [
+          0.89411764705882357,
+          0.88627450980392153,
+          0.77254901960784317,
+          1.0
+        ]
+      },
+      {
+        "PositionStart": [
+          -0.185532,
+          2.28968
+        ],
+        "PositionEnd": [
+          -6.19432,
+          2.28968
+        ],
+        "Color": [
+          0.70980392156862748,
+          0.82745098039215681,
+          0.71372549019607845,
+          1.0
+        ]
+      },
+      {
+        "PositionStart": [
+          -6.19213,
+          2.31287
+        ],
+        "PositionEnd": [
+          -6.19213,
+          -1.58889
+        ],
+        "Color": [
+          0.70980392156862748,
+          0.82745098039215681,
+          0.71372549019607845,
+          1.0
+        ]
+      },
+      {
+        "PositionStart": [
+          -3.10766,
+          2.24336
+        ],
+        "PositionEnd": [
+          -3.10766,
+          -1.60785
+        ],
+        "Color": [
+          0.70980392156862748,
+          0.82745098039215681,
+          0.71372549019607845,
+          1.0
+        ]
+      },
+      {
+        "PositionStart": [
+          -0.0695745,
+          2.275
+        ],
+        "PositionEnd": [
+          3.97699,
+          2.275
+        ],
+        "Color": [
+          0.70980392156862748,
+          0.82745098039215681,
+          0.71372549019607845,
+          1.0
+        ]
+      },
+      {
+        "PositionStart": [
+          3.98894,
+          2.31348
+        ],
+        "PositionEnd": [
+          3.98894,
+          -1.58653
+        ],
+        "Color": [
+          0.70980392156862748,
+          0.82745098039215681,
+          0.71372549019607845,
+          1.0
+        ]
+      },
+      {
+        "PositionStart": [
+          -10.6138,
+          -1.61816
+        ],
+        "PositionEnd": [
+          -9.5138,
+          -1.61816
+        ],
+        "Color": [
+          0.89411764705882357,
+          0.88627450980392153,
+          0.77254901960784317,
+          1.0
+        ]
+      },
+      {
+        "PositionStart": [
+          2.19319,
+          -3.34273
+        ],
+        "PositionEnd": [
+          -0.308495,
+          -3.34273
+        ],
+        "Color": [
+          0.89411764705882357,
+          0.88627450980392153,
+          0.77254901960784317,
+          1.0
+        ]
+      },
+      {
+        "PositionStart": [
+          -0.115957,
+          7.56594
+        ],
+        "PositionEnd": [
+          -0.115957,
+          6.17425
+        ],
+        "Color": [
+          0.70980392156862748,
+          0.82745098039215681,
+          0.71372549019607845,
+          1.0
+        ]
+      },
+      {
+        "PositionStart": [
+          -4.04849,
+          -1.64596
+        ],
+        "PositionEnd": [
+          -1.98886,
+          -1.64596
+        ],
+        "Color": [
+          0.89411764705882357,
+          0.88627450980392153,
+          0.77254901960784317,
+          1.0
+        ]
+      },
+      {
+        "PositionStart": [
+          0.783521,
+          -1.63325
+        ],
+        "PositionEnd": [
+          -0.997607,
+          -1.63325
+        ],
+        "Color": [
+          0.89411764705882357,
+          0.88627450980392153,
+          0.77254901960784317,
+          1.0
+        ]
+      },
+      {
+        "PositionStart": [
+          1.74838,
+          -1.63325
+        ],
+        "PositionEnd": [
+          6.98452,
+          -1.63325
+        ],
+        "Color": [
+          0.89411764705882357,
+          0.88627450980392153,
+          0.77254901960784317,
+          1.0
+        ]
+      }
+    ],
+    "ZoneEquipment": [
+      {
+        "Name": "VersaCell 1",
+        "ModelName": "VersaCell",
+        "SerialNumber": "VC-001",
+        "Active": true,
+        "RcMethod": 1,
+        "RcThumbnailUpdateMode": 0,
+        "RcAddress": "192.168.1.19",
+        "RcPort": 5900,
+        "RcPassword": "10LDpRgFB1vsAgbGJSII5g==",
+        "Position": [
+          6.67369,
+          0.0,
+          2.09158
+        ],
+        "Rotation": [
+          0.0,
+          -1.5707963267948966,
+          0.0
+        ]
+      },
+	  {
+        "Name": "VersaCell 1_1",
+        "ModelName": "VersaCell",
+        "SerialNumber": "VC-001",
+        "Active": true,
+        "RcMethod": 1,
+        "RcThumbnailUpdateMode": 0,
+        "RcAddress": "192.168.1.19",
+        "RcPort": 5900,
+        "RcPassword": "10LDpRgFB1vsAgbGJSII5g==",
+        "Position": [
+          5.67369,
+          0.0,
+          2.09158
+        ],
+        "Rotation": [
+          0.0,
+          -1.5707963267948966,
+          0.0
+        ]
+      },
+	  {
+        "Name": "VersaCell 1_2",
+        "ModelName": "VersaCell",
+        "SerialNumber": "VC-001",
+        "Active": true,
+        "RcMethod": 1,
+        "RcThumbnailUpdateMode": 0,
+        "RcAddress": "192.168.1.19",
+        "RcPort": 5900,
+        "RcPassword": "10LDpRgFB1vsAgbGJSII5g==",
+        "Position": [
+          7.67369,
+          0.0,
+          2.09158
+        ],
+        "Rotation": [
+          0.0,
+          -1.5707963267948966,
+          0.0
+        ]
+      },
+      {
+        "Name": "IMMULITE 2000 A",
+        "ModelName": "IMMULITE 2000",
+        "SerialNumber": "I2K-001",
+        "Active": true,
+        "RcMethod": 1,
+        "RcThumbnailUpdateMode": 0,
+        "RcAddress": "fld00ayc",
+        "RcPort": 5900,
+        "RcPassword": "10LDpRgFB1vsAgbGJSII5g==",
+        "Position": [
+          6.59305,
+          0.0,
+          1.20174
+        ],
+        "Rotation": [
+          0.0,
+          -1.5707963267948966,
+          0.0
+        ]
+      },
+	  {
+        "Name": "IMMULITE 2000 A_1",
+        "ModelName": "IMMULITE 2000",
+        "SerialNumber": "I2K-001",
+        "Active": true,
+        "RcMethod": 1,
+        "RcThumbnailUpdateMode": 0,
+        "RcAddress": "fld00ayc",
+        "RcPort": 5900,
+        "RcPassword": "10LDpRgFB1vsAgbGJSII5g==",
+        "Position": [
+          5.59305,
+          0.0,
+          1.20174
+        ],
+        "Rotation": [
+          0.0,
+          -1.5707963267948966,
+          0.0
+        ]
+      },
+	  {
+        "Name": "IMMULITE 2000 A_2",
+        "ModelName": "IMMULITE 2000",
+        "SerialNumber": "I2K-001",
+        "Active": true,
+        "RcMethod": 1,
+        "RcThumbnailUpdateMode": 0,
+        "RcAddress": "fld00ayc",
+        "RcPort": 5900,
+        "RcPassword": "10LDpRgFB1vsAgbGJSII5g==",
+        "Position": [
+          7.59305,
+          0.0,
+          1.20174
+        ],
+        "Rotation": [
+          0.0,
+          -1.5707963267948966,
+          0.0
+        ]
+      },
+      {
+        "Name": "Beckman ECI A",
+        "ModelName": "Generic Floor Instrument",
+        "SerialNumber": "",
+        "Active": true,
+        "RcMethod": 0,
+        "RcThumbnailUpdateMode": 1,
+        "Position": [
+          4.74077,
+          0.0,
+          7.27589
+        ],
+        "Rotation": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "Name": "Beckman ECI B",
+        "ModelName": "Generic Floor Instrument",
+        "SerialNumber": "",
+        "Active": true,
+        "RcMethod": 0,
+        "RcThumbnailUpdateMode": 1,
+        "Position": [
+          6.28545,
+          0.0,
+          7.19461
+        ],
+        "Rotation": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+	  {
+        "Name": "Beckman ECI C",
+        "ModelName": "Generic Floor Instrument",
+        "SerialNumber": "",
+        "Active": true,
+        "RcMethod": 0,
+        "RcThumbnailUpdateMode": 1,
+        "Position": [
+          8.74077,
+          0.0,
+          7.27589
+        ],
+        "Rotation": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "Name": "Beckman ECI D",
+        "ModelName": "Generic Floor Instrument",
+        "SerialNumber": "",
+        "Active": true,
+        "RcMethod": 0,
+        "RcThumbnailUpdateMode": 1,
+        "Position": [
+          10.28545,
+          0.0,
+          7.19461
+        ],
+        "Rotation": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "Name": "LIS 2",
+        "ModelName": "Desktop Computer",
+        "SerialNumber": "",
+        "Active": true,
+        "RcMethod": 0,
+        "RcThumbnailUpdateMode": 1,
+        "Position": [
+          3.61199,
+          0.0,
+          5.05535
+        ],
+        "Rotation": [
+          0.0,
+          3.1415926535897931,
+          0.0
+        ]
+      },
+      {
+        "Name": "LIS 3",
+        "ModelName": "Desktop Computer",
+        "SerialNumber": "",
+        "Active": true,
+        "RcMethod": 0,
+        "RcThumbnailUpdateMode": 1,
+        "Position": [
+          -10.2718,
+          0.0,
+          -3.89741
+        ],
+        "Rotation": [
+          0.0,
+          1.5707963267948966,
+          0.0
+        ]
+      },
+      {
+        "Name": "Ortho Vitros F51 A",
+        "ModelName": "Generic Floor Instrument",
+        "SerialNumber": "",
+        "Active": true,
+        "RcMethod": 0,
+        "RcThumbnailUpdateMode": 1,
+        "Position": [
+          -2.22657,
+          0.0,
+          2.67259
+        ],
+        "Rotation": [
+          0.0,
+          3.1415926535897931,
+          0.0
+        ]
+      },
+	  {
+        "Name": "Ortho Vitros F51 A_4",
+        "ModelName": "Generic Floor Instrument",
+        "SerialNumber": "",
+        "Active": true,
+        "RcMethod": 0,
+        "RcThumbnailUpdateMode": 1,
+        "Position": [
+          -2.22657,
+          0.0,
+          1.67259
+        ],
+        "Rotation": [
+          0.0,
+          3.1415926535897931,
+          0.0
+        ]
+      },
+	  {
+        "Name": "Ortho Vitros F51 A_1",
+        "ModelName": "Generic Floor Instrument",
+        "SerialNumber": "",
+        "Active": true,
+        "RcMethod": 0,
+        "RcThumbnailUpdateMode": 1,
+        "Position": [
+          -4.22657,
+          0.0,
+          3.67259
+        ],
+        "Rotation": [
+          0.0,
+          3.1415926535897931,
+          0.0
+        ]
+      },
+	  {
+        "Name": "Ortho Vitros F51 A_2",
+        "ModelName": "Generic Floor Instrument",
+        "SerialNumber": "",
+        "Active": true,
+        "RcMethod": 0,
+        "RcThumbnailUpdateMode": 1,
+        "Position": [
+          -4.22657,
+          0.0,
+          0.67259
+        ],
+        "Rotation": [
+          0.0,
+          3.1415926535897931,
+          0.0
+        ]
+      },
+      {
+        "Name": "LIS 4",
+        "ModelName": "Desktop Computer",
+        "SerialNumber": "",
+        "Active": true,
+        "RcMethod": 0,
+        "RcThumbnailUpdateMode": 1,
+        "Position": [
+          -4.85668,
+          0.0,
+          2.55466
+        ],
+        "Rotation": [
+          0.0,
+          -3.1415926535897931,
+          0.0
+        ]
+      },
+      {
+        "Name": "TDX FLX",
+        "ModelName": "Generic Tabletop Instrument",
+        "SerialNumber": "",
+        "Active": true,
+        "RcMethod": 0,
+        "RcThumbnailUpdateMode": 1,
+        "Position": [
+          -10.2721,
+          0.0,
+          2.95684
+        ],
+        "Rotation": [
+          0.0,
+          1.5707963267948966,
+          0.0
+        ]
+      },
+	  {
+        "Name": "TDX FLX",
+        "ModelName": "Generic Tabletop Instrument",
+        "SerialNumber": "",
+        "Active": true,
+        "RcMethod": 0,
+        "RcThumbnailUpdateMode": 1,
+        "Position": [
+          -9.2721,
+          0.0,
+          2.95684
+        ],
+        "Rotation": [
+          0.0,
+          1.5707963267948966,
+          0.0
+        ]
+      },
+      {
+        "Name": "Advia 2400 A",
+        "ModelName": "ADVIA 2400",
+        "SerialNumber": "A24-001",
+        "Active": true,
+        "RcMethod": 1,
+        "RcThumbnailUpdateMode": 0,
+        "RcAddress": "fld00ayc",
+        "RcPort": 5900,
+        "RcPassword": "10LDpRgFB1vsAgbGJSII5g==",
+        "Position": [
+          -10.284,
+          0.0,
+          6.02333
+        ],
+        "Rotation": [
+          0.0,
+          1.5707963267948966,
+          0.0
+        ]
+      },
+      {
+        "Name": "Advia 2400 B",
+        "ModelName": "ADVIA 2400",
+        "SerialNumber": "A24-002",
+        "Active": true,
+        "RcMethod": 1,
+        "RcThumbnailUpdateMode": 0,
+        "RcAddress": "fld00ayc",
+        "RcPort": 5900,
+        "RcPassword": "10LDpRgFB1vsAgbGJSII5g==",
+        "Position": [
+          -10.2898,
+          0.0,
+          4.55456
+        ],
+        "Rotation": [
+          0.0,
+          1.5707963267948966,
+          0.0
+        ]
+      },
+      {
+        "Name": "Beckman Coulter LH750 A",
+        "ModelName": "Generic Tabletop Instrument",
+        "SerialNumber": "",
+        "Active": true,
+        "RcMethod": 0,
+        "RcThumbnailUpdateMode": 1,
+        "Position": [
+          -8.12179,
+          0.0,
+          -7.20129
+        ],
+        "Rotation": [
+          0.0,
+          3.1415926535897931,
+          0.0
+        ]
+      },
+      {
+        "Name": "Beckman Coulter LH750 B",
+        "ModelName": "Generic Tabletop Instrument",
+        "SerialNumber": "",
+        "Active": true,
+        "RcMethod": 0,
+        "RcThumbnailUpdateMode": 1,
+        "Position": [
+          -10.3636,
+          0.0,
+          -4.60715
+        ],
+        "Rotation": [
+          0.0,
+          1.5707963267948966,
+          0.0
+        ]
+      },
+      {
+        "Name": "LIS 6",
+        "ModelName": "Desktop Computer",
+        "SerialNumber": "",
+        "Active": true,
+        "RcMethod": 0,
+        "RcThumbnailUpdateMode": 1,
+        "Position": [
+          -4.20929,
+          0.0,
+          -4.92608
+        ],
+        "Rotation": [
+          0.0,
+          -1.5707963267948966,
+          0.0
+        ]
+      },
+      {
+        "Name": "IMMULITE 2000",
+        "ModelName": "IMMULITE 2000",
+        "SerialNumber": "",
+        "Active": true,
+        "RcMethod": 1,
+        "RcThumbnailUpdateMode": 0,
+        "RcAddress": "fld00ayc",
+        "RcPort": 5900,
+        "RcPassword": "10LDpRgFB1vsAgbGJSII5g==",
+        "Position": [
+          6.57827,
+          0.0,
+          3.05488
+        ],
+        "Rotation": [
+          0.0,
+          1.5707963267948966,
+          0.0
+        ]
+      },
+	  {
+        "Name": "IMMULITE 2000 _1",
+        "ModelName": "IMMULITE 2000",
+        "SerialNumber": "",
+        "Active": true,
+        "RcMethod": 1,
+        "RcThumbnailUpdateMode": 0,
+        "RcAddress": "fld00ayc",
+        "RcPort": 5900,
+        "RcPassword": "10LDpRgFB1vsAgbGJSII5g==",
+        "Position": [
+          5.57827,
+          0.0,
+          3.05488
+        ],
+        "Rotation": [
+          0.0,
+          1.5707963267948966,
+          0.0
+        ]
+      },
+	  {
+        "Name": "IMMULITE 2000",
+        "ModelName": "IMMULITE 2000",
+        "SerialNumber": "",
+        "Active": true,
+        "RcMethod": 1,
+        "RcThumbnailUpdateMode": 0,
+        "RcAddress": "fld00ayc",
+        "RcPort": 5900,
+        "RcPassword": "10LDpRgFB1vsAgbGJSII5g==",
+        "Position": [
+          7.57827,
+          0.0,
+          3.05488
+        ],
+        "Rotation": [
+          0.0,
+          1.5707963267948966,
+          0.0
+        ]
+      },
+      {
+        "Name": "Table",
+        "ModelName": "Table",
+        "SerialNumber": "",
+        "Active": true,
+        "RcMethod": 0,
+        "RcThumbnailUpdateMode": 1,
+        "Position": [
+          -1.79894,
+          0.0,
+          -5.16957
+        ],
+        "Rotation": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "Name": "Table 1",
+        "ModelName": "Table",
+        "SerialNumber": "",
+        "Active": true,
+        "RcMethod": 0,
+        "RcThumbnailUpdateMode": 1,
+        "Position": [
+          -0.340851,
+          0.0,
+          -5.16957
+        ],
+        "Rotation": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "Name": "Table 2",
+        "ModelName": "Table",
+        "SerialNumber": "",
+        "Active": true,
+        "RcMethod": 0,
+        "RcThumbnailUpdateMode": 1,
+        "Position": [
+          -1.79894,
+          0.0,
+          -5.77553
+        ],
+        "Rotation": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "Name": "Table 3",
+        "ModelName": "Table",
+        "SerialNumber": "",
+        "Active": true,
+        "RcMethod": 0,
+        "RcThumbnailUpdateMode": 1,
+        "Position": [
+          -0.340851,
+          0.0,
+          -5.77553
+        ],
+        "Rotation": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+	  {
+        "Name": "VersaCell 1",
+        "ModelName": "VersaCell",
+        "SerialNumber": "VC-001",
+        "Active": true,
+        "IsInstrument": true,
+        "RcMethod": 1,
+        "RcThumbnailUpdateMode": 0,
+        "RcAddress": "192.168.1.19",
+        "RcPort": 5900,
+        "RcPassword": "10LDpRgFB1vsAgbGJSII5g==",
+        "Position": [
+          2.340851,
+          0.0,
+          -5.16957
+        ],
+        "Rotation": [
+          0.0,
+          -1.5707963267948966,
+          0.0
+        ]
+      },
+	  {
+        "Name": "IMMULITE 2000 A_5",
+        "ModelName": "IMMULITE 2000 XPi",
+        "SerialNumber": "I2K-001",
+        "Active": true,
+        "IsInstrument": true,
+        "RcMethod": 1,
+        "RcThumbnailUpdateMode": 0,
+        "RcAddress": "fld00ayc",
+        "RcPort": 5900,
+        "RcPassword": "10LDpRgFB1vsAgbGJSII5g==",
+        "Position": [
+          -2.340851,
+          0.0,
+          -2.16957
+        ],
+        "Rotation": [
+          0.0,
+          -1.5707963267948966,
+          0.0
+        ]
+      },
+	  {
+        "Name": "IMMULITE 2000 A_6",
+        "ModelName": "IMMULITE 2000 XPi",
+        "SerialNumber": "I2K-001",
+        "Active": true,
+        "IsInstrument": true,
+        "RcMethod": 1,
+        "RcThumbnailUpdateMode": 0,
+        "RcAddress": "fld00ayc",
+        "RcPort": 5900,
+        "RcPassword": "10LDpRgFB1vsAgbGJSII5g==",
+        "Position": [
+          -2.340851,
+          0.0,
+          -0.16957
+        ],
+        "Rotation": [
+          0.0,
+          -1.5707963267948966,
+          0.0
+        ]
+      },
+      {
+        "Name": "Bench - 30x48",
+        "ModelName": "Bench - 30x48",
+        "SerialNumber": "",
+        "Active": true,
+        "RcMethod": 0,
+        "RcThumbnailUpdateMode": 1,
+        "Position": [
+          9.40165,
+          0.0,
+          -1.96186
+        ],
+        "Rotation": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "Name": "Bench - 30x48 2",
+        "ModelName": "Bench - 30x48",
+        "SerialNumber": "",
+        "Active": true,
+        "RcMethod": 0,
+        "RcThumbnailUpdateMode": 1,
+        "Position": [
+          4.73904,
+          0.0,
+          -2.00698
+        ],
+        "Rotation": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "Name": "Bench - 30x48 1",
+        "ModelName": "Bench - 30x48",
+        "SerialNumber": "",
+        "Active": true,
+        "RcMethod": 0,
+        "RcThumbnailUpdateMode": 1,
+        "Position": [
+          -6.5841,
+          0.0,
+          -7.17916
+        ],
+        "Rotation": [
+          0.0,
+          3.1415926535897931,
+          0.0
+        ]
+      },
+      {
+        "Name": "Refrigerator - 1 Door",
+        "ModelName": "Refrigerator - 1 Door",
+        "SerialNumber": "",
+        "Active": true,
+        "RcMethod": 0,
+        "RcThumbnailUpdateMode": 1,
+        "Position": [
+          -4.3059,
+          0.0,
+          -4.19815
+        ],
+        "Rotation": [
+          0.0,
+          -1.5707963267948966,
+          0.0
+        ]
+      },
+      {
+        "Name": "Bench - 30x48 3",
+        "ModelName": "Bench - 30x48",
+        "SerialNumber": "",
+        "Active": true,
+        "RcMethod": 0,
+        "RcThumbnailUpdateMode": 1,
+        "Position": [
+          -7.55734,
+          0.0,
+          -7.17916
+        ],
+        "Rotation": [
+          0.0,
+          3.1415926535897931,
+          0.0
+        ]
+      },
+      {
+        "Name": "Bench - 30x48 4",
+        "ModelName": "Bench - 30x48",
+        "SerialNumber": "",
+        "Active": true,
+        "RcMethod": 0,
+        "RcThumbnailUpdateMode": 1,
+        "Position": [
+          -8.50989,
+          0.0,
+          -7.17916
+        ],
+        "Rotation": [
+          0.0,
+          3.1415926535897931,
+          0.0
+        ]
+      },
+      {
+        "Name": "Bench - 30x48 5",
+        "ModelName": "Bench - 30x48",
+        "SerialNumber": "",
+        "Active": true,
+        "RcMethod": 0,
+        "RcThumbnailUpdateMode": 1,
+        "Position": [
+          -9.50356,
+          0.0,
+          -7.17916
+        ],
+        "Rotation": [
+          0.0,
+          3.1415926535897931,
+          0.0
+        ]
+      },
+      {
+        "Name": "Desk - Medium",
+        "ModelName": "Desk",
+        "SerialNumber": "",
+        "Active": true,
+        "RcMethod": 0,
+        "RcThumbnailUpdateMode": 1,
+        "Position": [
+          -4.28043,
+          0.0,
+          -5.03895
+        ],
+        "Rotation": [
+          0.0,
+          -1.5707963267948966,
+          0.0
+        ]
+      },
+      {
+        "Name": "Bench - 30x48 6",
+        "ModelName": "Bench - 30x48",
+        "SerialNumber": "",
+        "Active": true,
+        "RcMethod": 0,
+        "RcThumbnailUpdateMode": 1,
+        "Position": [
+          -10.2424,
+          0.0,
+          -3.81597
+        ],
+        "Rotation": [
+          0.0,
+          1.5707963267948966,
+          0.0
+        ]
+      },
+      {
+        "Name": "Bench - 30x48 7",
+        "ModelName": "Bench - 30x48",
+        "SerialNumber": "",
+        "Active": true,
+        "RcMethod": 0,
+        "RcThumbnailUpdateMode": 1,
+        "Position": [
+          -10.2424,
+          0.0,
+          -4.78416
+        ],
+        "Rotation": [
+          0.0,
+          1.5707963267948966,
+          0.0
+        ]
+      },
+      {
+        "Name": "Bench - 30x48 8",
+        "ModelName": "Bench - 30x48",
+        "SerialNumber": "",
+        "Active": true,
+        "RcMethod": 0,
+        "RcThumbnailUpdateMode": 1,
+        "Position": [
+          -10.2424,
+          0.0,
+          -5.75235
+        ],
+        "Rotation": [
+          0.0,
+          1.5707963267948966,
+          0.0
+        ]
+      },
+      {
+        "Name": "Table 4",
+        "ModelName": "Table",
+        "SerialNumber": "",
+        "Active": true,
+        "RcMethod": 0,
+        "RcThumbnailUpdateMode": 1,
+        "Position": [
+          -10.2424,
+          0.0,
+          2.93589
+        ],
+        "Rotation": [
+          0.0,
+          -1.5707963267948966,
+          0.0
+        ]
+      },
+	  {
+        "Name": "Table 5",
+        "ModelName": "Table",
+        "SerialNumber": "",
+        "Active": true,
+        "RcMethod": 0,
+        "RcThumbnailUpdateMode": 1,
+        "Position": [
+          -9.2424,
+          0.0,
+          2.93589
+        ],
+        "Rotation": [
+          0.0,
+          -1.5707963267948966,
+          0.0
+        ]
+      },
+      {
+        "Name": "Advia 120",
+        "ModelName": "ADVIA 120",
+        "SerialNumber": "",
+        "Active": true,
+        "RcMethod": 0,
+        "RcThumbnailUpdateMode": 1,
+        "Position": [
+          -5.70718,
+          0.0,
+          -7.11746
+        ],
+        "Rotation": [
+          0.0,
+          -3.1415926535897931,
+          0.0
+        ]
+      },
+      {
+        "Name": "Bench - 30x48 9",
+        "ModelName": "Bench - 30x48",
+        "SerialNumber": "",
+        "Active": true,
+        "RcMethod": 0,
+        "RcThumbnailUpdateMode": 1,
+        "Position": [
+          -5.59436,
+          0.0,
+          -7.17682
+        ],
+        "Rotation": [
+          0.0,
+          3.1415926535897931,
+          0.0
+        ]
+      },
+      {
+        "Name": "Advia 2120",
+        "ModelName": "ADVIA 2120i",
+        "SerialNumber": "",
+        "Active": true,
+        "RcMethod": 0,
+        "RcThumbnailUpdateMode": 1,
+        "Position": [
+          -6.99214,
+          0.0,
+          -7.05482
+        ],
+        "Rotation": [
+          0.0,
+          3.1415926535897931,
+          0.0
+        ]
+      },
+      {
+        "Name": "Clinitek Atlas",
+        "ModelName": "CLINITEK Novus",
+        "SerialNumber": "",
+        "Active": true,
+        "RcMethod": 0,
+        "RcThumbnailUpdateMode": 1,
+        "Position": [
+          -10.17,
+          0.0,
+          -2.70479
+        ],
+        "Rotation": [
+          0.0,
+          1.5707963267948966,
+          0.0
+        ]
+      },
+	  {
+        "Name": "Clinitek Atlas A",
+        "ModelName": "CLINITEK Novus",
+        "SerialNumber": "",
+        "Active": true,
+        "RcMethod": 0,
+        "RcThumbnailUpdateMode": 1,
+        "Position": [
+          -9.17,
+          0.0,
+          -2.70479
+        ],
+        "Rotation": [
+          0.0,
+          1.5707963267948966,
+          0.0
+        ]
+      },
+      {
+        "Name": "Bench - 30x48 10",
+        "ModelName": "Bench - 30x48",
+        "SerialNumber": "",
+        "Active": true,
+        "RcMethod": 0,
+        "RcThumbnailUpdateMode": 1,
+        "Position": [
+          -6.48725,
+          0.0,
+          -2.00589
+        ],
+        "Rotation": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "Name": "Advia Autoslide",
+        "ModelName": "ADVIA Autoslide",
+        "SerialNumber": "",
+        "Active": true,
+        "RcMethod": 0,
+        "RcThumbnailUpdateMode": 1,
+        "Position": [
+          -10.319,
+          0.0,
+          -5.80701
+        ],
+        "Rotation": [
+          0.0,
+          1.5707963267948966,
+          0.0
+        ]
+      },
+      {
+        "Name": "Advia Dual Hematology Module",
+        "ModelName": "ADVIA Dual Hematology Module",
+        "SerialNumber": "",
+        "Active": true,
+        "RcMethod": 0,
+        "RcThumbnailUpdateMode": 1,
+        "Position": [
+          -7.49074,
+          0.0,
+          -4.40198
+        ],
+        "Rotation": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+	  {
+        "Name": "Advia Dual Hematology Module 1",
+        "ModelName": "ADVIA Dual Hematology Module",
+        "SerialNumber": "",
+        "Active": true,
+        "RcMethod": 0,
+        "RcThumbnailUpdateMode": 1,
+        "Position": [
+          -7.49074,
+          0.0,
+          -3.40198
+        ],
+        "Rotation": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+	  {
+        "Name": "Advia Dual Hematology Module 2",
+        "ModelName": "ADVIA Dual Hematology Module",
+        "SerialNumber": "",
+        "Active": true,
+        "RcMethod": 0,
+        "RcThumbnailUpdateMode": 1,
+        "Position": [
+          -5.49074,
+          0.0,
+          -4.40198
+        ],
+        "Rotation": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+	  {
+        "Name": "Advia Dual Hematology Module 2",
+        "ModelName": "ADVIA Dual Hematology Module",
+        "SerialNumber": "",
+        "Active": true,
+        "RcMethod": 0,
+        "RcThumbnailUpdateMode": 1,
+        "Position": [
+          -5.49074,
+          0.0,
+          -3.40198
+        ],
+        "Rotation": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "Name": "Centaur XP 1",
+        "ModelName": "ADVIA Centaur XP",
+        "SerialNumber": "XP-001",
+        "Active": true,
+        "RcMethod": 0,
+        "RcThumbnailUpdateMode": 1,
+        "Position": [
+          1.70707,
+          0.0,
+          7.2418
+        ],
+        "Rotation": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+	  {
+        "Name": "Centaur XP 1_1",
+        "ModelName": "ADVIA Centaur XP",
+        "SerialNumber": "XP-001",
+        "Active": true,
+        "RcMethod": 0,
+        "RcThumbnailUpdateMode": 1,
+        "Position": [
+          -8.70707,
+          0.0,
+          7.2418
+        ],
+        "Rotation": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+	  {
+        "Name": "Centaur XP 1_2",
+        "ModelName": "ADVIA Centaur XP",
+        "SerialNumber": "XP-001",
+        "Active": true,
+        "RcMethod": 0,
+        "RcThumbnailUpdateMode": 1,
+        "Position": [
+          -5.70707,
+          0.0,
+          7.2418
+        ],
+        "Rotation": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "Name": "Centaur XP 2",
+        "ModelName": "ADVIA Centaur XP",
+        "SerialNumber": "XP-002",
+        "Active": true,
+        "RcMethod": 1,
+        "RcThumbnailUpdateMode": 0,
+        "RcAddress": "fld00ayc",
+        "RcPort": 5900,
+        "RcPassword": "10LDpRgFB1vsAgbGJSII5g==",
+        "Position": [
+          1.22298,
+          0.0,
+          2.85946
+        ],
+        "Rotation": [
+          0.0,
+          3.1415926535897931,
+          0.0
+        ]
+      },
+      {
+        "Name": "Centaur B",
+        "ModelName": "ADVIA Centaur XP",
+        "SerialNumber": "",
+        "Active": true,
+        "RcMethod": 1,
+        "RcThumbnailUpdateMode": 0,
+        "RcAddress": "fld00ayc",
+        "RcPort": 5900,
+        "RcPassword": "10LDpRgFB1vsAgbGJSII5g==",
+        "Position": [
+          3.26128,
+          0.0,
+          2.85946
+        ],
+        "Rotation": [
+          0.0,
+          3.1415926535897931,
+          0.0
+        ]
+      },
+	  {
+        "Name": "Centaur XP 2_1",
+        "ModelName": "ADVIA Centaur XP",
+        "SerialNumber": "XP-002",
+        "Active": true,
+        "RcMethod": 1,
+        "RcThumbnailUpdateMode": 0,
+        "RcAddress": "fld00ayc",
+        "RcPort": 5900,
+        "RcPassword": "10LDpRgFB1vsAgbGJSII5g==",
+        "Position": [
+          1.22298,
+          0.0,
+          1.85946
+        ],
+        "Rotation": [
+          0.0,
+          3.1415926535897931,
+          0.0
+        ]
+      },
+      {
+        "Name": "Centaur B_1",
+        "ModelName": "ADVIA Centaur XP",
+        "SerialNumber": "",
+        "Active": true,
+        "RcMethod": 1,
+        "RcThumbnailUpdateMode": 0,
+        "RcAddress": "fld00ayc",
+        "RcPort": 5900,
+        "RcPassword": "10LDpRgFB1vsAgbGJSII5g==",
+        "Position": [
+          3.26128,
+          0.0,
+          1.85946
+        ],
+        "Rotation": [
+          0.0,
+          3.1415926535897931,
+          0.0
+        ]
+      },
+	  {
+        "Name": "Centaur XP 2_2",
+        "ModelName": "ADVIA Centaur XP",
+        "SerialNumber": "XP-002",
+        "Active": true,
+        "RcMethod": 1,
+        "RcThumbnailUpdateMode": 0,
+        "RcAddress": "fld00ayc",
+        "RcPort": 5900,
+        "RcPassword": "10LDpRgFB1vsAgbGJSII5g==",
+        "Position": [
+          1.22298,
+          0.0,
+          -1.85946
+        ],
+        "Rotation": [
+          0.0,
+          3.1415926535897931,
+          0.0
+        ]
+      },
+      {
+        "Name": "Centaur B_2",
+        "ModelName": "ADVIA Centaur XP",
+        "SerialNumber": "",
+        "Active": true,
+        "RcMethod": 1,
+        "RcThumbnailUpdateMode": 0,
+        "RcAddress": "fld00ayc",
+        "RcPort": 5900,
+        "RcPassword": "10LDpRgFB1vsAgbGJSII5g==",
+        "Position": [
+          3.26128,
+          0.0,
+          -1.85946
+        ],
+        "Rotation": [
+          0.0,
+          3.1415926535897931,
+          0.0
+        ]
+      },
+      {
+        "Name": "Advia 1200",
+        "ModelName": "ADVIA 1200",
+        "SerialNumber": "",
+        "Active": true,
+        "RcMethod": 0,
+        "RcThumbnailUpdateMode": 1,
+        "Position": [
+          -10.217,
+          0.0,
+          -0.197991
+        ],
+        "Rotation": [
+          0.0,
+          1.5707963267948966,
+          0.0
+        ]
+      },
+	  {
+        "Name": "Advia 1200 A",
+        "ModelName": "ADVIA 1200",
+        "SerialNumber": "",
+        "Active": true,
+        "RcMethod": 0,
+        "RcThumbnailUpdateMode": 1,
+        "Position": [
+          -9.217,
+          0.0,
+          -0.197991
+        ],
+        "Rotation": [
+          0.0,
+          1.5707963267948966,
+          0.0
+        ]
+      },
+	  {
+        "Name": "Advia 1200 B",
+        "ModelName": "ADVIA 1200",
+        "SerialNumber": "",
+        "Active": true,
+        "RcMethod": 0,
+        "RcThumbnailUpdateMode": 1,
+        "Position": [
+          -8.217,
+          0.0,
+          -0.197991
+        ],
+        "Rotation": [
+          0.0,
+          1.5707963267948966,
+          0.0
+        ]
+      },
+      {
+        "Name": "Advia2400",
+        "ModelName": "ADVIA 2400",
+        "SerialNumber": "A24-003",
+        "Active": true,
+        "RcMethod": 1,
+        "RcThumbnailUpdateMode": 0,
+        "RcAddress": "fld00ayc",
+        "RcPort": 5900,
+        "RcPassword": "10LDpRgFB1vsAgbGJSII5g==",
+        "Position": [
+          -10.217,
+          0.0,
+          1.22882
+        ],
+        "Rotation": [
+          0.0,
+          1.5707963267948966,
+          0.0
+        ]
+      },
+	  {
+        "Name": "Advia2400 C",
+        "ModelName": "ADVIA 2400",
+        "SerialNumber": "A24-003",
+        "Active": true,
+        "RcMethod": 1,
+        "RcThumbnailUpdateMode": 0,
+        "RcAddress": "fld00ayc",
+        "RcPort": 5900,
+        "RcPassword": "10LDpRgFB1vsAgbGJSII5g==",
+        "Position": [
+          -9.217,
+          0.0,
+          1.22882
+        ],
+        "Rotation": [
+          0.0,
+          1.5707963267948966,
+          0.0
+        ]
+      },
+	  {
+        "Name": "Advia2400 D",
+        "ModelName": "ADVIA 2400",
+        "SerialNumber": "A24-003",
+        "Active": true,
+        "RcMethod": 1,
+        "RcThumbnailUpdateMode": 0,
+        "RcAddress": "fld00ayc",
+        "RcPort": 5900,
+        "RcPassword": "10LDpRgFB1vsAgbGJSII5g==",
+        "Position": [
+          -8.217,
+          0.0,
+          1.22882
+        ],
+        "Rotation": [
+          0.0,
+          1.5707963267948966,
+          0.0
+        ]
+      },
+      {
+        "Name": "Advia1800",
+        "ModelName": "ADVIA 1800",
+        "SerialNumber": "A18-001",
+        "Active": true,
+        "RcMethod": 1,
+        "RcThumbnailUpdateMode": 0,
+        "RcAddress": "fld00ayc",
+        "RcPort": 5900,
+        "RcPassword": "10LDpRgFB1vsAgbGJSII5g==",
+        "Position": [
+          -6.59899,
+          0.0,
+          1.4836
+        ],
+        "Rotation": [
+          0.0,
+          -1.5707963267948966,
+          0.0
+        ]
+      },
+	  {
+        "Name": "Advia1800 A",
+        "ModelName": "ADVIA 1800",
+        "SerialNumber": "A18-001",
+        "Active": true,
+        "RcMethod": 1,
+        "RcThumbnailUpdateMode": 0,
+        "RcAddress": "fld00ayc",
+        "RcPort": 5900,
+        "RcPassword": "10LDpRgFB1vsAgbGJSII5g==",
+        "Position": [
+          -5.59899,
+          0.0,
+          1.4836
+        ],
+        "Rotation": [
+          0.0,
+          -1.5707963267948966,
+          0.0
+        ]
+      },
+      {
+        "Name": "Advia 1650",
+        "ModelName": "ADVIA 1650",
+        "SerialNumber": "",
+        "Active": true,
+        "RcMethod": 0,
+        "RcThumbnailUpdateMode": 1,
+        "Position": [
+          -6.57351,
+          0.0,
+          -0.0705973
+        ],
+        "Rotation": [
+          0.0,
+          -1.5707963267948966,
+          0.0
+        ]
+      },
+	  {
+        "Name": "Advia 1650 A",
+        "ModelName": "ADVIA 1650",
+        "SerialNumber": "",
+        "Active": true,
+        "RcMethod": 0,
+        "RcThumbnailUpdateMode": 1,
+        "Position": [
+          -5.57351,
+          0.0,
+          -0.0705973
+        ],
+        "Rotation": [
+          0.0,
+          -1.5707963267948966,
+          0.0
+        ]
+      },
+      {
+        "Name": "Vista A",
+        "ModelName": "Dimension Vista 1500",
+        "SerialNumber": "VIS-001",
+        "Active": true,
+        "RcMethod": 0,
+        "RcThumbnailUpdateMode": 1,
+        "Position": [
+          -1.9109,
+          0.0,
+          7.19084
+        ],
+        "Rotation": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+	  {
+        "Name": "Vista A_1",
+        "ModelName": "Dimension Vista 1500",
+        "SerialNumber": "VIS-001",
+        "Active": true,
+        "RcMethod": 0,
+        "RcThumbnailUpdateMode": 1,
+        "Position": [
+          -1.9109,
+          0.0,
+          5.99084
+        ],
+        "Rotation": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+	  {
+        "Name": "Vista A_2",
+        "ModelName": "Dimension Vista 1500",
+        "SerialNumber": "VIS-001",
+        "Active": true,
+        "RcMethod": 0,
+        "RcThumbnailUpdateMode": 1,
+        "Position": [
+          -1.9109,
+          0.0,
+          4.69084
+        ],
+        "Rotation": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "Name": "Benchtop Centrifuge 1",
+        "ModelName": "Benchtop Centrifuge",
+        "SerialNumber": "",
+        "Active": true,
+        "RcMethod": 0,
+        "RcThumbnailUpdateMode": 1,
+        "Position": [
+          -0.509574,
+          0.0,
+          6.63031
+        ],
+        "Rotation": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "Name": "Bench - 30x48 11",
+        "ModelName": "Bench - 30x48",
+        "SerialNumber": "",
+        "Active": true,
+        "RcMethod": 0,
+        "RcThumbnailUpdateMode": 1,
+        "Position": [
+          -0.484096,
+          0.0,
+          6.68126
+        ],
+        "Rotation": [
+          0.0,
+          -1.5707963267948966,
+          0.0
+        ]
+      },
+      {
+        "Name": "Bench - 30x48 12",
+        "ModelName": "Bench - 30x48",
+        "SerialNumber": "",
+        "Active": true,
+        "RcMethod": 0,
+        "RcThumbnailUpdateMode": 1,
+        "Position": [
+          -5.6308,
+          0.0,
+          2.63015
+        ],
+        "Rotation": [
+          0.0,
+          -3.1415926535897931,
+          0.0
+        ]
+      },
+      {
+        "Name": "Bench - 30x48 13",
+        "ModelName": "Bench - 30x48",
+        "SerialNumber": "",
+        "Active": true,
+        "RcMethod": 0,
+        "RcThumbnailUpdateMode": 1,
+        "Position": [
+          -4.66261,
+          0.0,
+          2.60467
+        ],
+        "Rotation": [
+          0.0,
+          3.1415926535897931,
+          0.0
+        ]
+      },
+      {
+        "Name": "Benchtop Centrifuge 3",
+        "ModelName": "Benchtop Centrifuge",
+        "SerialNumber": "",
+        "Active": true,
+        "RcMethod": 0,
+        "RcThumbnailUpdateMode": 1,
+        "Position": [
+          -6.03846,
+          0.0,
+          4.89775
+        ],
+        "Rotation": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "Name": "Printer",
+        "ModelName": "Printer",
+        "SerialNumber": "",
+        "Active": true,
+        "RcMethod": 0,
+        "RcThumbnailUpdateMode": 1,
+        "Position": [
+          -4.45878,
+          0.0,
+          2.65563
+        ],
+        "Rotation": [
+          0.0,
+          -3.1415926535897931,
+          0.0
+        ]
+      },
+      {
+        "Name": "Bench - 30x48 14",
+        "ModelName": "Bench - 30x48",
+        "SerialNumber": "",
+        "Active": true,
+        "RcMethod": 0,
+        "RcThumbnailUpdateMode": 1,
+        "Position": [
+          -7.10856,
+          0.0,
+          4.89775
+        ],
+        "Rotation": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "Name": "Bench - 30x48 15",
+        "ModelName": "Bench - 30x48",
+        "SerialNumber": "",
+        "Active": true,
+        "RcMethod": 0,
+        "RcThumbnailUpdateMode": 1,
+        "Position": [
+          -6.16585,
+          0.0,
+          4.89775
+        ],
+        "Rotation": [
+          0.0,
+          3.1415926535897931,
+          0.0
+        ]
+      },
+      {
+        "Name": "Bench - 30x48 16",
+        "ModelName": "Bench - 30x48",
+        "SerialNumber": "",
+        "Active": true,
+        "RcMethod": 0,
+        "RcThumbnailUpdateMode": 1,
+        "Position": [
+          -5.19787,
+          0.0,
+          4.89775
+        ],
+        "Rotation": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "Name": "Benchtop Centrifuge 4",
+        "ModelName": "Benchtop Centrifuge",
+        "SerialNumber": "",
+        "Active": true,
+        "RcMethod": 0,
+        "RcThumbnailUpdateMode": 1,
+        "Position": [
+          4.73904,
+          0.0,
+          -2.08342
+        ],
+        "Rotation": [
+          0.0,
+          -1.5707963267948966,
+          0.0
+        ]
+      },
+	  {
+        "Name": "Benchtop Centrifuge 4_1",
+        "ModelName": "Benchtop Centrifuge",
+        "SerialNumber": "",
+        "Active": true,
+        "RcMethod": 0,
+        "RcThumbnailUpdateMode": 1,
+        "Position": [
+          9.3234,
+          0.0,
+          -1.08342
+        ],
+        "Rotation": [
+          0.0,
+          -1.5707963267948966,
+          0.0
+        ]
+      },
+      {
+        "Name": "Bench - 30x48 17",
+        "ModelName": "Bench - 30x48",
+        "SerialNumber": "",
+        "Active": true,
+        "RcMethod": 0,
+        "RcThumbnailUpdateMode": 1,
+        "Position": [
+          10.2934,
+          0.0,
+          -0.936874
+        ],
+        "Rotation": [
+          0.0,
+          -1.5707963267948966,
+          0.0
+        ]
+      },
+	  {
+        "Name": "Bench - 30x48 17_1",
+        "ModelName": "Bench - 30x48",
+        "SerialNumber": "",
+        "Active": true,
+        "RcMethod": 0,
+        "RcThumbnailUpdateMode": 1,
+        "Position": [
+          9.2934,
+          0.0,
+          -0.936874
+        ],
+        "Rotation": [
+          0.0,
+          -1.5707963267948966,
+          0.0
+        ]
+      },
+      {
+        "Name": "Bench - 30x48 18",
+        "ModelName": "Bench - 30x48",
+        "SerialNumber": "",
+        "Active": true,
+        "RcMethod": 0,
+        "RcThumbnailUpdateMode": 1,
+        "Position": [
+          10.2934,
+          0.0,
+          0.0567963
+        ],
+        "Rotation": [
+          0.0,
+          -1.5707963267948966,
+          0.0
+        ]
+      },
+      {
+        "Name": "Bench - 30x48 19",
+        "ModelName": "Bench - 30x48",
+        "SerialNumber": "",
+        "Active": true,
+        "RcMethod": 0,
+        "RcThumbnailUpdateMode": 1,
+        "Position": [
+          10.2934,
+          0.0,
+          1.05047
+        ],
+        "Rotation": [
+          0.0,
+          -1.5707963267948966,
+          0.0
+        ]
+      },
+      {
+        "Name": "Bench - 30x48 20",
+        "ModelName": "Bench - 30x48",
+        "SerialNumber": "",
+        "Active": true,
+        "RcMethod": 0,
+        "RcThumbnailUpdateMode": 1,
+        "Position": [
+          2.49691,
+          0.0,
+          5.12706
+        ],
+        "Rotation": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "Name": "Bench - 30x48 21",
+        "ModelName": "Bench - 30x48",
+        "SerialNumber": "",
+        "Active": true,
+        "RcMethod": 0,
+        "RcThumbnailUpdateMode": 1,
+        "Position": [
+          3.49059,
+          0.0,
+          5.12706
+        ],
+        "Rotation": [
+          0.0,
+          3.1415926535897931,
+          0.0
+        ]
+      },
+      {
+        "Name": "Bench - 30x48 22",
+        "ModelName": "Bench - 30x48",
+        "SerialNumber": "",
+        "Active": true,
+        "RcMethod": 0,
+        "RcThumbnailUpdateMode": 1,
+        "Position": [
+          4.48426,
+          0.0,
+          5.12706
+        ],
+        "Rotation": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "Name": "Benchtop Centrifuge 5",
+        "ModelName": "Benchtop Centrifuge",
+        "SerialNumber": "",
+        "Active": true,
+        "RcMethod": 0,
+        "RcThumbnailUpdateMode": 1,
+        "Position": [
+          4.50904,
+          0.0,
+          5.10297
+        ],
+        "Rotation": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "Name": "Benchtop Centrifuge 6",
+        "ModelName": "Benchtop Centrifuge",
+        "SerialNumber": "",
+        "Active": true,
+        "RcMethod": 0,
+        "RcThumbnailUpdateMode": 1,
+        "Position": [
+          2.42048,
+          0.0,
+          5.10158
+        ],
+        "Rotation": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "Name": "Bench - 30x48 23",
+        "ModelName": "Bench - 30x48",
+        "SerialNumber": "",
+        "Active": true,
+        "RcMethod": 0,
+        "RcThumbnailUpdateMode": 1,
+        "Position": [
+          1.75803,
+          0.0,
+          7.19084
+        ],
+        "Rotation": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    ]
+  }
+]

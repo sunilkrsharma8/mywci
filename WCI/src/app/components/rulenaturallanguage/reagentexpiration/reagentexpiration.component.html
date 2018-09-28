@@ -1,0 +1,20 @@
+<p style="color:#000000; margin-left:10px;">
+Apply this rule for <a [class.newrule]="itemsNames[0] == -1" (click)="naturalLanguageTextConfigurator('reagents')"> {{reagentText}} </a> when loaded on <a [class.newrule]="instruments[0] == -1" (click)="naturalLanguageTextConfigurator('instrument')"> {{instrumentText}} </a>.
+<br><br>
+Show a warning alert when calibration is due to expire:  <a [class.newrule]="warningThreshold == -2" (click)="naturalLanguageTextConfigurator('warningthreshold')"> {{warningThresholdText}} </a>.
+<br>
+Show a critical alert when calibration has expired: <a [class.newrule]="criticalThreshold == -2" (click)="naturalLanguageTextConfigurator('criticalthreshold')"> {{criticalThresholdText}} </a>.
+<br>
+Note that if this rule is configured to create a calibration expiration warning alert without creating a calibration expiration critical alert, then a warning alert will be created any time the expiration is less than the warning threshold (including expired).
+<br><br>
+Show a warning alert when onboard stability is due to expire: <a [class.newrule]="OBSWarningThreshold == -2" (click)="naturalLanguageTextConfigurator('OBSWarningThreshold')"> {{OBSWarningThresholdText}} </a>.
+<br>
+Show a critical alert when onboard stability has expired: <a [class.newrule]="OBSCriticalThreshold == -2" (click)="naturalLanguageTextConfigurator('OBSCriticalThreshold')"> {{OBSCriticalThresholdText}} </a>.
+<br>
+Note that if this rule is configured to create an onboard stability expiration warning alert without creating an onboard stability critical alert, then a warning alert will be created any time the expiration is less than the warning threshold (including expired).
+<br><br>
+<app-sharedruleparams #srpComponent [ruleData]="ruleData" [emailsList]="emailsList" (onChange)="onSharedRuleParamsChange($event)" [isNewRule]="isNewRule"></app-sharedruleparams>
+</p>
+<app-assetconfigurator *ngIf="isShowReagentModal" (onAssetSelection)="updateReagent($event)"></app-assetconfigurator>
+<app-assetconfigurator *ngIf="isShowInstrumentModal" (onAssetSelection)="updateInstrument($event)"></app-assetconfigurator>
+<app-alertconfigurator *ngIf="isShowAlertModal" (onAlertSelection)="updateAlerts($event)" [configurabletext1]="configurabletext1" [configurabletext2]="configurabletext2" [configurabletext3]="configurabletext3" [alertType]="alertType" [isShowTextBox]="isShowAlertInputText"></app-alertconfigurator>

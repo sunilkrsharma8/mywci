@@ -1,0 +1,526 @@
+[
+  {
+    "Name": "ADVIA 120",
+    "MeshFile": "ADVIA 120/ADVIA 120.obj",
+    "IconFile": "ADVIA 120/ADVIA 120.png",
+    "FlagpoleOffset": [0.0, 0.5, 0.0],
+	"IsInstrument": true 
+  },
+  {
+    "Name": "ADVIA 1200",
+    "MeshFile": "ADVIA 1200/ADVIA 1200.obj",
+    "IconFile": "ADVIA 1200/ADVIA 1200.png",
+    "FlagpoleOffset": null,
+	"IsInstrument": true 
+  },
+  {
+    "Name": "ADVIA 1650",
+    "MeshFile": "ADVIA 1650/ADVIA 1650.obj",
+    "IconFile": "ADVIA 1650/ADVIA 1650.png",
+    "FlagpoleOffset": [0.0, 0.3, 0.0],
+	"IsInstrument": true 
+  },
+  {
+    "Name": "ADVIA 1800",
+    "MeshFile": "ADVIA 1800/ADVIA 1800.obj",
+    "IconFile": "ADVIA 1800/ADVIA 1800.png",
+    "FlagpoleOffset": [0.0, 0.3, 0.0],
+	"IsInstrument": true 
+  },
+  {
+    "Name": "ADVIA 2120i",
+    "MeshFile": "ADVIA 2120i/ADVIA 2120i.obj",
+    "IconFile": "ADVIA 2120i/ADVIA 2120i.png",
+    "FlagpoleOffset": [0.0, 0.5, 0.0],
+	"IsInstrument": true 
+  },
+  {
+    "Name": "ADVIA 2400",
+    "MeshFile": "ADVIA 2400/ADVIA 2400.obj",
+    "IconFile": "ADVIA 2400/ADVIA 2400.png",
+    "FlagpoleOffset": [0.0, 0.3, 0.0],
+	"IsInstrument": true 
+  },
+  {
+    "Name": "ADVIA Autoslide",
+    "MeshFile": "ADVIA Autoslide/ADVIA Autoslide.obj",
+    "IconFile": "ADVIA Autoslide/ADVIA Autoslide.png",
+    "FlagpoleOffset": null,
+	"IsInstrument": true 
+  },
+  {
+    "Name": "ADVIA Centaur CP",
+    "MeshFile": "ADVIA Centaur CP/ADVIA Centaur CP.obj",
+    "IconFile": "ADVIA Centaur CP/ADVIA Centaur CP.png",
+    "FlagpoleOffset": [0.05, 0.5, 0.0],
+	"IsInstrument": true 
+  },
+  {
+    "Name": "ADVIA Centaur XP",
+    "MeshFile": "ADVIA Centaur XP/ADVIA Centaur XP.obj",
+    "IconFile": "ADVIA Centaur XP/ADVIA Centaur XP.png",
+    "FlagpoleOffset": [0.25, 0.18, 0.0],
+	"IsInstrument": true 
+  },
+  {
+    "Name": "ADVIA Centaur XPT",
+    "MeshFile": "ADVIA Centaur XPT/ADVIA Centaur XPT.obj",
+    "IconFile": "ADVIA Centaur XPT/ADVIA Centaur XPT.png",
+    "FlagpoleOffset": null,
+	"IsInstrument": true 
+  },
+  {
+    "Name": "ADVIA Chemistry XPT",
+    "MeshFile": "ADVIA Chemistry XPT/ADVIA Chemistry XPT.obj",
+    "IconFile": "ADVIA Chemistry XPT/ADVIA Chemistry XPT.png",
+    "FlagpoleOffset": null,
+	"IsInstrument": true 
+  },
+  {
+    "Name": "ADVIA Dual Hematology Module",
+    "MeshFile": "ADVIA Dual Hematology Module/ADVIA Dual Hematology Module.obj",
+    "IconFile": "ADVIA Dual Hematology Module/ADVIA Dual Hematology Module.png",
+    "FlagpoleOffset": [0.0, 0.2, 0.0],
+	"IsInstrument": true 
+  },
+  {
+    "Name": "Aliquoter",
+    "MeshFile": "Aliquoter/Aliquoter.obj",
+    "IconFile": "Aliquoter/Aliquoter.png",
+    "FlagpoleOffset": null,
+	"IsInstrument": true 
+  },
+  {
+    "Name": "Atellica CH 930",
+    "MeshFile": "Atellica CH 930/Atellica CH 930.obj",
+    "IconFile": "Atellica CH 930/Atellica CH 930.png",
+    "FlagpoleOffset": [0.0, 0.2, 0.0],
+	"IsInstrument": true 
+  },
+  {
+    "Name": "Atellica COAG360",
+    "MeshFile": "Atellica COAG360/Atellica COAG360.obj",
+    "IconFile": "Atellica COAG360/Atellica COAG360.png",
+    "FlagpoleOffset": [0.0, 0.2, 0.0],
+	"IsInstrument": true 
+  },
+  {
+    "Name": "Atellica Daytona Track",
+    "MeshFile": "Atellica Daytona Track/Atellica Daytona Track.obj",
+    "IconFile": "Atellica Daytona Track/Atellica Daytona Track.png",
+    "FlagpoleOffset": null,
+	"IsInstrument": true 
+  },
+  {
+    "Name": "Atellica Direct Load",
+    "MeshFile": "Atellica Direct Load/Atellica Direct Load.obj",
+    "IconFile": "Atellica Direct Load/Atellica Direct Load.png",
+    "FlagpoleOffset": null,
+	"IsInstrument": false 
+  },
+  {
+    "Name": "Atellica IM 1300",
+    "MeshFile": "Atellica IM 1600/Atellica IM 1600.obj",
+    "IconFile": "Atellica IM 1600/Atellica IM 1600.png",
+    "FlagpoleOffset": [0.0, 0.2, 0.0],
+	"IsInstrument": true 
+  },
+  {
+    "Name": "Atellica IM 1600",
+    "MeshFile": "Atellica IM 1600/Atellica IM 1600.obj",
+    "IconFile": "Atellica IM 1600/Atellica IM 1600.png",
+    "FlagpoleOffset": [0.0, 0.2, 0.0],
+	"IsInstrument": true 
+  },
+  {
+    "Name": "Atellica NEPH630",
+    "MeshFile": "Atellica NEPH630/Atellica NEPH630.obj",
+    "IconFile": "Atellica NEPH630/Atellica NEPH630.png",
+    "FlagpoleOffset": [0.0, 0.3, 0.0],
+	"IsInstrument": true 
+  },
+  {
+    "Name": "Atellica PM Server",
+    "MeshFile": "Desktop Computer/Desktop Computer.obj",
+    "IconFile": "Desktop Computer/Desktop Computer.png",
+    "FlagpoleOffset": [0.0, 0.3, 0.0],
+	"IsInstrument": true 
+  },
+  {
+    "Name": "Atellica Sample Handler",
+    "MeshFile": "Atellica Sample Handler/Atellica Sample Handler.obj",
+    "IconFile": "Atellica Sample Handler/Atellica Sample Handler.png",
+    "FlagpoleOffset": [0.0, 0.2, 0.0],
+	"IsInstrument": true },
+  {
+    "Name": "Atellica Sample Handler (Additional)",
+    "MeshFile": "Atellica Sample Handler/Atellica Sample Handler - Alt.obj",
+    "IconFile": "Atellica Sample Handler/Atellica Sample Handler - Alt.png",
+    "FlagpoleOffset": [0.0, 0.2, 0.0],
+	"IsInstrument": true 
+  },
+  {
+    "Name": "Atellica Sample Handler (Connect)",
+    "MeshFile": "Atellica SHC/SHC.obj",
+    "IconFile": "Atellica SHC/SHC.png",
+    "FlagpoleOffset": [0.0, 0.2, 0.0],
+	"IsInstrument": true 
+  },
+  {
+    "Name": "Automation Track",
+    "MeshFile": "Automation Track/Automation Track.obj",
+    "IconFile": "Automation Track/Automation Track.png",
+    "FlagpoleOffset": null,
+	"IsInstrument": false 
+  },
+  {
+    "Name": "Automation Track L-Module",
+    "MeshFile": "Automation Track L-Module/Automation Track L-Module.obj",
+    "IconFile": "Automation Track L-Module/Automation Track L-Module.png",
+    "FlagpoleOffset": null,
+	"IsInstrument": false 
+  },
+  {
+    "Name": "Automation Track Loop",
+    "MeshFile": "Automation Track Loop/Automation Track Loop.obj",
+    "IconFile": "Automation Track Loop/Automation Track Loop.png",
+    "FlagpoleOffset": null,
+	"IsInstrument": false 
+  },
+  {
+    "Name": "Automation Track T-Module",
+    "MeshFile": "Automation Track T-Module/Automation Track T-Module.obj",
+    "IconFile": "Automation Track T-Module/Automation Track T-Module.png",
+    "FlagpoleOffset": null,
+	"IsInstrument": false 
+  },
+  {
+    "Name": "Automation Track x2",
+    "MeshFile": "Automation Track x2/Automation Track x2.obj",
+    "IconFile": "Automation Track x2/Automation Track x2.png",
+    "FlagpoleOffset": null,
+	"IsInstrument": false 
+  },
+  {
+    "Name": "Automation Track x3",
+    "MeshFile": "Automation Track x3/Automation Track x3.obj",
+    "IconFile": "Automation Track x3/Automation Track x3.png",
+    "FlagpoleOffset": null,
+	"IsInstrument": false 
+  },
+  {
+    "Name": "Automation Track x4",
+    "MeshFile": "Automation Track x4/Automation Track x4.obj",
+    "IconFile": "Automation Track x4/Automation Track x4.png",
+    "FlagpoleOffset": null,
+	"IsInstrument": false 
+  },
+  {
+    "Name": "Automation Track x5",
+    "MeshFile": "Automation Track x5/Automation Track x5.obj",
+    "IconFile": "Automation Track x5/Automation Track x5.png",
+    "FlagpoleOffset": null,
+	"IsInstrument": false 
+  },
+  {
+    "Name": "Axis IP Camera",
+    "MeshFile": "Axis IP Camera/Axis IP Camera.obj",
+    "IconFile": "IconUnavailable.png",
+    "FlagpoleOffset": null,
+	"IsInstrument": true 
+  },
+  {
+    "Name": "Bench - 30x48",
+    "MeshFile": "Bench - 30x48/Bench - 30x48.obj",
+    "IconFile": "Bench - 30x48/Bench - 30x48.png",
+    "FlagpoleOffset": null,
+	"IsInstrument": false 
+  },
+  {
+    "Name": "Benchtop Centrifuge",
+    "MeshFile": "Benchtop Centrifuge/Benchtop Centrifuge.obj",
+    "IconFile": "Benchtop Centrifuge/Benchtop Centrifuge.png",
+    "FlagpoleOffset": null,
+	"IsInstrument": true 
+  },
+  {
+    "Name": "Bulk Input",
+    "MeshFile": "Bulk Input/Bulk Input.obj",
+    "IconFile": "Bulk Input/Bulk Input.png",
+    "FlagpoleOffset": null,
+	"IsInstrument": false 
+  },
+  {
+    "Name": "Bulk Output",
+    "MeshFile": "Bulk Output/Bulk Output.obj",
+    "IconFile": "Bulk Output/Bulk Output.png",
+    "FlagpoleOffset": null,
+	"IsInstrument": false 
+  },
+  {
+    "Name": "Carrier Buffer",
+    "MeshFile": "Carrier Buffer/Carrier Buffer.obj",
+    "IconFile": "Carrier Buffer/Carrier Buffer.png",
+    "FlagpoleOffset": null,
+	"IsInstrument": false 
+  },
+  {
+    "Name": "CentraLink",
+    "MeshFile": "CentraLink/CentraLink.obj",
+    "IconFile": "CentraLink/CentraLink.png",
+    "FlagpoleOffset": null,
+	"IsInstrument": false 
+  },
+  {
+    "Name": "Centrifuge",
+    "MeshFile": "Centrifuge/Centrifuge.obj",
+    "IconFile": "Centrifuge/Centrifuge.png",
+    "FlagpoleOffset": null,
+	"IsInstrument": false 
+  },
+  {
+    "Name": "CLINITEK Novus",
+    "MeshFile": "CLINITEK Novus/CLINITEK Novus.obj",
+    "IconFile": "CLINITEK Novus/CLINITEK Novus.png",
+    "FlagpoleOffset": [0.0, 0.3, 0.0],
+	"IsInstrument": true 
+  },
+  {
+    "Name": "Computer - Desktop",
+    "MeshFile": "Desktop Computer/Desktop Computer.obj",
+    "IconFile": "Desktop Computer/Desktop Computer.png",
+    "FlagpoleOffset": [0.0, 0.3, 0.0],
+	"IsInstrument": true 
+  },
+  {
+    "Name": "Decapper",
+    "MeshFile": "Decapper/Decapper.obj",
+    "IconFile": "Decapper/Decapper.png",
+    "FlagpoleOffset": null,
+	"IsInstrument": false 
+  },
+  {
+    "Name": "Desealer",
+    "MeshFile": "Desealer/Desealer.obj",
+    "IconFile": "Desealer/Desealer.png",
+    "FlagpoleOffset": null,
+	"IsInstrument": false 
+  },
+  {
+    "Name": "Desk",
+    "MeshFile": "Desk/Desk.obj",
+    "IconFile": "Desk/Desk.png",
+    "FlagpoleOffset": null,
+	"IsInstrument": false 
+  },
+  {
+    "Name": "Desktop Computer",
+    "MeshFile": "Desktop Computer/Desktop Computer.obj",
+    "IconFile": "Desktop Computer/Desktop Computer.png",
+    "FlagpoleOffset": [0.0, 0.3, 0.0],
+	"IsInstrument": true 
+  },
+  {
+    "Name": "Dimension EXL",
+    "MeshFile": "Dimension EXL/Dimension EXL.obj",
+    "IconFile": "Dimension EXL/Dimension EXL.png",
+    "FlagpoleOffset": null,
+	"IsInstrument": true 
+  },
+  {
+    "Name": "Dimension EXL 200",
+    "MeshFile": "Dimension EXL/Dimension EXL.obj",
+    "IconFile": "Dimension EXL/Dimension EXL.png",
+    "FlagpoleOffset": null,
+	"IsInstrument": true 
+  },
+  {
+    "Name": "Dimension Vista 1500",
+    "MeshFile": "Dimension Vista 1500/Dimension Vista 1500.obj",
+    "IconFile": "Dimension Vista 1500/Dimension Vista 1500.png",
+    "FlagpoleOffset": [0.0, 0.2, 0.0],
+	"IsInstrument": true 
+  },
+  {
+    "Name": "Dimension Vista 500",
+    "MeshFile": "Dimension Vista 1500/Dimension Vista 1500.obj",
+    "IconFile": "Dimension Vista 1500/Dimension Vista 1500.png",
+    "FlagpoleOffset": [0.0, 0.2, 0.0],
+	"IsInstrument": true 
+  },
+  {
+    "Name": "Doors - Double - 1",
+    "MeshFile": "Doors - Double - 1/Doors - Double - 1.obj",
+    "IconFile": "Doors - Double - 1/Doors - Double - 1.png",
+    "FlagpoleOffset": null,
+	"IsInstrument": false 
+  },
+  {
+    "Name": "Doors - Single - 1",
+    "MeshFile": "Doors - Single - 1/Doors - Single - 1.obj",
+    "IconFile": "Doors - Single - 1/Doors - Single - 1.png",
+    "FlagpoleOffset": null,
+	"IsInstrument": false 
+  },
+  {
+    "Name": "Generic Floor Instrument",
+    "MeshFile": "Generic Floor Instrument/Generic Floor Instrument.obj",
+    "IconFile": "Generic Floor Instrument/Generic Floor Instrument.png",
+    "FlagpoleOffset": null,
+	"IsInstrument": true 
+  },
+  {
+    "Name": "Generic Tabletop Instrument",
+    "MeshFile": "Generic Tabletop Instrument/Generic Tabletop Instrument.obj",
+    "IconFile": "Generic Tabletop Instrument/Generic Tabletop Instrument.png",
+    "FlagpoleOffset": [0.0, 0.3, 0.0],
+	"IsInstrument": true 
+  },
+  {
+    "Name": "Hematology Island",
+    "MeshFile": "Generic Floor Instrument/Generic Floor Instrument.obj",
+    "IconFile": "IconUnavailable.png",
+    "FlagpoleOffset": null,
+	"IsInstrument": false 
+  },
+  {
+    "Name": "IMMULITE 2000",
+    "MeshFile": "IMMULITE 2000 XPi/IMMULITE 2000 XPi.obj",
+    "IconFile": "IMMULITE 2000 XPi/IMMULITE 2000 XPi.png",
+    "FlagpoleOffset": null,
+	"IsInstrument": true 
+  },
+  {
+    "Name": "IMMULITE 2000 XPi",
+    "MeshFile": "IMMULITE 2000 XPi/IMMULITE 2000 XPi.obj",
+    "IconFile": "IMMULITE 2000 XPi/IMMULITE 2000 XPi.png",
+    "FlagpoleOffset": null,
+	"IsInstrument": true 
+  },
+  {
+    "Name": "Input/Output",
+    "MeshFile": "Input Output/Input Output.obj",
+    "IconFile": "Input Output/Input Output.png",
+    "FlagpoleOffset": null,
+	"IsInstrument": false 
+  },
+  {
+    "Name": "Manual Input/Output",
+    "MeshFile": "Generic Floor Instrument/Generic Floor Instrument.obj",
+    "IconFile": "IconUnavailable.png",
+    "FlagpoleOffset": null,
+	"IsInstrument": false 
+  },
+  {
+    "Name": "Pneumatic Transportation",
+    "MeshFile": "Generic Floor Instrument/Generic Floor Instrument.obj",
+    "IconFile": "IconUnavailable.png",
+    "FlagpoleOffset": null,
+	"IsInstrument": false 
+  },
+  {
+    "Name": "Printer",
+    "MeshFile": "Printer/Printer.obj",
+    "IconFile": "Printer/Printer.png",
+    "FlagpoleOffset": null,
+	"IsInstrument": true 
+  },
+  {
+    "Name": "Rack Input",
+    "MeshFile": "Rack Input/Rack Input.obj",
+    "IconFile": "Rack Input/Rack Input.png",
+    "FlagpoleOffset": null,
+	"IsInstrument": false 
+  },
+  {
+    "Name": "Rack Output",
+    "MeshFile": "Rack Input/Rack Input.obj",
+    "IconFile": "Rack Input/Rack Input.png",
+    "FlagpoleOffset": null,
+	"IsInstrument": false 
+  },
+  {
+    "Name": "Recapper",
+    "MeshFile": "Recapper/Recapper.obj",
+    "IconFile": "Recapper/Recapper.png",
+    "FlagpoleOffset": null,
+	"IsInstrument": false 
+  },
+  {
+    "Name": "Refrigerator",
+    "MeshFile": "Refrigerator/Refrigerator.obj",
+    "IconFile": "Refrigerator/Refrigerator.png",
+    "FlagpoleOffset": null,
+	"IsInstrument": false 
+  },
+  {
+    "Name": "Refrigerator - 1 Door",
+    "MeshFile": "Refrigerator - 1 Door/Refrigerator - 1 Door.obj",
+    "IconFile": "Refrigerator - 1 Door/Refrigerator - 1 Door.png",
+    "FlagpoleOffset": null,
+	"IsInstrument": false 
+  },
+  {
+    "Name": "Sealer",
+    "MeshFile": "Sealer/Sealer.obj",
+    "IconFile": "Sealer/Sealer.png",
+    "FlagpoleOffset": null,
+	"IsInstrument": false 
+  },
+  {
+    "Name": "Shaker",
+    "MeshFile": "Generic Floor Instrument/Generic Floor Instrument.obj",
+    "IconFile": "IconUnavailable.png",
+    "FlagpoleOffset": null,
+	"IsInstrument": false 
+  },
+  {
+    "Name": "Sink Cabinet",
+    "MeshFile": "Sink Cabinet/Sink Cabinet.obj",
+    "IconFile": "Sink Cabinet/Sink Cabinet.png",
+    "FlagpoleOffset": null,
+	"IsInstrument": false 
+  },
+  {
+    "Name": "Storage",
+    "MeshFile": "Storage/Storage.obj",
+    "IconFile": "Storage/Storage.png",
+    "FlagpoleOffset": null,
+	"IsInstrument": false 
+  },
+  {
+    "Name": "Support Post",
+    "MeshFile": "Support Post/Support Post.obj",
+    "IconFile": "Support Post/Support Post.png",
+    "FlagpoleOffset": null,
+  "IsInstrument": false 
+  },
+  {
+    "Name": "Table",
+    "MeshFile": "Table/Table.obj",
+    "IconFile": "Table/Table.png",
+    "FlagpoleOffset": null,
+	"IsInstrument": false 
+  },
+  {
+    "Name": "VersaCell",
+    "MeshFile": "VersaCell/VersaCell.obj",
+    "IconFile": "VersaCell/VersaCell.png",
+    "FlagpoleOffset": [0.0, 0.5, 0.0],
+	"IsInstrument": true 
+  },
+  {
+    "Name": "Volume Detector",
+    "MeshFile": "Generic Floor Instrument/Generic Floor Instrument.obj",
+    "IconFile": "IconUnavailable.png",
+    "FlagpoleOffset": null,
+	"IsInstrument": false 
+  },
+  {
+    "Name": "Windows - Single - 1",
+    "MeshFile": "Windows - Single - 1/Windows - Single - 1.obj",
+    "IconFile": "Windows - Single - 1/Windows - Single - 1.png",
+    "FlagpoleOffset": null,
+	"IsInstrument": false 
+  }
+]

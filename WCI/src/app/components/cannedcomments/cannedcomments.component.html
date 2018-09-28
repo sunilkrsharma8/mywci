@@ -1,0 +1,8 @@
+<div>
+    <div class="tool-bar">
+        <sh-button label="Default Sort" (click)="defaultSort($event)" style="margin: 4px;"></sh-button>
+        <sh-button label="Add New " id="addNewCannedCommentBtn" (click)="addNewCannedComment($event)" style="margin: 4px;" [disabled]="newDisabled()"></sh-button>
+    </div>
+    <app-expansion-overview #expansionOverviewComp [appModuleName]="appModuleName" [displayedHeaderColumns]="displayedColumns"
+        [(dataList)]="allNoteTemplesSubscribedResult" [parrentComponent]=this></app-expansion-overview>
+</div>

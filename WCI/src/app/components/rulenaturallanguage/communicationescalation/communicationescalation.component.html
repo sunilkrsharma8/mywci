@@ -1,0 +1,7 @@
+<p style="color:#000000; margin-left:10px;">
+    Apply this escalation rule when a communication alert
+    results from loss of communication with <a [class.newrule]="instruments[0] == -1" (click)="naturalLanguageTextConfigurator('instrument')"> {{instrumentText}} </a>
+<br><br>
+<app-sharedruleparams #srpComponent [ruleData]="ruleData" [emailsList]="emailsList" (onChange)="onSharedRuleParamsChange($event)" [isNewRule]="isNewRule"></app-sharedruleparams>
+</p>
+<app-instrumentconfigurator *ngIf="isShowAssetModal" (onInstrumentSet)="updateInstruments($event)" [instruments]="allInstruments"></app-instrumentconfigurator>

@@ -1,0 +1,148 @@
+p{
+  background: white;
+  color: black;
+  margin-top: 0px !important;
+}
+
+split-gutter{
+  /*background-color: #3c3c3c !important;*/
+  flex-basis: 5px !important;
+}
+
+sh-dropdown{
+  margin-right: 10px;
+  width: 100%;;
+}
+
+.pane-wrapper {
+  width: 100% !important;
+}
+
+.tool-bar{
+	height: 40px;
+	background-color: rgba(40,40,40,1);
+	display: flex;
+}
+
+.tool-bar sh-button{
+  margin: 5px;
+}
+
+.cell-wrapper{
+  white-space: normal !important;
+}
+
+.sq-button{
+  min-height: 24px;
+  min-width: 24px;
+}
+
+.tableBodyScroll{
+  height:70%; 
+  background-color: white;
+  width: 100%;
+  overflow-y:scroll;
+  overflow-x: hidden;
+  display:block;
+}
+
+.tableBodyScroll tbody {
+	display:block;
+	max-height:100%;
+	overflow-y:scroll;
+	overflow-x: hidden;
+}
+.tableBodyScroll tr:nth-child(odd) {
+	display:table;
+	width:100%;
+	table-layout:fixed;
+	/*color: #ffffff;*/
+	/*background: #8a8a8a;*/
+}
+
+.tableBodyScroll tr:nth-child(even) {
+	display:table;
+	width:100%;
+	table-layout:fixed;
+	margin-top: -10px;
+}
+
+.tableBodyScroll tr:nth-child(odd) td{
+	color: #000;
+	font-weight: bold;
+}
+
+.tableBodyScroll tr:nth-child(even) td{
+	color: #000;
+	font-weight: normal;
+}
+
+
+.tableBodyScroll::-webkit-scrollbar{
+  width: 8px;
+}
+.tableBodyScroll::-webkit-scrollbar-thumb {
+  background: rgba(125,125,125,1);
+  border-radius: 10px;
+} 
+
+.pane-wrapper {
+  width: 100%;
+  max-width: 100%;
+}
+
+
+#Severity-200-background{
+
+	background-image:url(../../../assets/imgs/FlagTextures_enus.png);
+	background-repeat: no-repeat;
+	background-position: -1px -5px; 
+width: 51px;
+height: 45px;
+	z-index: -1;
+}
+
+#Severity-200-background .Severity-40-foreground{
+	display: inline-block;
+	background-image:url(../../../assets/imgs/FlagTextures_enus.png);
+	background-position:  -168px -226px;
+	width: 44px;
+	height: 45px;
+	position: relative;
+	z-index: 2;
+}
+
+#Severity-200-background .Severity-102-foreground{
+	display: inline-block;
+	background-image:url(../../../assets/imgs/FlagTextures_enus.png);
+	background-position: -387px -224px;
+	width: 44px;
+	height: 45px;
+	position: relative;
+	z-index: 2;
+
+}
+ 
+#Severity-100-background{
+	
+	background-image:url(../../../assets/imgs/FlagTextures_enus.png);
+	background-position: -1px -61px; 
+	width: 51px;
+	height: 45px;
+	z-index: -1;
+}
+
+#Severity-100-background .Severity-102-foreground{
+	display: inline-block;
+	background-image:url(../../../assets/imgs/FlagTextures_enus.png);
+	background-position:  -386px -173px;
+	width: 44px;
+	height: 45px;
+	position: relative;
+	z-index: 2;
+}
+
+sh-table-head{
+  cursor: pointer;
+}
+

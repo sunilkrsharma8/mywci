@@ -1,0 +1,181 @@
+<sh-modal class="modal" style="width:500px;" modalWidth="800px">
+  <sh-card label="Recurrence Pattern">
+    <div style="display:flex; box-sizing: border-box;">
+      <sh-radio-group (click)="handleRadioClick($event)" style="width: 15%; padding-right: 10px; border-right: 1px solid #E4E4E4;">
+        <sh-radio-button id="rbtnNoOccurence" active=true label="No Occurence" (click)="occurenceFrequency = 'no'"></sh-radio-button>
+        <sh-radio-button id="rbtnHourly" label="Hourly" (click)="occurenceFrequency = 'hourly'"></sh-radio-button>
+        <sh-radio-button id="rbtnDaily" label="Daily" (click)="occurenceFrequency = 'daily'"></sh-radio-button>
+        <sh-radio-button id="rbtnWeekly" label="Weekly" (click)="occurenceFrequency = 'weekly'"></sh-radio-button>
+        <sh-radio-button id="rbtnMonthly" label="Monthly" (click)="occurenceFrequency = 'monthly'"></sh-radio-button>
+        <sh-radio-button id="rbtnYearly" label="Yearly" (click)="occurenceFrequency = 'yearly'"></sh-radio-button>
+      </sh-radio-group>
+      <div style="position:relative; width:90%;">
+        <div *ngIf="occurenceFrequency == 'monthly'" style="position:absolute; top: 30%; margin-left: 10px; width: 90%;">
+          <sh-radio-group (click)="handleRadioClick($event)">
+            <div style="display:flex;">
+              <sh-radio-button id="rbtnMonthly1" style="width: 40px;" label="" active=true (click)="occurencePattern.RecurrenceType = 4"></sh-radio-button>
+              <span>On day</span>
+             
+              <sh-input-number style="width:120px; height: 40px; padding: 5px; background-color: #383838;" min="1" max="31" label="Day"
+                #myDayOfMonth1 (keyup)="occurencePattern.DayOfMonth=myDayOfMonth1.value" (click)="occurencePattern.DayOfMonth=myDayOfMonth1.value"
+                [value]="occurencePattern.DayOfMonth"></sh-input-number>
+              <span>of every</span>
+        
+              <sh-input-number style="width:120px; height: 40px; padding: 5px; background-color: #383838;" min="1" max="12" label="Month"
+                #myInterval1 (keyup)="occurencePattern.Interval=myInterval1.value" (click)="occurencePattern.Interval=myInterval1.value"
+                [value]="occurencePattern.Interval"></sh-input-number>
+              <span>month(s)</span>
+            </div>
+            <div style="height:30px;"></div>
+            <div style="display:flex;">
+              <sh-radio-button id="rbtnMonthly2" style="width: 40px;" label="" (click)="occurencePattern.RecurrenceType = 7"></sh-radio-button>
+              <span>On the</span>
+              <sh-dropdown label="" style="width: 150px; height: 20px;" (click)="setOccurenceInstance($event)">
+                <sh-menu-item label="First"></sh-menu-item>
+                <sh-menu-item label="Second"></sh-menu-item>
+                <sh-menu-item label="Third"></sh-menu-item>
+                <sh-menu-item label="Fourth"></sh-menu-item>
+                <sh-menu-item label="Last"></sh-menu-item>
+              </sh-dropdown>
+              <div style="width:10px;"></div>
+              <sh-dropdown label="" style="width: 150px; height: 20px;" (click)="setDaysofWeekMask($event)">
+                <sh-menu-item label="Sunday"></sh-menu-item>
+                <sh-menu-item label="Monday"></sh-menu-item>
+                <sh-menu-item label="Tuesday"></sh-menu-item>
+                <sh-menu-item label="Wednesday"></sh-menu-item>
+                <sh-menu-item label="Thursday"></sh-menu-item>
+                <sh-menu-item label="Friday"></sh-menu-item>
+                <sh-menu-item label="Saturday"></sh-menu-item>
+              </sh-dropdown>
+              <span>of every</span>
+   
+              <sh-input-number style="width:120px; height: 40px; padding: 5px; background-color: #383838;" min="1" max="12" #myInterval2
+                label="Month" (keyup)="occurencePattern.Interval=myInterval2.value" (click)="occurencePattern.Interval=myInterval2.value"
+                [value]="occurencePattern.Interval"></sh-input-number>
+              <span>month(s)</span>
+            </div>
+          </sh-radio-group>
+        </div>
+        <div *ngIf="occurenceFrequency == 'yearly'" style="position:absolute; top: 30%; margin-left: 10px; width: 90%;">
+
+          <sh-radio-group (click)="handleRadioClick($event)">
+            <div style="display:flex;">
+              <sh-radio-button id="rbtnYearly1" style="width: 40px;" label="" active=true (click)="occurencePattern.RecurrenceType = 4"></sh-radio-button>
+              <span>Every</span>
+              <sh-dropdown label="" style="width: 150px; height: 20px;" (click)="setOccurenceMonth($event)">
+                <sh-menu-item label="January"></sh-menu-item>
+                <sh-menu-item label="February"></sh-menu-item>
+                <sh-menu-item label="March"></sh-menu-item>
+                <sh-menu-item label="April"></sh-menu-item>
+                <sh-menu-item label="May"></sh-menu-item>
+                <sh-menu-item label="June"></sh-menu-item>
+                <sh-menu-item label="July"></sh-menu-item>
+                <sh-menu-item label="August"></sh-menu-item>
+                <sh-menu-item label="September"></sh-menu-item>
+                <sh-menu-item label="October"></sh-menu-item>
+                <sh-menu-item label="November"></sh-menu-item>
+                <sh-menu-item label="December"></sh-menu-item>
+              </sh-dropdown>
+       
+              <sh-input-number style="width:120px; height: 40px; padding: 5px;margin-left: 10px; background-color: #383838;" min="1" max="31"
+                label="Day" #myDayOfMonth2 (keyup)="occurencePattern.DayOfMonth=myDayOfMonth2.value" (click)="occurencePattern.DayOfMonth=myDayOfMonth2.value"
+                [value]="occurencePattern.DayOfMonth"></sh-input-number>
+            </div>
+            <div style="height:30px;"></div>
+            <div style="display:flex;">
+              <sh-radio-button id="rbtnYearly2" style="width: 40px;" label="" (click)="occurencePattern.RecurrenceType = 7"></sh-radio-button>
+              <span>The</span>
+              <sh-dropdown label="" style="width: 150px; height: 20px;" (click)="setOccurenceInstance($event)">
+                <sh-menu-item label="First"></sh-menu-item>
+                <sh-menu-item label="Second"></sh-menu-item>
+                <sh-menu-item label="Third"></sh-menu-item>
+                <sh-menu-item label="Fourth"></sh-menu-item>
+                <sh-menu-item label="Last"></sh-menu-item>
+              </sh-dropdown>
+              <div style="width:10px;"></div>
+              <sh-dropdown label="" style="width: 150px; height: 20px;" (click)="setDaysofWeekMask($event)">
+                <sh-menu-item label="Sunday"></sh-menu-item>
+                <sh-menu-item label="Monday"></sh-menu-item>
+                <sh-menu-item label="Tuesday"></sh-menu-item>
+                <sh-menu-item label="Wednesday"></sh-menu-item>
+                <sh-menu-item label="Thursday"></sh-menu-item>
+                <sh-menu-item label="Friday"></sh-menu-item>
+                <sh-menu-item label="Saturday"></sh-menu-item>
+              </sh-dropdown>
+              <span>of </span>
+              <sh-dropdown label="" style="width: 150px; height: 20px;" (click)="setOccurenceMonth($event)">
+                <sh-menu-item label="January"></sh-menu-item>
+                <sh-menu-item label="February"></sh-menu-item>
+                <sh-menu-item label="March"></sh-menu-item>
+                <sh-menu-item label="April"></sh-menu-item>
+                <sh-menu-item label="May"></sh-menu-item>
+                <sh-menu-item label="June"></sh-menu-item>
+                <sh-menu-item label="July"></sh-menu-item>
+                <sh-menu-item label="August"></sh-menu-item>
+                <sh-menu-item label="September"></sh-menu-item>
+                <sh-menu-item label="October"></sh-menu-item>
+                <sh-menu-item label="November"></sh-menu-item>
+                <sh-menu-item label="December"></sh-menu-item>
+              </sh-dropdown>
+            </div>
+          </sh-radio-group>
+        </div>
+        <div *ngIf="occurenceFrequency == 'weekly'" style="position:absolute; top: 30%; margin-left: 10px; width: 90%;">
+
+          <div style="display:flex;">
+            <span>Recur Every</span>
+          
+            <sh-input-number style="width:120px; height: 40px; padding: 5px; background-color: #383838;" min="1" max="4" label="Week"
+              #myDayOfMonth3 (keyup)="occurencePattern.DayOfMonth=myDayOfMonth3.value" (click)="occurencePattern.DayOfMonth=myDayOfMonth3.value"
+              [value]="occurencePattern.DayOfMonth"></sh-input-number>
+            <span>week(s) on</span>
+          </div>
+          <div style="height:20px;"></div>
+          <div style="display: flex; flex-wrap: wrap; display: -webkit-flex; -webkit-flex-wrap: wrap; width: 500px;" (click)="handleDaysCheckBXClick($event)">
+            <div>
+              <sh-checkbox id="chkbxSunday" label="Sunday" style="padding: 10px;"></sh-checkbox>
+            </div>
+            <div>
+              <sh-checkbox id="chkbxMonday" label="Monday" style="padding: 10px;"></sh-checkbox>
+            </div>
+            <div>
+              <sh-checkbox id="chkbxTuesday" label="Tuesday" style="padding: 10px;"></sh-checkbox>
+            </div>
+            <div>
+              <sh-checkbox id="chkbxWednesday" label="Wednesday" style="padding: 10px;"></sh-checkbox>
+            </div>
+            <div>
+              <sh-checkbox id="chkbxThursday" label="Thursday" style="padding: 10px;"></sh-checkbox>
+            </div>
+            <div>
+              <sh-checkbox id="chkbxFriday" label="Friday" style="padding: 10px;"></sh-checkbox>
+            </div>
+            <div>
+              <sh-checkbox id="chkbxSaturday" label="Saturday" style="padding: 10px;"></sh-checkbox>
+            </div>
+          </div>
+        </div>
+        <div *ngIf="occurenceFrequency == 'daily'" style="position:absolute; top: 30%; margin-left: 10px; width: 90%;">
+          <div style="display:flex;">
+            <span>Every</span>
+            <sh-input-number style="width:120px; height: 40px; padding: 5px; background-color: #383838;" min="1" max="31" #myInterval4
+              label="Days" (keyup)="occurencePattern.Interval=myInterval4.value" (click)="occurencePattern.Interval=myInterval4.value"
+              [value]="occurencePattern.Interval"></sh-input-number>
+            <span>day(s)</span>
+          </div>
+        </div>
+        <div *ngIf="occurenceFrequency == 'hourly'" style="position:absolute; top: 30%; margin-left: 10px; width: 90%;">
+          <div style="display:flex;">
+            <span>Every</span>
+          
+            <sh-input-number style="width:120px; height: 40px; padding: 5px; background-color: #383838;" min="1" max="12" #myInterval5
+              label="Hours" (keyup)="occurencePattern.Interval=myInterval5.value" (click)="occurencePattern.Interval=myInterval5.value"
+              [value]="occurencePattern.Interval"></sh-input-number>
+            <span>hour(s)</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </sh-card>
+  <sh-button label="OK" (click)="setRecurrencePattern($event)"></sh-button>
+</sh-modal>

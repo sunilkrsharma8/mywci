@@ -1,0 +1,7 @@
+newmtl mat1
+map_Kd mat1.png
+Ks 1.0000 1.0000 1.0000
+Ns 100.0000
+Ni 1
+Tf 1 1 1
+illum 2

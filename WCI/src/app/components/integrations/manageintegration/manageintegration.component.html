@@ -1,0 +1,11 @@
+<div class="tool-bar">
+    <sh-button label="Default Sort" (click)="defaultSort($event)"></sh-button>
+    <sh-button label="Add New " (click)="addNewExtSystem($event)" [disabled]="isAddRecord"></sh-button>
+    <sh-button label="Global Data Router Settings" (click)="setGlobalDataRouterSettings($event)"></sh-button>
+</div>
+<div>
+ <app-expansion-overview #expansionOverviewComp *ngIf="extSystems" [appModuleName]="appModuleName" [displayedHeaderColumns]="displayedColumns"
+        [(dataList)]="extSystems" [parrentComponent]=this></app-expansion-overview>
+</div>
+<app-globaldataroutersettingsconfigurator *ngIf="isShowDRSettings" (onGlobalDRSettingsSet)="onSetGlobalDataRouterSettings($event)"
+    [settings]="globalSettings"></app-globaldataroutersettingsconfigurator>

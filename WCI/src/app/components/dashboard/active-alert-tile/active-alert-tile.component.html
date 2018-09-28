@@ -1,0 +1,36 @@
+<table (mouseenter)="displaymsg()" (mouseleave)="hiddenmsg()" style=" background: rgba(125,125,125,1); width: 100%; margin-top: 5px;">
+  <thead>
+    <tr class="txtColorWhite">
+      <th style="padding-left: 24px;">Critical</th>
+      <th>Warning</th>
+      <th>Information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="cursor: pointer; padding-left: 24px;" (click)="navigateToActiveAlerts()">
+        <div *ngIf="criticalAlert" style="margin-bottom: 3px;" [ngClass]="{'criticalAlert': criticalAlert.length!==0, 'noAlert':  criticalAlert.length===0}">
+          <span [ngClass]="{'criticalTxtPng': criticalAlert.length!==0, 'criticalNoTxtPng':  criticalAlert.length===0}" class="alertMsg txtColorWhite">{{criticalAlert.length}}</span>
+        </div>
+      </td>
+      <td style="cursor: pointer;" (click)="navigateToActiveAlerts()">
+        <div *ngIf="warningAlert" [ngClass]="{'warningAlert': warningAlert.length!==0, 'noAlert':  warningAlert.length===0}">
+          <span [ngClass]="{'txtColorWhite warningTxtPng' : warningAlert.length===0, 'warningNoTxtPng': warningAlert.length!==0}" class="alertMsg">{{warningAlert.length}}</span>
+        </div>
+      </td>
+      <td style="cursor: pointer;" (click)="navigateToActiveAlerts()">
+        <div *ngIf="infoAlert" style="margin-top: 10px;" [ngClass]="{'infoAlert': infoAlert.length!==0, 'noAlert':  infoAlert.length===0}">
+          <span class="alertMsg txtColorWhite" [ngClass]="{'infoTxtPng' : infoAlert.length!==0, 'infoNoTxtPng': infoAlert.length===0}">{{infoAlert.length}}</span>
+        </div>
+      </td>
+    </tr>
+    <tr #activeAlertsMsg>
+      <td colspan="2">
+        <span class="alertTooltip"></span>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+
+

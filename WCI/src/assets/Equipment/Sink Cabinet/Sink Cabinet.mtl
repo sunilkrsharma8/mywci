@@ -1,0 +1,36 @@
+newmtl mat1
+map_Kd mat1.png
+Ks 1.0000 1.0000 1.0000
+Ns 100.0000
+Ni 1
+Tf 1 1 1
+illum 2
+newmtl mat2
+map_Kd mat2.png
+Ks 1.0000 1.0000 1.0000
+Ns 100.0000
+Ni 1
+Tf 1 1 1
+illum 2
+newmtl mat3
+map_Kd mat3.png
+Ks 1.0000 1.0000 1.0000
+Ns 100.0000
+Ni 1
+Tf 1 1 1
+illum 2
+newmtl mat4
+Kd 0.9020 0.9020 0.9020
+Tr 1.0000
+Ks 1.0000 1.0000 1.0000
+Ns 100.0000
+Ni 1
+Tf 1 1 1
+illum 2
+newmtl mat5
+map_Kd mat5.png
+Ks 1.0000 1.0000 1.0000
+Ns 100.0000
+Ni 1
+Tf 1 1 1
+illum 2

@@ -1,0 +1,20 @@
+﻿[
+  {
+    "Name": "Add Zone",
+    "Length": 10.0,
+    "Width": 10.0,
+    "Rotation": 0,
+    "Pitch": 0,
+    "IsMetricFloorSize": false,
+    "Color": [
+      0.4941176470588235,
+      0.5333333333333333,
+      0.5450980392156863,
+      1.0
+    ],
+    "Walls": [ 
+    ],
+    "ZoneEquipment": [
+    ]
+  }
+]

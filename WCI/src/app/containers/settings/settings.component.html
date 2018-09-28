@@ -1,0 +1,16 @@
+<sh-card slot='content'>
+  <sh-nav-bar>
+    <sh-tabs slot='tabs'>
+      <sh-tab-item *ngFor="let route of navRoutes" [routerLink]="[{outlets: {'settings' : [route.path]}}]" label='{{route.data.title}}' id='nav{{route.data.routeId}}' (click) ="setTargetLink(route)"></sh-tab-item>
+    </sh-tabs>
+  </sh-nav-bar>
+  <router-outlet name="settings"></router-outlet>
+</sh-card>
+
+<!-- 
+<sh-page theme='blue'>
+  <sh-pane slot='left'>
+<div *ngFor="let route of navRoutes" [routerLink]="[{outlets: {'settings' : [route.path]}}]" id='nav{{route.data.routeId}}'>{{route.data.title}}</div>
+  </sh-pane>
+  <router-outlet slot='content' name="settings"></router-outlet>
+</sh-page> -->

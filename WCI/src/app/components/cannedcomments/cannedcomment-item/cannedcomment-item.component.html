@@ -1,0 +1,50 @@
+<mat-expansion-panel hideToggle="true" id="matPanelExpansion{{data.Id}}"  #matPanelExpansion class="matPanelExpansion" [(expanded)]="data.isExpanded" style="width: 982px;">
+  <mat-expansion-panel-header (click)="expandCollapse(data,matPanelExpansion)">
+    <td>
+      <mat-panel-title style="width: 650px;">
+        <mat-icon style="color: #A6A6A6; margin-top: 5px;font-size: 30px;" *ngIf="!matPanelExpansion.expanded"> keyboard_arrow_right</mat-icon>
+        <mat-icon style="color: #A6A6A6; margin-top: 5px;font-size: 30px;" *ngIf="matPanelExpansion.expanded">keyboard_arrow_down</mat-icon>
+        <span>
+          <span style="vertical-align: top;">{{data.Text}}</span>
+        </span>
+      </mat-panel-title>
+    </td>
+
+    <td>
+      <mat-panel-title style="padding: 8px;">
+        <span style="vertical-align: top;">{{data.Code}}</span>
+      </mat-panel-title>
+    </td>
+  </mat-expansion-panel-header>
+  <div *ngIf="data.isExpanded">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8">
+          <div style="display:flex; margin-bottom: 5px;">
+            <sh-input-text textarea="true" style="width: 100%;margin-left: 5%;" #cannedCommentText label="Comment" (keyup)="data.Text = cannedCommentText.value; isFieldChanged = true;"
+              [value]="data.Text"></sh-input-text>
+          </div>
+
+          <div style="display:flex; margin-bottom: 5px;">
+            <sh-input-text style="width: 100%;margin-left: 5%;" #cannedCommentShortcutCode label="Shortcut Code" (keyup)="data.Code = cannedCommentShortcutCode.value; isFieldChanged = true;"
+              [value]="data.Code"></sh-input-text>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div style="display:flex; margin-top: 80px;">
+            <sh-button label="Save" style="margin-right: 7px;" (click)="save(data)" [disabled]="!isFieldChanged"></sh-button>
+            <sh-button label="Cancel" style="margin-right: 7px;" (click)="cancel()" [disabled]="!isFieldChanged"></sh-button>
+            <sh-button label="Delete" style="margin-right: 7px;" (click)="delete(data)"></sh-button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
+
+
+
+
+  </div>
+</mat-expansion-panel>

@@ -1,0 +1,93 @@
+<div style="display:flex; height:62.5vh;">
+    <div class="zone-list" id="sidebar">
+        <ul class="nav flex-column flex-nowrap">
+            <li class="nav-item" *ngFor="let zone of zoneList; let i = index" (click)="loadZone(i)" [class.active]="i == selectedRowZone">
+                <a style="cursor:pointer" class="nav-link collapsed" data-toggle="collapse" data-target="#submenu1" (click)="handleMenuClick('manageIntegration')">{{zone.Name}}</a>
+            </li>
+        </ul>
+    </div>
+    <div style="width: 87%; height: 100%;">
+        <div class="tool-bar">
+            <div>
+                <ul class="nav navbar-nav">
+                    <li style="cursor: pointer">
+                        <sh-button (click)="changeArrowIcon()" data-toggle="dropdown" label="Add Equipment&nbsp;&nbsp;&nbsp;"></sh-button>
+                        <mat-icon (click)="changeArrowIcon()"  data-toggle="dropdown"  style="color: #fff; margin-top: -35px;font-size: 30px; position: absolute;margin-left: 101px;cursor: pointer">
+                            {{arrowIcon}}
+                        </mat-icon>
+                        <div>
+                            <ul   class="dropdown-menu multi-level" role="menu" aria-labelledby="dropdownMenu" style="background-color: #e3ebe3;">
+                                <ng-container *ngIf="equipmentMenuListCopy.length">
+                                    <li *ngFor="let child1 of equipmentMenuListCopy" [ngClass]="{'dropdown-submenu': child1.subMenuLabel.length}" class="dropdown-item"
+                                        style="cursor: pointer">
+                                        <a *ngIf="child1.subMenuLabel.length" href="#" data-toggle="dropdown">{{child1.menuLabel}}</a>
+                                        <ul *ngIf="child1.subMenuLabel.length" class="instrument-dropdown-scroll dropdown-menu" style="background-color: #e3ebe3;">
+                                            <li *ngFor="let child2 of child1.subMenuLabel" [ngClass]="dropdown-submenu" class="dropdown-item" style="cursor: pointer">
+                                                <a href="#" data-toggle="dropdown" style=" width: 120px !important; overflow-wrap: break-word;" (click)="addEquipmentToZone(child1, child2)">{{child2.Name}}</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ng-container>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="walldraw-container" (click)="drawWall()">
+                <img id="wallIcon" class="wallImage" [class.active]="isDrawWall">
+                <!--<input type="image" id="wallIcon" class="wallImage" value= " "/>-->
+            </div>
+            <div>
+                <app-color-picker (outputColor)="getcolval($event)"></app-color-picker>
+            </div>
+        </div>
+        <!-- <wait-screen [isRunning]="isRequesting" *ngIf="isRequesting" style="height: 80%; min-height: 80%;"></wait-screen> -->
+        <div #labDesignerContainer style="display:flex; height: 80%; min-height: 80%;">
+            <wait-screen [isRunning]="isRequesting" *ngIf="isRequesting" style="width: 75%; min-width: 75%; height: 80%; min-height: 80%;"></wait-screen>
+            <div #zoneTVContainer class="zone_main"></div>
+            <div class="zone_right">
+                <div>
+                    <label>Zone Properties</label>
+                    <table>
+                        <tr>
+                            <td class="prop-label">Name</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td class="prop-label">Floor Color</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td class="prop-label">Floor Width</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td class="prop-label">Floor Length</td>
+                            <td></td>
+                        </tr>
+                    </table>
+                </div>
+                <label>Default View</label>
+                <div #zone3DContainer></div>
+                <label>Equipment Properties</label>
+            </div>
+        </div>
+        <div class="action-bar">
+            <!-- <button class="action-button" type="submit" (click)="saveZone()">Save</button>
+           <button class="action-button">Cancel</button>
+           <button class="action-button">Delete</button> -->
+            <sh-button label="Save" (click)="saveZone()"></sh-button>
+            <sh-button label="Cancel"></sh-button>
+            <sh-button label="Delete"></sh-button>
+        </div>
+    </div>
+    <div class="label-text"></div>
+    <div class="context-menu" hidden="hidden">
+        <!--<button class="action-button" type="submit" (click)="deleteInstrument($event)">Delete</button>-->
+        <label class="instrument-name">Instrument Name</label>
+        <sh-button label="Delete From Zone" (click)="deleteInstrument($event)"></sh-button>
+    </div>
+    <div name="left-circle" class="div-circle" hidden="hidden"></div>
+    <div name="right-circle" class="div-circle" hidden="hidden"></div>
+</div>

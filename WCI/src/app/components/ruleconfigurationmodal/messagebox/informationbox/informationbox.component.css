@@ -1,0 +1,182 @@
+/* The Modal (background) */
+		.modal-wrapper{
+    		width: 200px;
+    		height: 200px;
+		}
+		.modal {
+            display: block;
+			position: fixed; /* Stay in place */
+			z-index: 9999; /* Sit on top */
+			padding-top: 100px; /* Location of the box */
+			left: 0;
+			top: 0;
+			width: 200px; /* Full width */
+			height: 200px; /* Full height */
+			overflow: auto; /* Enable scroll if needed */
+			background-color: rgb(0,0,0); /* Fallback color */
+			background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+            min-height: 100%;
+            max-height: 100%;
+            min-width: 100%;
+            max-width: 100%;
+            opacity: 1;
+		}
+
+		/* Modal Content */
+		.modal-content {
+			background-color: #fefefe;
+			margin: auto;
+			padding: 20px;
+			border: 1px solid #888;
+			width: 50%;
+			/*height: 70%;*/
+		}
+
+		/* The Close Button */
+		.close {
+			color: #aaaaaa;
+			float: right;
+			font-size: 28px;
+			font-weight: bold;
+		}
+
+		.close:hover,
+		.close:focus {
+			color: #000;
+			text-decoration: none;
+			cursor: pointer;
+		}
+		span{
+            font-family: calibri,sans-serif;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            color:rgba(255,255,255,.9);
+            padding: 8px;
+
+        }
+		
+		.information-image{
+		/*	border-radius: 50%;*/
+			display: inline-block;
+			background-image:url(../../../../../assets/imgs/FlagTextures_enus.png);
+			position: relative;
+			z-index: 2;
+			background-position: -222px -226px;
+			width:40px; 
+			height: 40px; 
+		}
+		
+.tableBodyScroll tbody {
+	display:block;
+	max-height:100%;
+	overflow-y:scroll;
+	overflow-x: hidden;
+}
+.tableBodyScroll thead, tbody tr {
+	display:table;
+	width:100%;
+	table-layout:fixed;
+	color: #ffffff;
+	background: #8a8a8a;
+	padding: 8px;
+}
+
+.tableBodyScroll thead, tbody th {
+	display:table;
+	width:100%;
+	table-layout:fixed;
+	color: #ffffff;
+	background: #4f4f4f;
+	padding: 8px;
+}
+
+.tableBodyScroll tbody tr:hover td {
+	background: #3c3c3C;
+}
+
+.tableBodyScroll tbody tr.selected td {
+    background: none repeat scroll 0 0 #3c3c3C;
+}
+
+th {
+    cursor: pointer;
+}
+
+#Severity-50-background{
+
+	display: inline-block;
+	background-image:url(../../../../../assets/imgs/FlagTextures_enus.png);
+	background-repeat: no-repeat;
+	z-index: -1;
+	background-position:  -1px -116px;
+	width: 50px;
+	height: 42px;
+}
+
+#Severity-100-background{
+
+	display: inline-block;
+	background-image:url(../../../../../assets/imgs/FlagTextures_enus.png);
+	background-repeat: no-repeat;
+	z-index: -1;
+	background-position: -2px -62px; 
+	width: 50px;
+	height: 42px;
+}
+
+#Severity-200-background{
+	display: inline-block;
+	background-image:url(../../../../../assets/imgs/FlagTextures_enus.png);
+	background-repeat: no-repeat;
+	background-position: -1px -5px; 
+	width: 51px;
+	height: 45px;
+	z-index: -1;
+}
+
+#Severity-50-background .Severity-50-foreground{
+	display: inline-block;
+	background-image:url(../../../../../assets/imgs/FlagTextures_enus.png);
+	position: relative;
+	z-index: 2;
+	background-position:  -113px -227px;
+	width: 44px;
+	height: 45px;
+
+}
+
+#Severity-100-background .Severity-100-foreground{
+	display: inline-block;
+	background-image:url(../../../../../assets/imgs/FlagTextures_enus.png);
+	position: relative;
+	z-index: 2;
+	background-position: -113px -172px;
+	width: 44px;
+	height: 45px;
+
+}
+
+#Severity-200-background .Severity-200-foreground{
+	display: inline-block;
+	background-image:url(../../../../../assets/imgs/FlagTextures_enus.png);
+	background-position: -113px -172px;
+	width: 44px;
+	height: 45px;
+	position: relative;
+	z-index: 2;
+}
+
+sh-button {
+	margin:4px;
+}
+.action-bar{
+height: 40px;
+    width: 100%;
+    background-color: #3c3c3c;
+    display: flex;
+    float: left;
+    margin-right: 10px;
+
+}
+    

@@ -1,0 +1,29 @@
+canvas {
+  display: block;
+  /* fix necessary to remove space at bottom of canvas */
+  overflow: hidden;
+  background: transparent; 
+  width: 1000px;
+  height: 400px;
+}
+
+.label-text{
+	max-width: 755;
+	height: auto;
+	background-color:rgb(255,255,255,0.1);
+	border-radius: 5px;
+	position: absolute;
+	left: 10%;
+	padding:  1px;
+	z-index:1109;
+	color: rgb(255,255,255);
+}
+
+.canvas_container {
+	overflow: hidden;
+	display: none;
+    width: 100%;
+    height: 410px;
+}
+
+/*# sourceMappingURL=home.component.css.map */

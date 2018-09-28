@@ -1,0 +1,45 @@
+span{
+    font-family: calibri,sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    color:rgba(255,255,255,.9);
+    padding: 8px;
+}
+
+input[type="number"]:disabled {
+background: #dddddd;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+/* display: none; <- Crashes Chrome on hover */
+-webkit-appearance: none;
+margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+input{
+outline:0px;
+border: 0px;
+background-color: #383838;
+color: #A6A6A6;
+}
+
+.table thead th {
+border-bottom: 0px;
+height: 30px;
+}
+
+.table td, .table th {
+padding: 0px;
+}
+
+th{
+border: 0px;
+}
+
+td{
+border: 0px;
+}
+
+

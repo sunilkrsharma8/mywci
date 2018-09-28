@@ -1,0 +1,361 @@
+.label-text{
+	max-width: 755;
+	height: auto;
+	background-color:rgb(255,255,255,0.1);
+	border-radius: 5px;
+	position: absolute;
+	left: 10%;
+	padding:  1px;
+	z-index:1109;
+	color: rgb(255,255,255);
+}
+
+.instrument-name{
+	font-weight: bold;
+    font-size: 14px;
+    padding-left: 8px;
+}
+
+.context-menu{
+	height: auto;
+	background-color: #3c3c3c;
+	border-radius: 5px;
+	position: absolute;
+	left: 10%;
+	padding:  1px;
+	z-index:1109;
+}
+
+.zone_main {
+	overflow: hidden;
+	display: none;
+	background-color: #2d2d2d;
+	float:left;
+	width:75%;
+	min-width: 75%;
+}
+
+.zone_right {
+	display: block;
+	background-color: #3c3c3c;
+	float:left;
+	overflow-y: scroll;
+	overflow-x: hidden;
+	width:25%;
+}
+
+.zone_right::-webkit-scrollbar {width: 5px;}
+.zone_right::-webkit-scrollbar-thumb {background: rgba(125,125,125,1); border-radius: 2px;}
+
+.rotate {
+	cursor:url(http://www.javascriptkit.com/dhtmltutors/cursor-hand.gif), auto;
+}
+
+
+.zone-list li.active{
+	background-color: #3C3C3C;	
+	outline: none;
+}
+
+.zone-list ul {
+list-style-type: none;
+outline: none;
+width: 100%;
+}
+
+.zone-list ul  :hover{
+	background-color: #3C3C3C; 
+	outline: none;
+}
+
+.zone-list ul.active{
+	background-color: #3C3C3C;	
+	outline: none;
+}
+
+.zone-list{
+	width: 12%;
+	background-color: #242424;
+	color: #ffffff;
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+/*a{
+	padding-top: 1px;
+	padding-left: 2px; 
+	color: #191818;
+	cursor: default;
+}*/
+
+a.active{
+	color:#fff;
+	cursor: default;
+  }
+
+.zone-list ul li div ul li  :hover{
+	background-color: #3C3C3C;
+	outline: none;
+}
+
+.zone-list ul li div ul li.active{
+	background-color: #3C3C3C;
+	outline: none;
+}
+
+.zone-list ul li.active{
+	background-color: #3C3C3C;
+	outline: none;
+}
+
+span{
+	font-family: calibri,sans-serif;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 14px;
+	color:rgba(255,255,255,.9);
+	padding: 8px;
+}
+
+input[type="number"]:disabled {
+	background: #dddddd;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+	/* display: none; <- Crashes Chrome on hover */
+	-webkit-appearance: none;
+	margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+input[type="number"]:disabled {
+	background: #dddddd;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+	/* display: none; <- Crashes Chrome on hover */
+	-webkit-appearance: none;
+	margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+input{
+	outline:0px;
+	border: 0px;
+	background-color: #383838;
+	color: #A6A6A6;
+}
+
+.tool-bar{
+	height: 40px;
+	background-color: #3c3c3c;
+	display: flex;
+}
+
+.action-bar
+{
+	height: 40px;
+	width: 100%;
+	background-color: #3c3c3c;
+	display: flex;
+	float: left;
+	margin-right: 10px;
+}
+
+.action-button{
+	position: relative;
+	display: block;
+	background-color: #4f4f4f; 
+	width:138px;
+	height: 25px;
+	margin-left: 10px;
+	z-index: 1000;
+	margin-top: 8px;
+	border: 1px solid #fff;
+	color: #ffffff;
+}
+
+.instrument-menu-container{
+	position: relative;
+	display: block;
+	background-color: #BDBDFF; 
+	width:169px;
+	height: 30px;
+	margin-left: 10px;
+	z-index: 1000;
+	margin-top: 10px;
+	border: 1px solid #fff;
+}
+
+.dropdown-submenu {
+	position: relative;
+}
+
+.dropdown-item.active, .dropdown-item:active {
+    color: #fff;
+    text-decoration: none;
+    background-color: #000;
+}
+
+.dropdown-item {
+	color: #000;
+    padding: .1rem 1rem;
+	height: 25px;
+	cursor: pointer;
+}
+.dropdown-item> a{
+	color:#000;
+	text-decoration: none;
+    background-color: transparent;
+}
+
+.dropdown-item> a:hover{
+	color:#fff;
+	text-decoration: none;
+    background-color: transparent;
+}
+.dropdown-item.hover>a, .dropdown-item:hover>a {
+    color: #fff;
+    /* text-decoration: none; */
+    background-color: #3c3c3c;
+	height: 25px;
+	cursor: pointer;
+}
+.dropdown-item.focus>a, .dropdown-item:focus>a {
+    color: #fff;
+    /* text-decoration: none; */
+    background-color: #3c3c3c;
+	height: 25px;
+	cursor: pointer;
+}
+
+.dropdown-submenu>.dropdown-menu {
+	top: 0;
+	margin-top: -6px;
+	margin-left: 95%;
+	-webkit-border-radius: 0 6px 6px 6px;
+	-moz-border-radius: 0 6px 6px;
+	border-radius: 0 6px 6px 6px;
+}
+
+.dropdown-submenu:hover>.dropdown-menu {
+	display: block;
+}
+
+.dropdown-item.hover, .dropdown-item:hover {
+	color: #fff;
+	/* text-decoration: none; */
+	background-color: #3c3c3c;
+	height: 25px;
+	cursor: pointer;
+}
+
+.dropdown-submenu>a:after {
+	display: block;
+	content: " ";
+	float: right;
+	width: 0;
+	height: 0;
+	border-color: transparent;
+	border-style: solid;
+	border-width: 5px 0 5px 5px;
+	border-left-color: #ccc;
+	margin-top: 5px;
+	margin-right: -10px;
+}
+
+.dropdown-submenu:hover>a:after {
+	border-left-color: #fff;
+}
+
+.dropdown-submenu.pull-left {
+	float: none;
+}
+
+.dropdown-submenu.pull-left>.dropdown-menu {
+	left: -100%;
+	margin-left: 10px;
+	-webkit-border-radius: 6px 0 6px 6px;
+	-moz-border-radius: 6px 0 6px 6px;
+	border-radius: 6px 0 6px 6px;
+}
+
+.navbar-nav>li>a {
+	padding-top: 5px;
+	padding-bottom: 5px;
+	color: #54548A;
+}
+
+.walldraw-container{
+	position: relative;
+	margin-left: 20px;
+	margin-top: 10px;
+	height: 30px;
+	width: 30px;
+	border: 1px solid #fff;	
+	
+}
+
+.wallImage{
+	background-image: url("../../../assets/imgs/wall.png");
+}
+
+img.active{
+	background-image: url("../../../assets/imgs/wall-selected.png");
+
+}
+
+.dropdown-menu li{
+	padding-left: 8px;
+	cursor: default;
+}
+
+.wallImage{
+	width: 28px;
+	height: 28px;
+}
+
+label{
+	font-weight: bold;
+	font-size: 14px;
+	padding-left: 8px;
+	color: rgb(255,255,255);
+}
+
+.prop-label{
+	text-align: right;
+	font-size: 12px;
+	padding: 2px;
+	color: #ffffff;
+}
+
+.div-circle {
+	background-color: #4CAF50; /* Green */
+	border: 1px solid grey;
+	position: absolute;
+	width: 5px;
+	height: 5px;
+	border-radius: 50%;
+	z-index:1109;
+}
+
+sh-button {
+	margin:4px;
+}
+
+a.hover, a:hover{
+	text-decoration: none;
+	color: #fff;
+	width: 100%;
+}
+
+.navbar-nav .dropdown-menu {
+	position:absolute !important;
+}
+.instrument-dropdown-scroll{
+overflow-y: scroll;
+height: 240px;
+}
+
+.instrument-dropdown-scroll::-webkit-scrollbar {width: 8px;}
+.instrument-dropdown-scroll::-webkit-scrollbar-thumb {background: rgba(125,125,125,1); border-radius: 10px;}

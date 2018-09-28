@@ -1,0 +1,24 @@
+<sh-modal #userLoginModal active>
+    <sh-card label="" class="sites-card">
+        <div *ngIf="error" style="color: var(--primary-color)">{{ error}}</div>
+        <div class="group">
+            <sh-input-text #myuser label="Username" (keyup)="user.username = myuser.value" [value]="user.username"></sh-input-text>
+        </div>
+        <div class="group">
+            <sh-input-text #mypwd label="Password" type="password" (keyup)="user.password = mypwd.value" [value]="user.password"></sh-input-text>
+        </div>
+        <div style="display: flex;">
+            <sh-dropdown #mysites label="Site" class="group" style="width: 100%;" [value]="selectedSite.name">
+                <sh-menu-item label={{site.name}} *ngFor="let site of this.siteService.getSites()" (clicked)="selectSite(site)"></sh-menu-item>
+            </sh-dropdown>
+            <sh-button class="button-sites" shape="circle" tooltip='Manage Sites' icon="right-s" Label="" (click)="showManageSites($event)">
+            </sh-button>
+        </div>
+        <sh-button class="button" Label="Login" (click)="signIn()">
+        </sh-button>
+        <!-- <sh-button class="button" [disabled]="!isSiteFormValid()" Label="Login" (click)="signIn()">
+            </sh-button>-->
+    </sh-card>
+</sh-modal>
+
+<app-managesites *ngIf="isShowManageSites" (onCancel)="cancelSiteManagement()"></app-managesites>

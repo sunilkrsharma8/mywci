@@ -1,0 +1,45 @@
+<div class="tool-bar">
+  <sh-button label="Default Sort" (click)="defaultSort($event)"></sh-button>
+  <sh-button label="Select New" (click)="selectNew($event)" [disabled]="isSelectNewDisabled"></sh-button>
+  <sh-button label="Hide Selected" (click)="hideSelected($event)" [disabled]="isHideSelectedDisabled"></sh-button>
+  <sh-button label="Show Selected" (click)="showSelected($event)" [disabled]="isShowSelectedDisabled"></sh-button>
+  <sh-button label="Resolve Alerts" (click)="resolveAlerts($event)"></sh-button>
+</div>
+<app-informationbox *ngIf="isShowInformationBoxModal" [modalType]="modalType" [activeAlertsData]="activeAlerts" (onCancelEvent)="closeModal()"></app-informationbox>
+<div style="height: 35%;">
+  <table #ruletable class="tableBodyScroll">
+    <thead>
+      <tr>
+        <th style="padding-left: 67px;font-weight:50px;" (click)="sortEvents(0)">*</th>
+        <th style="padding-left: -200px;" (click)="sortEvents(1)">Show/Hide</th>
+        <th (click)="sortEvents(2)">Equipment Model</th>
+        <th style="padding-left: -150px;" (click)="sortEvents(3)">Event Code</th>
+        <th (click)="sortEvents(4)">Type</th>
+        <th (click)="sortEvents(5)">Message</th>
+      </tr>
+    </thead>
+    <tbody #ruleTableBody>
+      <tr *ngFor="let eventdata of eventsAllData | async; let i = index" (click)="eventSelect($event, eventdata, i)" [class.selected]="eventdata.Id == currentEvent || eventdata.FilterState==-1 && newAlerts == true">
+        <td style="text-align:center;"><span [ngClass]="{'astrik':eventdata.FilterState==-1}"></span></td>
+        <td>
+          <div id="circle-background" (click)="tickClicked($event,i,eventdata)">
+            <span id="tick{{i}}" [ngClass]="{'circle-tick-foreground':eventdata.FilterState==1}">
+            </span>
+          </div>
+          <div id="circle-background" (click)="crossClicked($event,i,eventdata)">
+            <span id="cross{{i}}" [ngClass]="{'circle-cross-foreground':eventdata.FilterState==0}">
+            </span>
+          </div>
+        </td>
+        <td style="padding-left: -180px;">{{eventdata.DisplayName}}</td>
+        <td>{{eventdata.Code}}</td>
+        <td>
+          <div id="Severity-{{eventdata.Severity}}-background">
+            <span class="Severity-{{eventdata.Severity}}-foreground"></span>
+          </div>
+        </td>
+        <td>{{eventdata.Message}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

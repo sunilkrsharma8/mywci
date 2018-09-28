@@ -1,0 +1,30 @@
+
+    <div *ngIf="showLogout"  class="logout-button">
+      <sh-button class="button-sites"  tooltip='Logout'  icon="more-vertical"  Label="Logout" (click)="signOut()"></sh-button>
+    </div>
+    <!-- Tobe uncommented later -->
+    <!--<div *ngIf="false" class="error-bar">
+      <div id="Severity-200-background">
+        <div class="Severity-200-foreground"></div>
+      </div>
+     Data Router is disconnected or misconfigured. Information may not be current.
+    </div>-->
+    <sh-page theme='dark'>
+      <sh-access-bar slot='access' label='Atellica&#174; Process Manager'>
+
+        <sh-access-user slot='user' name='Administrator' info='' image='../assets/imgs/APMIcon.png' (click)="handleClickAccessUser($event)"></sh-access-user>
+      </sh-access-bar>
+      <sh-nav-bar slot='nav'>
+        <sh-tabs slot='tabs'>
+          <sh-tab-item *ngFor="let route of navRoutes" [routerLink]="[{outlets: {'main' : [route.path]}}]" label='{{route.data.title}}'
+            id='nav{{route.data.routeId}}' (click) ="setTargetLink(route)"></sh-tab-item>
+        </sh-tabs>
+      </sh-nav-bar>
+      <app-dashboard slot='right'></app-dashboard>
+      <div *ngIf="!showLogin">
+        <router-outlet name='main'></router-outlet>
+      </div>
+      <!--<div *ngIf="showLogin">
+    <app-login></app-login>
+  </div>-->
+    </sh-page>

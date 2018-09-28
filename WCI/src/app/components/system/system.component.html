@@ -1,0 +1,11 @@
+<div style="display:flex; height:62.5vh;">
+    <div class="system-list">
+        <ul>
+            <li *ngFor="let route of navRoutes; let i = index" (click)="loadData(i)" [routerLink]="[{outlets: {'system' : [route.path]}}]" [class.active]="i == selectedRow">{{route.data.title}}
+            </li>
+        </ul>
+    </div>
+    <div style="width: 90%;">
+        <router-outlet name="system"></router-outlet>
+    </div>
+</div>

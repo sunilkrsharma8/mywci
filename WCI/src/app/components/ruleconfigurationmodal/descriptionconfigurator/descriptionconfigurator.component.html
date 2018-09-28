@@ -1,0 +1,5 @@
+<sh-modal class="modal">
+    <sh-input-text #mymessage style="margin: 25px;width: 90%;" label="" textarea="true" rows="20" (keyup)="message = mymessage.value"
+        [value]="message"></sh-input-text>
+    <sh-button label="OK" (click)="setText($event)"></sh-button>
+</sh-modal>

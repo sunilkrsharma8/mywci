@@ -1,0 +1,122 @@
+<div style="display:flex; height:62.5vh;">
+  <div class="col-2 collapse d-md-flex rule-list" id="sidebar">
+    <ul class="nav flex-column flex-nowrap">
+      <li class="nav-item" [class.active]="selectedMenu == 1">
+        <a style="cursor:pointer" #manageIntegrationTab class="nav-link collapsed" data-toggle="collapse" data-target="#submenu1" (click)="handleMenuClick('manageIntegration', 1)">Manage Integration</a>
+      </li>
+      <li class="nav-item" *ngIf="DMSSysName!=''">
+        <a style="cursor:pointer" class="nav-link collapsed" href="#submenu2" data-toggle="collapse" data-target="#submenu2" (click)="handleMenuClick('dmsComm', 2)">{{DMSSysName}}</a>
+        <div class="collapse" id="submenu2" aria-expanded="false">
+          <ul class="flex-column nav pl-4">
+            <li class="nav-item" [class.active]="selectedMenu == 2">
+              <a style="cursor:pointer" #dMSSysNameCommunication  class="nav-link p-1" (click)="handleMenuClick('dmsComm', 2)">
+                Communication
+              </a>
+            </li>
+            <li class="nav-item" [class.active]="selectedMenu == 3">
+              <a style="cursor:pointer" #dMSSysNameInstrumentMap class="nav-link p-1" (click)="handleMenuClick('dmsInstrumentMap', 3)">
+                Instrument Map
+              </a>
+            </li>
+          </ul>
+        </div>
+      </li>
+      <li class="nav-item" *ngIf="LCMSysName!=''">
+        <a style="cursor:pointer" class="nav-link collapsed" href="#submenu3" data-toggle="collapse" data-target="#submenu3" (click)="handleMenuClick('lcmComm', 4)">{{LCMSysName}}</a>
+        <div class="collapse" id="submenu3" aria-expanded="false">
+          <ul class="flex-column nav pl-4">
+            <li class="nav-item" [class.active]="selectedMenu == 4">
+              <a style="cursor:pointer" #lCMSysNameCommunication class="nav-link p-1" (click)="handleMenuClick('lcmComm', 4)">
+                Communication
+              </a>
+            </li>
+          </ul>
+        </div>
+      </li>
+      <li class="nav-item" *ngIf="CLSysName!=''">
+        <a class="nav-link collapsed" href="#submenu4" data-toggle="collapse" data-target="#submenu4" (click)="handleMenuClick('clComm', 5)">{{CLSysName}}</a>
+        <div class="collapse" id="submenu4" aria-expanded="false">
+          <ul class="flex-column nav pl-4">
+            <li class="nav-item" [class.active]="selectedMenu == 5">
+              <a style="cursor:pointer" #CLSysNameCommunication class="nav-link p-1" (click)="handleMenuClick('clComm', 5)">
+                Communication
+              </a>
+            </li>
+          </ul>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div style="width: 825px !important; height: 100%; color: #A6A6A6;">
+    <app-manageintegration #manageintegrationComp [parrentComponent]=this  [(extSystems)]="extSystemsData" *ngIf="extSystemsData && selectedMenu == 1" (onAddManageIntegration)="updateCentralLink($event)"
+      (onDeleteManageIntegration)="deleteCentralLink($event)"></app-manageintegration>
+
+
+
+    <div *ngIf="selectedMenu == 2" style="margin: 20px;">
+      <div>
+        <h5>DMS Communications</h5>
+        <sh-checkbox #chbxdmsCommEnabled *ngIf="dmsCommEnabled" (click)="dmsCommEnabled = !chbxdmsCommEnabled.active" label="Enable Communication" active=""></sh-checkbox>
+        <sh-checkbox #chbxdmsCommDisabled *ngIf="!dmsCommEnabled" (click)="dmsCommEnabled = !chbxdmsCommDisabled.active" label="Enable Communication"></sh-checkbox>
+        <br>
+        <br>
+        <h5>Data Router Subscription Configuration</h5>
+        <div style="display:flex; margin-left: 25px;">
+          <span style="font-size: 16px; width: 80px; ">Channel</span>
+          <input style="width:200px; height: 40px; padding: 5px; background-color: #383838;" type="text" [(ngModel)]="DMSCommchannel"
+            disabled=t rue>
+        </div>
+        <br>
+        <br>
+        <h5>Communication Details</h5>
+        <div style="display:flex; margin-left: 25px;">
+          <span style="font-size: 16px; width: 160px; ">Character Encoding</span>
+          <input style="width:200px; height: 40px; padding: 5px; background-color: #383838;" type="text" [(ngModel)]="DMSCharEncoding"
+            disabled=t rue>
+        </div>
+      </div>
+      <div style="position:absolute; bottom:0; margin-bottom: 40px;">
+        <sh-button label="Save" (click)="saveExtSysConfig($event)"></sh-button>
+      </div>
+    </div>
+    <app-instrumentmap *ngIf="selectedMenu == 3"></app-instrumentmap>
+    <div *ngIf="selectedMenu == 4" style="margin: 20px;">
+      <div>
+        <h5>LCM Communications</h5>
+        <sh-checkbox #chbxlcmCommEnabled *ngIf="lcmCommEnabled" (click)="lcmCommEnabled = !chbxlcmCommEnabled.active" label="Enable Communication" active=""></sh-checkbox>
+        <sh-checkbox #chbxlcmCommDisabled *ngIf="!lcmCommEnabled" (click)="lcmCommEnabled = !chbxlcmCommDisabled.active" label="Enable Communication"></sh-checkbox>
+        <br>
+        <br>
+        <h5>Data Router Subscription Configuration</h5>
+        <div style="display:flex; margin-left: 25px;">
+          <span style="font-size: 16px; width: 80px; ">Channel</span>
+          <input style="width:200px; height: 40px; padding: 5px; background-color: #383838;" type="text" [(ngModel)]="LCMCommchannel"
+            disabled=true>
+        </div>
+      </div>
+      <div style="position:absolute; bottom:0; margin-bottom: 40px;">
+        <sh-button label="Save" (click)="saveExtSysConfig($event)"></sh-button>
+      </div>
+    </div>
+    <div *ngIf="selectedMenu == 5" style="margin: 20px;">
+      <div>
+        <h5>{{CLSysName}} Communications</h5>
+        <sh-checkbox #chbxclCommEnabled *ngIf="clCommEnabled" (click)="clCommEnabled = !chbxclCommEnabled.active" label="Enable Communication" active=""></sh-checkbox>
+        <sh-checkbox #chbxclCommDisabled *ngIf="!clCommEnabled" (click)="clCommEnabled = !chbxclCommDisabled.active" label="Enable Communication"></sh-checkbox>
+        <br>
+        <br>
+        <h5>Data Router Subscription Configuration</h5>
+        <div style="display:flex; margin-left: 25px;">
+          <span style="font-size: 16px; width: 80px; ">Channel</span>
+          <input style="width:200px; height: 40px; padding: 5px; background-color: #383838;" type="text" [(ngModel)]="CLCommchannel"
+            disabled=true>
+        </div>
+      </div>
+      <div style="position:absolute; bottom:0; margin-bottom: 40px;">
+        <sh-button label="Save" (click)="saveExtSysConfig($event)" [disabled]=""></sh-button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<app-alertbox *ngIf="isIntegrationShowAlertBox" [modelHeaderContent]=modelHeaderContent [modelBodyContent]=modelBodyContent  maxHeight="190px" minHeight="190px" maxWidth="450px" minWidth="450px" marginLeft="31%" marginTop="3%" shIcon="false" (onDiscardChanges)="popupDiscardChanges($event)" (onCancelEvent)="popupCancelEvent($event)"></app-alertbox>

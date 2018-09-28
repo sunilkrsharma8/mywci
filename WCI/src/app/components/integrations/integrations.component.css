@@ -1,0 +1,89 @@
+
+.rule-list li.active{
+	background-color: #3c3c3C;	
+	outline: none;
+}
+
+.rule-list ul {
+  list-style-type: none;
+  outline: none;
+  width: 100%;
+}
+
+.rule-list ul  :hover{
+	background-color: #3c3c3C;
+	outline: none;
+}
+
+.rule-list ul.active{
+	background-color: #3c3c3C;	
+	outline: none;
+}
+
+.rule-list{
+	/*width: 20%;*/
+	background-color: #242424;
+	color: #ffffff;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+a{
+    padding-top: 5px;
+    padding-left: 20px; 
+    color: #ffffff;
+    cursor: default;
+}
+
+.rule-list ul li div ul li  :hover{
+	background-color: #1C1C1C;
+	outline: none;
+}
+
+.rule-list ul li div ul li.active{
+	background-color: #1C1C1C;
+	outline: none;
+}
+
+.rule-list ul li.active{
+	background-color: #1C1C1C;
+	outline: none;
+}
+
+span{
+    font-family: calibri,sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    color:rgba(255,255,255,.9);
+    padding: 8px;
+}
+
+input[type="number"]:disabled {
+    background: #dddddd;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+input[type="number"]:disabled {
+    background: #dddddd;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+input{
+    outline:0px;
+    border: 0px;
+    background-color: #383838;
+    color: #A6A6A6;
+}

@@ -1,0 +1,4 @@
+<sh-modal class="modal">
+  <sh-input-text #myTitle (keyup)="title=myTitle.value" label="Title" [value]="title" style="width:90%;"></sh-input-text>
+  <sh-button label="OK" (click)="setTitle($event)"></sh-button>
+</sh-modal>

@@ -1,0 +1,15 @@
+When this alert occurs, send an email to <a (click)="naturalLanguageTextConfigurator('notificationemail')"> {{notificationemailText}} </a>.
+<br><br>
+Escalate this alert if it is not acknowledged: <a (click)="naturalLanguageTextConfigurator('escalationAck')"> {{escalationAckText}} </a>.
+<br>
+Escalate this alert if it is not resolved: <a (click)="naturalLanguageTextConfigurator('escalationresolve')"> {{escalationresolveText}} </a>.
+<br><br>
+When this alert escalates, send an email to <a (click)="naturalLanguageTextConfigurator('escalationemail')" [class.disabled]="disableEscalationEmail"> {{escalationEmailText}} </a>.
+<br>
+Note that a second email will not be sent when a resolved escalation setting becomes violated while an acknowledged escalation setting is currently in violation.
+<br><br>
+When this alert escalates and is resolved, <a (click)="naturalLanguageTextConfigurator('resolutionemail')" [class.disabled]="disableResolutionEmail"> {{resolutionEmailText}} </a>.
+
+<app-alertconfigurator *ngIf="isShowAlertModal" (onAlertSelection)="updateAlerts($event)" [configurabletext1]="configurabletext1" [configurabletext2]="configurabletext2" [configurabletext3]="configurabletext3" [alertType]="alertType" [isShowTextBox]="isShowAlertInputText"></app-alertconfigurator>
+<app-emailconfigurator *ngIf="isShowEscalationEmailModal" (onEmailSet)="updateEscalationEmail($event)" [emails]="emailsList"></app-emailconfigurator>
+<app-emailconfigurator *ngIf="isShowNotificationEmailModal" (onEmailSet)="updateNotificationEmail($event)" [emails]="emailsList"></app-emailconfigurator>

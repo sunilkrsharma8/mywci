@@ -1,0 +1,50 @@
+<sh-modal class="modal" #tagDialog>
+  <div style="display: flex; background-color: rgba(30,30,30,1);">
+    <span [ngClass]="{'information-image':noAlertsToResolve}"></span>
+    <span [ngClass]="{'question-mark-image':resolveActiveAlerts}"></span>
+    <span style="margin-left:auto; margin-right:auto;" *ngIf="noAlertsToResolve">No Alerts to Resolve</span>
+    <span style="margin-left:auto; margin-right:auto;" *ngIf="resolveActiveAlerts">Resolve Currently Active Alerts?</span>
+  </div>
+  <p *ngIf="noAlertsToResolve">There are currently no active instrument alerts that would have been hidden based on the current auto-filter settings.
+  </p>
+  <p *ngIf="resolveActiveAlerts">The following active instrument alerts would have been hidden based on the current auto-filter settings. Would you like
+    to resolve them now? This can not be undone.
+  </p>
+  <div *ngIf="resolveActiveAlerts">
+    <table #ruletable class="tableBodyScroll">
+      <thead>
+        <tr>
+          <th style="padding-left: 67px;font-weight:50px;" (click)="sortEvents(0)">Type</th>
+          <th style="padding-left: -200px;" (click)="sortEvents(1)">Message</th>
+          <th (click)="sortEvents(2)">Status</th>
+          <th style="padding-left: -150px;" (click)="sortEvents(3)">Equipment</th>
+          <th (click)="sortEvents(4)">Occurred</th>
+        </tr>
+      </thead>
+      <tbody #ruleTableBody>
+        <tr *ngFor="let activealert of activeAlertsData; let i = index" (click)="eventSelect($event, eventdata, i)" [class.selected]="activealert.Id == currentEvent">
+          <td style="text-align:center;">
+            <div id="Severity-{{activealert.Severity}}-background">
+              <span class="Severity-{{activealert.Severity}}-foreground"></span>
+            </div>
+          </td>
+          <td>
+            {{activealert.Message}}
+          </td>
+          <td style="padding-left: -180px;">{{activealert.Status==2?'Open':null}}</td>
+          <td>{{activealert.DisplayName}}</td>
+          <td>{{activealert.Occurred}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div *ngIf="noAlertsToResolve">
+    <sh-button label="Cancel" (click)="cancelEvent($event)"></sh-button>
+  </div>
+  <div style="display:flex;padding-top: inherit;flex-direction: row-reverse;" *ngIf="resolveActiveAlerts">
+
+    <sh-button label="Resolve Alerts" (click)="resolveAllAlerts($event)"></sh-button>
+    <sh-button label="Cancel" (click)="cancelEvent($event)"></sh-button>
+  </div>
+</sh-modal>

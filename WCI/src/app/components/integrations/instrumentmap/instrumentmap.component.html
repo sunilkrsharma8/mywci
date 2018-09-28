@@ -1,0 +1,64 @@
+<sh-card style="height:fit-content">
+    <!--<div class="tool-bar">
+        <h3 style="padding: 7px;">DMS to Atellica<sup>&reg;</sup> Instrument Mapping</h3>
+    </div>-->
+    <div style="margin:-10px; margin-bottom: 25px;">
+        <ng-container *ngFor="let maps of integrationEquipmentMapsData; let i = index">
+            <div class="dms-container" [class.selected]="maps.EquipmentId != null"  *ngIf="maps.EquipmentId == null">
+                <div style="width:50%; padding-left: 3px; padding-top: 3px;">
+                    {{maps.ExternalEquipmentName}}
+                </div>
+                <div class="instrument-menu-container">
+                    <div style="width:80%; overflow: hidden;">
+                        {{maps.EquipmentId}}
+                    </div>
+                    <div style="width:20%;">
+                        <button style="float:right;" class="btn btn-secondary dropdown-toggle" type="button"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
+                        <ul class="dropdown-menu multi-level" role="menu" aria-labelledby="dropdownMenu">
+                            <li class="dropdown-item" (click)="selectInstrument('reset', i)"><a href="#"  data-toggle="dropdown" >Reset</a></li>
+                            <li *ngFor="let n of groupedInstruments" (click)="select(n.Name);" [ngClass]="{active: isActive(n.name)}" class="dropdown-item dropdown-submenu">
+                                <a href="#"  data-toggle="dropdown">{{n.Name}}</a>
+                                <ul class="dropdown-menu">
+                                    <li *ngFor="let child of n.GroupItems" class="dropdown-item" (click)="selectInstrument(child, i)">
+                                        <a href="#"  data-toggle="dropdown">{{child.Name}}</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </ng-container>
+        <div style="background-color: #3c3c3c; height:5px; width:100%; margin-top:10px;"></div>
+        <ng-container *ngFor="let maps of integrationEquipmentMapsData; let i = index">
+            <div class="dms-container" [class.selected]="maps.EquipmentId != null" *ngIf="maps.EquipmentId != null">
+                <div style="width:50%; padding-left: 3px; padding-top: 3px;">
+                    {{maps.ExternalEquipmentName}}
+                </div>
+                <div class="instrument-menu-container">
+                    <div style="width:80%; overflow: hidden;">
+                        {{getEquipmentName(maps.EquipmentId)}}
+                    </div>
+                    <div style="width:20%;">
+                        <button style="float:right;" class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
+                        <ul class="dropdown-menu multi-level" role="menu" aria-labelledby="dropdownMenu">
+                            <li class="dropdown-item" (click)="selectInstrument('reset', i)"><a href="#"  data-toggle="dropdown" >Reset</a></li>
+                            <li *ngFor="let n of groupedInstruments" (click)="select(n.name);" [ngClass]="{active: isActive(n.name)}" class="dropdown-item dropdown-submenu">
+                                <a href="#"  data-toggle="dropdown">{{n.Name}}</a>
+                                <ul class="dropdown-menu">
+                                    <li *ngFor="let child of n.GroupItems" class="dropdown-item" (click)="selectInstrument(child, i)">
+                                        <a href="#"  data-toggle="dropdown">{{child.Name}}</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </ng-container>
+    </div>
+    <div class="action-bar">
+        <sh-button label="Save" (click)="saveIntegrationEquipmentMaps($event)"></sh-button>
+        <sh-button style="margin-left:10px;" label="Cancel" (click)="cancelIntegrationEquipmentMaps($event)"></sh-button>
+    </div>
+</sh-card>
