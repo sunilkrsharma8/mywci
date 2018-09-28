@@ -76,11 +76,8 @@ export class RenderZoneDesigner {
     private plane: Mesh;
     private selection: Mesh;
     private offset = new THREE.Vector3();
-    // private wallResizerSphere_right: Mesh;
-    // private wallResizerSphere_left: Mesh;
     private isLeftResizerSelected: boolean = false;
     private isRightResizerSelected: boolean = false;
-    private grpRotator : Group;
     private dragControls: any;
     private prevClientX: number = 0;
     private prevClientY: number = 0;
@@ -89,7 +86,7 @@ export class RenderZoneDesigner {
         x: 0,
         y: 0
     };
-    private isRotatorHighlighted: boolean =false;
+    private isRotateInstrument: boolean =false;
     private isDrawWalls: boolean = false;
     private isWallDrawn: boolean = false;
     private isWallDrawing: boolean = false;
@@ -101,7 +98,6 @@ export class RenderZoneDesigner {
     private equipments: Array<InstrumentItem>;
     private equipmentModels: Array<EquipmentModel>;
     private unResolvedAlerts: Array<any>;
-    private flagColorTexture: any;
     // For loading items from JSON.
     private mapCreatedObj: Map<string, any>;
 
@@ -243,20 +239,42 @@ export class RenderZoneDesigner {
         }
     }
 
-    private removeRotateHandle(){
-        if(this.grpRotator && this.selection){
-            this.selection.remove(this.grpRotator);
-            this.destroyMesh(this.grpRotator);
+    private removeRotateHandle(selectedMesh: Mesh): void{
+        // if(this.grpRotator && this.selection){
+        //     this.selection.remove(this.grpRotator);
+        //     this.destroyMesh(this.grpRotator);
+        // }
+        let rotatorMesh = this.scene.getObjectByName( 'rotator' );
+
+        if(rotatorMesh){
+            let component: RenderZoneDesigner = this;
+            let rotatorParentMesh = rotatorMesh.parent;
+            rotatorParentMesh.traverse( function ( child ) {
+
+                if ( child.geometry !== undefined && child.name != 'wall') {
+
+                    child.geometry.dispose();
+                    child.material.dispose();
+                    component.scene.remove(child);
+
+                }
+            } );
+
+
+            let selectedInstrument = rotatorParentMesh.parent;
+            selectedInstrument.remove(rotatorParentMesh);
+
+            this.scene.remove(rotatorParentMesh);
         }
     }
 
-    private removeWallHighlighter(mesh: Mesh){
+    private removeWallHighlighter(mesh: Mesh): void{
         if(mesh != undefined){
-        this.wallMesh.children.forEach(element => {
+        mesh.children.forEach(element => {
             mesh.remove(element);
         });
 
-        this.wallMesh.children.forEach(element => {
+        mesh.children.forEach(element => {
             mesh.remove(element);
         });
 
@@ -334,24 +352,27 @@ export class RenderZoneDesigner {
 
     private renderBar(selectedObject: Mesh){
         var barMaterial = new THREE.MeshPhongMaterial({ color: 0x4f4848 , side: DoubleSide});
-        var barGeometry = new THREE.BoxGeometry (2, 70, 2);
-        var sphereGeometry = new THREE.SphereGeometry(4,10,10);
+        var barGeometry = new THREE.BoxGeometry (4, 70, 0.5);
+        var sphereGeometry = new THREE.SphereGeometry(6,10,10);
         var sphereMaterial = new THREE.MeshPhongMaterial({ color: 0xffff00});
         var bar = new Mesh(barGeometry, barMaterial);
         var sphere = new Mesh(sphereGeometry, sphereMaterial);
 
         sphere.position.z = sphere.position.z + 35;
+        sphere.name = 'rotator';
 
         bar.rotation.x = Math.PI/2;
 
-        this.grpRotator = new THREE.Group();
-        this.grpRotator.add( bar );
-        this.grpRotator.add( sphere );
-        this.grpRotator.name = "rotator";
+        let grpRotator = new THREE.Group();
+        grpRotator.add( bar );
+        grpRotator.add( sphere );
+        //this.grpRotator.name = 'rotator';
         
-        this.grpRotator.position.y = 100;
-        this.grpRotator.position.z = this.grpRotator.position.z + 35;
-        selectedObject.add(this.grpRotator);
+        grpRotator.position.y = 100;
+        grpRotator.position.z = grpRotator.position.z + 35;
+        if(this.scene.getObjectByName( 'rotator' ) == undefined){
+            selectedObject.add(grpRotator);
+        }
     }
 
      private renderWallHighlighter(selectedObject: Mesh){
@@ -406,7 +427,40 @@ export class RenderZoneDesigner {
 
     }
 
-    private addSelectedObject = (object, event) => {
+    public renderRotateHandle(clientX: number, clientY: number): void{
+        let rect = this.ocRenderer.domElement.getBoundingClientRect();
+        // this.onMouseDownPosition.x = ( clientX  / window.innerWidth ) * 2 - 1;
+        // this.onMouseDownPosition.y = - ( ( clientY - rect.top ) / ( this.tvContainer.nativeElement.clientHeight) ) * 2 + 1;
+        this.onMouseDownPosition.x = ( (clientX - rect.left) / rect.width ) * 2 - 1;
+		this.onMouseDownPosition.y = - ( (clientY - rect.top) / rect.height ) * 2 + 1;
+        this.raycaster = new Raycaster();
+        this.raycaster.setFromCamera(this.onMouseDownPosition, this.oCamera);
+        var intersectObj = this.raycaster.intersectObjects( this.scene.children,true );
+
+        if ( intersectObj.length > 0) {
+            let mesh = new Mesh;
+            let parentMesh = new Mesh;
+            mesh = intersectObj[ 0 ].object;
+            parentMesh = mesh.parent;
+            // if(parentMesh.type === 'Scene') {
+            // }else 
+            if(parentMesh.type === 'Scene' && mesh.name != "floor" && mesh.name != "wall") {
+                //this.renderBar(mesh);
+                this.selection = mesh;
+            }
+            else if(mesh.name != "floor" && mesh.name != "wall" && mesh.name != "resizer-left" && mesh.name != "resizer-right" ) {
+                this.renderBar(parentMesh);
+                this.selection = parentMesh;
+            }
+        }
+    }
+
+    /**
+     * Handles object highlighting on mouse click or hover
+     * @param object object to be highlighted
+     * @param event either click or hover
+     */
+    private addSelectedObject(object: any, event: string): void{
         this.selectedObjects = [];
         if (event == "Hover")
         {
@@ -424,9 +478,14 @@ export class RenderZoneDesigner {
     private empty = (elem) => {
         while (elem.lastChild) elem.removeChild(elem.lastChild);
     }
-
     
-    private setOverlayText = (text, posX, posY) => {
+    /**
+     * Displays text like intrument name as a pop up
+     * @param text text to be displayed
+     * @param posX X position
+     * @param posY Y position
+     */
+    private setOverlayText(text: string, posX: number, posY: number): void{
         
         if (text.trim().length == 0)
         {
@@ -440,12 +499,21 @@ export class RenderZoneDesigner {
         }
     }
 
+    /**
+     * Attaches drag and drop control to the scene and renderer
+     */
     public attachDragandDropControl(){
         this.dragControls = new THREE.DragControls( this.scene.children, this.oCamera, this.ocRenderer.domElement );
 		this.dragControls.addEventListener( 'dragstart', this.onDragStart, false);
 		this.dragControls.addEventListener( 'dragend', this.onDragEnd, false);
     }
 
+    /**
+     * Intialises 3D scene, add lights, camera.
+     * @param tvContainer top view container
+     * @param threedContainer three dimensional scene container
+     * @param http instance of http client
+     */
     public init = (tvContainer: ElementRef, threedContainer: ElementRef, http: HttpClient) => {
         this.http = http;
         this.manager = new LoadingManager();
@@ -743,6 +811,26 @@ export class RenderZoneDesigner {
             }
         }
     }
+
+    /**
+     * Rotates selected instrument on mouse move
+     * @param event mouse event
+     */
+    private rotateInstrument(event: MouseEvent): void{
+        
+        let mouseIntersect = ObjectRendererHelper.get3DPosition(event.clientX, event.clientY, this.tvContainer, this.oCamera, this.scene, this.ocRenderer);
+
+        if(mouseIntersect != undefined){
+
+            let deltaX = mouseIntersect.x - this.selection.position.x;
+            let deltaZ = mouseIntersect.z - this.selection.position.z;
+            let rad = Math.atan2(deltaZ, deltaX);
+            this.selection.rotation.y = -rad + Math.PI/2;
+            
+            this.ocRenderer.domElement.style.cursor = 'grabbing';
+
+        }
+    }
     
     /**
      * Start the UI render from the JSON Model.
@@ -863,6 +951,12 @@ export class RenderZoneDesigner {
         }
     }
 
+    /**
+     * Adds intrument into the scene
+     * @param eqpInfo Equipment information Mapping
+     * @param objEquipmentData Zone Equipment
+     * @param objEquipmentMesh Mesh
+     */
     private renderInstrument(eqpInfo: EquipmentInfoMap, 
                              objEquipmentData: ZoneEquipment, 
                              objEquipmentMesh: any): void {
@@ -881,8 +975,8 @@ export class RenderZoneDesigner {
     /**
      * Add an outline effect to the instruments on Hoverover and clicks
      */
-    public addOutlineEffect()
-    {
+    public addOutlineEffect(){
+
         this.composer = new THREE.EffectComposer( this.ocRenderer );
         var renderPass = new THREE.RenderPass( this.scene, this.oCamera );
         this.composer.addPass( renderPass );
@@ -898,43 +992,15 @@ export class RenderZoneDesigner {
         this.composer.addPass( this.effectFXAA );
     }
 
-    public renderRotateHandle(clientX, clientY){
-        var rect = this.ocRenderer.domElement.getBoundingClientRect();
-        // this.onMouseDownPosition.x = ( clientX  / window.innerWidth ) * 2 - 1;
-        // this.onMouseDownPosition.y = - ( ( clientY - rect.top ) / ( this.tvContainer.nativeElement.clientHeight) ) * 2 + 1;
-        this.onMouseDownPosition.x = ( (clientX - rect.left) / rect.width ) * 2 - 1;
-		this.onMouseDownPosition.y = - ( (clientY - rect.top) / rect.height ) * 2 + 1;
-        this.raycaster = new Raycaster();
-        this.raycaster.setFromCamera(this.onMouseDownPosition, this.oCamera);
-        var intersectObj = this.raycaster.intersectObjects( this.scene.children,true );
-
-        if ( intersectObj.length > 0) {
-            let mesh = new Mesh;
-            let parentMesh = new Mesh;
-            mesh = intersectObj[ 0 ].object;
-            parentMesh = mesh.parent;
-            // if(parentMesh.type === 'Scene') {
-            // }else 
-            if(parentMesh.type === 'Scene' && mesh.name != "floor" && mesh.name != "wall") {
-                //this.renderBar(mesh);
-                this.selection = mesh;
-            }
-            else if(mesh.name != "floor" && mesh.name != "wall" && mesh.name != "resizer-left" && mesh.name != "resizer-right" ) {
-                this.renderBar(parentMesh);
-                this.selection = parentMesh;
-            }
-        }
-    }
-
     
     /**
      * Identify the hovered/clicked instrument and highlight it
-     * @param clientX 
-     * @param clientY 
-     * @param event 
+     * @param clientX X position
+     * @param clientY Y position
+     * @param event either click or hover
      */
-    public highlightInstrument(clientX, clientY,event)
-    {
+    public handleMouseRaycasting(clientX, clientY,event){
+
         let rect = this.ocRenderer.domElement.getBoundingClientRect();
         this.onMouseDownPosition.x = ( (clientX - rect.left) / rect.width ) * 2 - 1;
 		this.onMouseDownPosition.y = - ( (clientY - rect.top) / rect.height ) * 2 + 1;
@@ -948,58 +1014,79 @@ export class RenderZoneDesigner {
             let parentMesh = new Mesh;
             mesh = intersectObj[ 0 ].object;
             parentMesh = mesh.parent;
-            if(mesh.name == "wall" && event == "Click") {
+            if(mesh.name === 'wall' && event === 'Click') {
                 this.isWallSelected = true;
-                this.selection = mesh;
                 this.removeWallHighlighter(this.wallMesh);
+                this.removeRotateHandle(this.selection);
                 if(!this.isWallDrawing){
                     this.renderWallHighlighter(mesh);
                 }
+                this.selection = mesh;
                 this.wallMesh = mesh;
-            }else if (parentMesh.type != 'Scene' && parentMesh.IsInstrument) {
+            }else if (parentMesh.type !== 'Scene' && parentMesh.IsInstrument) {
                 selectedObjPosition = ObjectRendererHelper.getScreenPosition(parentMesh, this.oCamera, this.ocRenderer, this.tvContainer);
                 this.setOverlayText(parentMesh.name,selectedObjPosition.x,selectedObjPosition.y);
                 this.addSelectedObject(parentMesh,event);
                 this.outlinePass.selectedObjects = this.selectedObjects;
+                if(event === 'Click'){
+                    this.removeWallHighlighter(this.wallMesh);
+                    this.removeRotateHandle(this.selection);
+                    this.renderBar(parentMesh);
+                }
                 this.selection = parentMesh;
                 //this.ocRenderer.domElement.style.cursor = "move";
-            }else if(mesh.name == "resizer-left" && event == "Click"){
+            }else if(mesh.name === 'resizer-left' && event === 'Click'){
                 selectedObjPosition = ObjectRendererHelper.getScreenPosition(mesh.parent.parent, this.oCamera, this.ocRenderer, this.tvContainer);
                 this.isLeftResizerSelected = true;
-                let resizerRight = this.scene.getObjectByName( "resizer-right" );
+                let resizerRight = this.scene.getObjectByName( 'resizer-right' );
                 this.wallInitialPoint = this.getWallInitialPoints(resizerRight);
                 this.prevWallLength =  mesh.parent.parent.geometry.parameters.width * mesh.parent.parent.scale.x;
                 //this.ocRenderer.domElement.style.cursor = 'grabbing';
-            }else if(mesh.name == "resizer-right" && event == "Click"){
+            }else if(mesh.name === 'resizer-right' && event === 'Click'){
                 selectedObjPosition = ObjectRendererHelper.getScreenPosition(mesh.parent.parent, this.oCamera, this.ocRenderer, this.tvContainer);
                 this.isRightResizerSelected = true;
-                let resizerLeft = this.scene.getObjectByName( "resizer-left" );
+                let resizerLeft = this.scene.getObjectByName( 'resizer-left' );
                 this.wallInitialPoint = this.getWallInitialPoints(resizerLeft);
                 this.prevWallLength =  mesh.parent.parent.geometry.parameters.width * mesh.parent.parent.scale.x;
                 let translationFactor = this.wallMesh.geometry.width * this.wallMesh.scale.x;
                 this.wallMesh.geometry.applyMatrix(new THREE.Matrix4().makeTranslation(0, 0, 0 ));
                 this.wallMesh.rotation.y = this.wallMesh.rotation.y + Math.PI;
 
-             }else if(event == "Click"){
+            }else if(mesh.name === 'rotator' && event === 'Hover') {
+                this.ocRenderer.domElement.style.cursor = 'grab';
+
+            }else if(mesh.name === 'rotator' && event === 'Click') {
+                this.selection = mesh.parent.parent;
+                this.ocRenderer.domElement.style.cursor = 'grab';
+                this.dragControls.deactivate();
+                this.isRotateInstrument = true;
+
+            }else if(event === 'Click'){
                 this.removeWallHighlighter(this.wallMesh);
+                this.removeRotateHandle(this.selection);
+
+            }else{
+                this.ocRenderer.domElement.style.cursor = 'auto';
             }
+        }else if(event === 'Click'){
+            this.removeWallHighlighter(this.wallMesh);
+            this.removeRotateHandle(this.selection);
         }
     }
     
     /**
      * returns the x and y  of initial position of selected wall
-     * @param selectedObj 
+     * @param targetObj 
      */
     private getWallInitialPoints(targetObj: Mesh): Vector3{
+
         let wallInitialWorldPosition: any;
 
         targetObj.parent.parent.updateMatrixWorld();
         targetObj.parent.updateMatrixWorld();
+
         let vector = new THREE.Vector3();
         vector.getPositionFromMatrix( targetObj.matrixWorld );
-
-        let object: any = {};
-        object.position = vector;
 
         return vector;
     }
@@ -1010,8 +1097,8 @@ export class RenderZoneDesigner {
      * @param clientY 
      * @param event 
      */
-    public highlightRotator(clientX, clientY,event)
-    {
+    public highlightRotator(clientX, clientY,event){
+
         let rect = this.ocRenderer.domElement.getBoundingClientRect();
         this.onMouseDownPosition.x = ( (clientX - rect.left) / rect.width ) * 2 - 1;
 		this.onMouseDownPosition.y = - ( (clientY - rect.top) / rect.height ) * 2 + 1;
@@ -1024,13 +1111,13 @@ export class RenderZoneDesigner {
             let parentMesh = new Mesh;
             mesh = intersectObj[ 0 ].object;
             parentMesh = mesh.parent;
-            if(parentMesh.name === 'rotator') {
+            if(mesh.name === 'rotator') {
                 this.ocRenderer.domElement.style.cursor = 'grab';//"../assets/rotate.png";
                 this.dragControls.deactivate();
-                this.isRotatorHighlighted = true;
+                this.isRotateInstrument = true;
             } else {
                 this.ocRenderer.domElement.style.cursor = 'auto';
-                this.isRotatorHighlighted = false;
+                this.isRotateInstrument = false;
             }
         }
     }
@@ -1043,7 +1130,7 @@ export class RenderZoneDesigner {
         // this.container.nativeElement.style.cursor = 'pointer';
         this.isMouseDown = true;
         this.isWallDrawn = false;
-        this.highlightInstrument(event.clientX, event.clientY,"Click");
+        this.handleMouseRaycasting(event.clientX, event.clientY,"Click");
         if(this.isDrawWalls || this.isRightResizerSelected || this.isLeftResizerSelected){
             this.dragControls.deactivate();
         }else{
@@ -1058,19 +1145,19 @@ export class RenderZoneDesigner {
         event.preventDefault();
         this.isMouseDown = false;
         this.isWallSelected = false;
-        //this.highlightInstrument(event.clientX, event.clientY,"Click");
-        this.removeRotateHandle();
+        //this.handleMouseRaycasting(event.clientX, event.clientY,"Click");
         //this.removeSphere(this.wallMesh);
         this.selection = null;
         this.prevClientX = 0;
         this.prevClientY = 0;
-        this.renderRotateHandle(event.clientX, event.clientY);
+        //this.renderRotateHandle(event.clientX, event.clientY);
         this.isWallDrawing = false;
         if(this.isRightResizerSelected || this.isLeftResizerSelected){
             this.renderWallHighlighter(this.wallMesh);
             this.isRightResizerSelected = false;
             this.isLeftResizerSelected = false;
         }
+        this.isRotateInstrument = false;
         this.hideContextMenu();
     }
 
@@ -1086,7 +1173,7 @@ export class RenderZoneDesigner {
     // public onContextMenu(event: MouseEvent): void {
     onContextMenu = (event) => {
          event.preventDefault();
-         this.highlightInstrument(event.clientX, event.clientY,"Click");
+         this.handleMouseRaycasting(event.clientX, event.clientY,"Click");
          let selectedObjectPositions = ObjectRendererHelper.getScreenPosition(this.selection, this.oCamera, this.ocRenderer, this.tvContainer);
          let contextMenu = <HTMLDivElement>document.getElementsByClassName("context-menu")[0];
          let intrumentNameLabel = <HTMLDivElement>document.getElementsByClassName("instrument-name")[0];
@@ -1112,13 +1199,8 @@ export class RenderZoneDesigner {
      */
     onDocumentMouseMove = (event) => {
         event.preventDefault();
-        if (this.isMouseDown && this.isRotatorHighlighted) {
-            var selectedObjectPositions = ObjectRendererHelper.getScreenPosition(this.selection, this.oCamera, this.ocRenderer, this.tvContainer);
-            var deltaX = event.clientX - selectedObjectPositions.x;
-            var deltaY = event.clientY - selectedObjectPositions.y;
-            var rad = Math.atan2(deltaY, deltaX);
-            this.selection.rotation.y = (-rad);
-            this.ocRenderer.domElement.style.cursor = 'grabbing';
+        if (this.isMouseDown && this.isRotateInstrument) {
+            this.rotateInstrument(event);
         }
         else if( this.isMouseDown && this.isDrawWalls && !this.isWallDrawn){
             this.addWall(event.clientX,event.clientY);
@@ -1133,7 +1215,7 @@ export class RenderZoneDesigner {
             this.editPreDrawnWall(event.clientX, event.clientY);
         }
          else if(!this.isDrawWalls){
-            this.highlightInstrument(event.clientX, event.clientY,"Hover");
+            this.handleMouseRaycasting(event.clientX, event.clientY,"Hover");
             this.highlightRotator(event.clientX, event.clientY,"Hover");
         }
 

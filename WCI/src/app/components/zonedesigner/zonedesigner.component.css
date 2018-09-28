@@ -289,9 +289,9 @@ input{
 .walldraw-container{
 	position: relative;
 	margin-left: 20px;
-	margin-top: 10px;
-	height: 30px;
-	width: 30px;
+	margin-top: 2px;
+	height: 35px;
+	width: 35px;
 	border: 1px solid #fff;	
 	
 }
@@ -311,8 +311,8 @@ img.active{
 }
 
 .wallImage{
-	width: 28px;
-	height: 28px;
+	width: 33px;
+	height: 33px;
 }
 
 label{
