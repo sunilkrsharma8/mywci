@@ -1,0 +1,677 @@
+[
+    {
+        "DisableRemoteControl": false,
+        "DisplayName": "VersaCell",
+        "Id": 3,
+        "MaxHourlyThroughput": 0,
+        "Name": "VersaCell",
+        "Type": 1,
+        "Version": 10600
+    },
+    {
+        "DisableRemoteControl": false,
+        "DisplayName": "Desk",
+        "Id": 7,
+        "MaxHourlyThroughput": 0,
+        "Name": "Desk",
+        "Type": 2,
+        "Version": 10571
+    },
+    {
+        "DisableRemoteControl": false,
+        "DisplayName": "Desktop Computer",
+        "Id": 9,
+        "MaxHourlyThroughput": 0,
+        "Name": "Desktop Computer",
+        "Type": 5,
+        "Version": 10656
+    },
+    {
+        "DisableRemoteControl": false,
+        "DisplayName": "Refrigerator",
+        "Id": 13,
+        "MaxHourlyThroughput": 0,
+        "Name": "Refrigerator",
+        "Type": 2,
+        "Version": 10572
+    },
+    {
+        "DisableRemoteControl": false,
+        "DisplayName": "Generic Tabletop Instrument",
+        "Id": 15,
+        "MaxHourlyThroughput": 0,
+        "Name": "Generic Tabletop Instrument",
+        "Type": 4,
+        "Version": 10654
+    },
+    {
+        "DisableRemoteControl": false,
+        "DisplayName": "ADVIA 1800",
+        "Id": 21,
+        "MaxHourlyThroughput": 0,
+        "Name": "ADVIA 1800",
+        "Type": 1,
+        "Version": 10597
+    },
+    {
+        "DisableRemoteControl": false,
+        "DisplayName": "ADVIA 2400",
+        "Id": 22,
+        "MaxHourlyThroughput": 0,
+        "Name": "ADVIA 2400",
+        "Type": 1,
+        "Version": 10598
+    },
+    {
+        "DisableRemoteControl": false,
+        "DisplayName": "ADVIA Chemistry XPT",
+        "Id": 23,
+        "MaxHourlyThroughput": 0,
+        "Name": "ADVIA Chemistry XPT",
+        "Type": 1,
+        "Version": 10599
+    },
+    {
+        "DisableRemoteControl": false,
+        "DisplayName": "ADVIA Centaur XP",
+        "Id": 24,
+        "MaxHourlyThroughput": 0,
+        "Name": "ADVIA Centaur XP",
+        "Type": 1,
+        "Version": 10595
+    },
+    {
+        "DisableRemoteControl": false,
+        "DisplayName": "CentraLink",
+        "Id": 25,
+        "MaxHourlyThroughput": 0,
+        "Name": "CentraLink",
+        "Type": 5,
+        "Version": 10607
+    },
+    {
+        "DisableRemoteControl": false,
+        "DisplayName": "Dimension Vista 1500",
+        "Id": 33,
+        "MaxHourlyThroughput": 0,
+        "Name": "Dimension Vista 1500",
+        "Type": 1,
+        "Version": 10605
+    },
+    {
+        "DisableRemoteControl": false,
+        "DisplayName": "Bench - 30x48",
+        "Id": 34,
+        "MaxHourlyThroughput": 0,
+        "Name": "Bench - 30x48",
+        "Type": 2,
+        "Version": 10573
+    },
+    {
+        "DisableRemoteControl": false,
+        "DisplayName": "Benchtop Centrifuge",
+        "Id": 38,
+        "MaxHourlyThroughput": 0,
+        "Name": "Benchtop Centrifuge",
+        "Type": 2,
+        "Version": 10574
+    },
+    {
+        "DisableRemoteControl": false,
+        "DisplayName": "Sink Cabinet",
+        "Id": 39,
+        "MaxHourlyThroughput": 0,
+        "Name": "Sink Cabinet",
+        "Type": 2,
+        "Version": 10575
+    },
+    {
+        "DisableRemoteControl": false,
+        "DisplayName": "Generic Floor Instrument",
+        "Id": 40,
+        "MaxHourlyThroughput": 0,
+        "Name": "Generic Floor Instrument",
+        "Type": 4,
+        "Version": 10655
+    },
+    {
+        "DisableRemoteControl": false,
+        "DisplayName": "Printer",
+        "Id": 42,
+        "MaxHourlyThroughput": 0,
+        "Name": "Printer",
+        "Type": 2,
+        "Version": 10576
+    },
+    {
+        "DisableRemoteControl": false,
+        "DisplayName": "Refrigerator - 1 Door",
+        "Id": 43,
+        "MaxHourlyThroughput": 0,
+        "Name": "Refrigerator - 1 Door",
+        "Type": 2,
+        "Version": 10577
+    },
+    {
+        "DisableRemoteControl": false,
+        "DisplayName": "Support Post",
+        "Id": 48,
+        "MaxHourlyThroughput": 0,
+        "Name": "Support Post",
+        "Type": 2,
+        "Version": 10578
+    },
+    {
+        "DisableRemoteControl": false,
+        "DisplayName": "Table",
+        "Id": 49,
+        "MaxHourlyThroughput": 0,
+        "Name": "Table",
+        "Type": 2,
+        "Version": 10579
+    },
+    {
+        "DisableRemoteControl": false,
+        "DisplayName": "ADVIA 120",
+        "Id": 51,
+        "MaxHourlyThroughput": 0,
+        "Name": "ADVIA 120",
+        "Type": 4,
+        "Version": 10648
+    },
+    {
+        "DisableRemoteControl": false,
+        "DisplayName": "ADVIA 2120i",
+        "Id": 52,
+        "MaxHourlyThroughput": 0,
+        "Name": "ADVIA 2120i",
+        "Type": 4,
+        "Version": 10649
+    },
+    {
+        "DisableRemoteControl": false,
+        "DisplayName": "ADVIA 1200",
+        "Id": 53,
+        "MaxHourlyThroughput": 0,
+        "Name": "ADVIA 1200",
+        "Type": 4,
+        "Version": 10650
+    },
+    {
+        "DisableRemoteControl": false,
+        "DisplayName": "ADVIA 1650",
+        "Id": 54,
+        "MaxHourlyThroughput": 0,
+        "Name": "ADVIA 1650",
+        "Type": 4,
+        "Version": 10651
+    },
+    {
+        "DisableRemoteControl": false,
+        "DisplayName": "ADVIA Centaur CP",
+        "Id": 55,
+        "MaxHourlyThroughput": 0,
+        "Name": "ADVIA Centaur CP",
+        "Type": 1,
+        "Version": 10594
+    },
+    {
+        "DisableRemoteControl": false,
+        "DisplayName": "ADVIA Dual Hematology Module",
+        "Id": 56,
+        "MaxHourlyThroughput": 0,
+        "Name": "ADVIA Dual Hematology Module",
+        "Type": 4,
+        "Version": 10652
+    },
+    {
+        "DisableRemoteControl": false,
+        "DisplayName": "ADVIA Autoslide",
+        "Id": 57,
+        "MaxHourlyThroughput": 0,
+        "Name": "ADVIA Autoslide",
+        "Type": 4,
+        "Version": 10653
+    },
+    {
+        "DisableRemoteControl": false,
+        "DisplayName": "CLINITEK Novus",
+        "Id": 58,
+        "MaxHourlyThroughput": 0,
+        "Name": "CLINITEK Novus",
+        "Type": 1,
+        "Version": 10608
+    },
+    {
+        "DisableRemoteControl": false,
+        "DisplayName": "Atellica Sample Handler",
+        "Id": 59,
+        "MaxHourlyThroughput": 0,
+        "Name": "Atellica Sample Handler",
+        "Type": 1,
+        "Version": 10609
+    },
+    {
+        "DisableRemoteControl": true,
+        "DisplayName": "Atellica Sample Handler (Additional)",
+        "Id": 60,
+        "MaxHourlyThroughput": 0,
+        "Name": "Atellica Sample Handler (Additional)",
+        "Type": 1,
+        "Version": 10610
+    },
+    {
+        "DisableRemoteControl": true,
+        "DisplayName": "Atellica IM 1600",
+        "Id": 61,
+        "MaxHourlyThroughput": 0,
+        "Name": "Atellica IM 1600",
+        "Type": 1,
+        "Version": 10611
+    },
+    {
+        "DisableRemoteControl": false,
+        "DisplayName": "Doors - Single - 1",
+        "Id": 62,
+        "MaxHourlyThroughput": 0,
+        "Name": "Doors - Single - 1",
+        "Type": 2,
+        "Version": 10580
+    },
+    {
+        "DisableRemoteControl": false,
+        "DisplayName": "Doors - Double - 1",
+        "Id": 63,
+        "MaxHourlyThroughput": 0,
+        "Name": "Doors - Double - 1",
+        "Type": 2,
+        "Version": 10581
+    },
+    {
+        "DisableRemoteControl": true,
+        "DisplayName": "Atellica CH 930",
+        "Id": 64,
+        "MaxHourlyThroughput": 0,
+        "Name": "Atellica CH 930",
+        "Type": 1,
+        "Version": 10612
+    },
+    {
+        "DisableRemoteControl": false,
+        "DisplayName": "Windows - Single - 1",
+        "Id": 65,
+        "MaxHourlyThroughput": 0,
+        "Name": "Windows - Single - 1",
+        "Type": 2,
+        "Version": 10582
+    },
+    {
+        "DisableRemoteControl": false,
+        "DisplayName": "Atellica Direct Load",
+        "Id": 66,
+        "MaxHourlyThroughput": 0,
+        "Name": "Atellica Direct Load",
+        "Type": 1,
+        "Version": 10613
+    },
+    {
+        "DisableRemoteControl": false,
+        "DisplayName": "Computer - Desktop",
+        "Id": 68,
+        "MaxHourlyThroughput": 0,
+        "Name": "Computer - Desktop",
+        "Type": 2,
+        "Version": 10583
+    },
+    {
+        "DisableRemoteControl": false,
+        "DisplayName": "Automation Track",
+        "Id": 72,
+        "MaxHourlyThroughput": 0,
+        "Name": "Automation Track",
+        "Type": 2,
+        "Version": 10584
+    },
+    {
+        "DisableRemoteControl": false,
+        "DisplayName": "Automation Track Loop",
+        "Id": 73,
+        "MaxHourlyThroughput": 0,
+        "Name": "Automation Track Loop",
+        "Type": 2,
+        "Version": 10585
+    },
+    {
+        "DisableRemoteControl": false,
+        "DisplayName": "Automation Track L-Module",
+        "Id": 74,
+        "MaxHourlyThroughput": 0,
+        "Name": "Automation Track L-Module",
+        "Type": 2,
+        "Version": 10586
+    },
+    {
+        "DisableRemoteControl": false,
+        "DisplayName": "Automation Track T-Module",
+        "Id": 75,
+        "MaxHourlyThroughput": 0,
+        "Name": "Automation Track T-Module",
+        "Type": 2,
+        "Version": 10587
+    },
+    {
+        "DisableRemoteControl": false,
+        "DisplayName": "Automation Track x2",
+        "Id": 76,
+        "MaxHourlyThroughput": 0,
+        "Name": "Automation Track x2",
+        "Type": 2,
+        "Version": 10588
+    },
+    {
+        "DisableRemoteControl": false,
+        "DisplayName": "Automation Track x3",
+        "Id": 77,
+        "MaxHourlyThroughput": 0,
+        "Name": "Automation Track x3",
+        "Type": 2,
+        "Version": 10589
+    },
+    {
+        "DisableRemoteControl": false,
+        "DisplayName": "Automation Track x4",
+        "Id": 78,
+        "MaxHourlyThroughput": 0,
+        "Name": "Automation Track x4",
+        "Type": 2,
+        "Version": 10590
+    },
+    {
+        "DisableRemoteControl": false,
+        "DisplayName": "Automation Track x5",
+        "Id": 79,
+        "MaxHourlyThroughput": 0,
+        "Name": "Automation Track x5",
+        "Type": 2,
+        "Version": 10591
+    },
+    {
+        "DisableRemoteControl": false,
+        "DisplayName": "Atellica Daytona Track",
+        "Id": 80,
+        "MaxHourlyThroughput": 0,
+        "Name": "Atellica Daytona Track",
+        "Type": 2,
+        "Version": 10592
+    },
+    {
+        "DisableRemoteControl": false,
+        "DisplayName": "Axis IP Camera",
+        "Id": 87,
+        "MaxHourlyThroughput": 0,
+        "Name": "Axis IP Camera",
+        "Type": 6,
+        "Version": 10657
+    },
+    {
+        "DisableRemoteControl": false,
+        "DisplayName": "Aliquoter",
+        "Id": 101,
+        "MaxHourlyThroughput": 0,
+        "Name": "Aliquoter",
+        "Type": 7,
+        "Version": 10658
+    },
+    {
+        "DisableRemoteControl": false,
+        "DisplayName": "Centrifuge",
+        "Id": 102,
+        "MaxHourlyThroughput": 0,
+        "Name": "Centrifuge",
+        "Type": 7,
+        "Version": 10659
+    },
+    {
+        "DisableRemoteControl": false,
+        "DisplayName": "Decapper",
+        "Id": 103,
+        "MaxHourlyThroughput": 0,
+        "Name": "Decapper",
+        "Type": 7,
+        "Version": 10660
+    },
+    {
+        "DisableRemoteControl": false,
+        "DisplayName": "Desealer",
+        "Id": 104,
+        "MaxHourlyThroughput": 0,
+        "Name": "Desealer",
+        "Type": 7,
+        "Version": 10661
+    },
+    {
+        "DisableRemoteControl": false,
+        "DisplayName": "Bulk Input",
+        "Id": 105,
+        "MaxHourlyThroughput": 0,
+        "Name": "Bulk Input",
+        "Type": 7,
+        "Version": 10662
+    },
+    {
+        "DisableRemoteControl": false,
+        "DisplayName": "Input\/Output",
+        "Id": 106,
+        "MaxHourlyThroughput": 0,
+        "Name": "Input\/Output",
+        "Type": 7,
+        "Version": 10663
+    },
+    {
+        "DisableRemoteControl": false,
+        "DisplayName": "Manual Input\/Output",
+        "Id": 107,
+        "MaxHourlyThroughput": 0,
+        "Name": "Manual Input\/Output",
+        "Type": 7,
+        "Version": 10664
+    },
+    {
+        "DisableRemoteControl": false,
+        "DisplayName": "Recapper",
+        "Id": 108,
+        "MaxHourlyThroughput": 0,
+        "Name": "Recapper",
+        "Type": 7,
+        "Version": 10665
+    },
+    {
+        "DisableRemoteControl": false,
+        "DisplayName": "Rack Input",
+        "Id": 109,
+        "MaxHourlyThroughput": 0,
+        "Name": "Rack Input",
+        "Type": 7,
+        "Version": 10666
+    },
+    {
+        "DisableRemoteControl": false,
+        "DisplayName": "Rack Output",
+        "Id": 110,
+        "MaxHourlyThroughput": 0,
+        "Name": "Rack Output",
+        "Type": 7,
+        "Version": 10667
+    },
+    {
+        "DisableRemoteControl": false,
+        "DisplayName": "Sealer",
+        "Id": 111,
+        "MaxHourlyThroughput": 0,
+        "Name": "Sealer",
+        "Type": 7,
+        "Version": 10668
+    },
+    {
+        "DisableRemoteControl": false,
+        "DisplayName": "Storage",
+        "Id": 112,
+        "MaxHourlyThroughput": 0,
+        "Name": "Storage",
+        "Type": 7,
+        "Version": 10669
+    },
+    {
+        "DisableRemoteControl": false,
+        "DisplayName": "Carrier Buffer",
+        "Id": 113,
+        "MaxHourlyThroughput": 0,
+        "Name": "Carrier Buffer",
+        "Type": 7,
+        "Version": 10670
+    },
+    {
+        "DisableRemoteControl": false,
+        "DisplayName": "Volume Detector",
+        "Id": 114,
+        "MaxHourlyThroughput": 0,
+        "Name": "Volume Detector",
+        "Type": 7,
+        "Version": 10671
+    },
+    {
+        "DisableRemoteControl": false,
+        "DisplayName": "Hematology Island",
+        "Id": 115,
+        "MaxHourlyThroughput": 0,
+        "Name": "Hematology Island",
+        "Type": 7,
+        "Version": 10672
+    },
+    {
+        "DisableRemoteControl": false,
+        "DisplayName": "Pneumatic Transportation",
+        "Id": 116,
+        "MaxHourlyThroughput": 0,
+        "Name": "Pneumatic Transportation",
+        "Type": 7,
+        "Version": 10673
+    },
+    {
+        "DisableRemoteControl": false,
+        "DisplayName": "Shaker",
+        "Id": 117,
+        "MaxHourlyThroughput": 0,
+        "Name": "Shaker",
+        "Type": 7,
+        "Version": 10674
+    },
+    {
+        "DisableRemoteControl": false,
+        "DisplayName": "Bulk Output",
+        "Id": 118,
+        "MaxHourlyThroughput": 0,
+        "Name": "Bulk Output",
+        "Type": 7,
+        "Version": 10675
+    },
+    {
+        "DisableRemoteControl": false,
+        "DisplayName": "Atellica COAG360",
+        "Id": 201,
+        "MaxHourlyThroughput": 0,
+        "Name": "Atellica COAG360",
+        "Type": 1,
+        "Version": 10614
+    },
+    {
+        "DisableRemoteControl": false,
+        "DisplayName": "Atellica NEPH630",
+        "Id": 202,
+        "MaxHourlyThroughput": 0,
+        "Name": "Atellica NEPH630",
+        "Type": 1,
+        "Version": 10615
+    },
+    {
+        "DisableRemoteControl": true,
+        "DisplayName": "Atellica IM 1300",
+        "Id": 203,
+        "MaxHourlyThroughput": 0,
+        "Name": "Atellica IM 1300",
+        "Type": 1,
+        "Version": 10616
+    },
+    {
+        "DisableRemoteControl": true,
+        "DisplayName": "Atellica Sample Handler (Connect)",
+        "Id": 204,
+        "MaxHourlyThroughput": 0,
+        "Name": "Atellica Sample Handler (Connect)",
+        "Type": 1,
+        "Version": 10617
+    },
+    {
+        "DisableRemoteControl": false,
+        "DisplayName": "ADVIA Centaur XPT",
+        "Id": 1001,
+        "MaxHourlyThroughput": 0,
+        "Name": "ADVIA Centaur XPT",
+        "Type": 1,
+        "Version": 10596
+    },
+    {
+        "DisableRemoteControl": false,
+        "DisplayName": "IMMULITE 2000 XPi",
+        "Id": 1005,
+        "MaxHourlyThroughput": 0,
+        "Name": "IMMULITE 2000 XPi",
+        "Type": 1,
+        "Version": 10602
+    },
+    {
+        "DisableRemoteControl": false,
+        "DisplayName": "Dimension Vista 500",
+        "Id": 1008,
+        "MaxHourlyThroughput": 0,
+        "Name": "Dimension Vista 500",
+        "Type": 1,
+        "Version": 10606
+    },
+    {
+        "DisableRemoteControl": false,
+        "DisplayName": "Atellica Process Manager Server",
+        "Id": 1101,
+        "MaxHourlyThroughput": 0,
+        "Name": "Atellica PM Server",
+        "Type": 5,
+        "Version": 10593
+    },
+    {
+        "DisableRemoteControl": false,
+        "DisplayName": "IMMULITE 2000",
+        "Id": 10001,
+        "MaxHourlyThroughput": 0,
+        "Name": "IMMULITE 2000",
+        "Type": 1,
+        "Version": 10601
+    },
+    {
+        "DisableRemoteControl": false,
+        "DisplayName": "Dimension EXL",
+        "Id": 70000,
+        "MaxHourlyThroughput": 0,
+        "Name": "Dimension EXL",
+        "Type": 1,
+        "Version": 10603
+    },
+    {
+        "DisableRemoteControl": false,
+        "DisplayName": "Dimension EXL 200",
+        "Id": 70001,
+        "MaxHourlyThroughput": 0,
+        "Name": "Dimension EXL 200",
+        "Type": 1,
+        "Version": 10604
+    }
+]

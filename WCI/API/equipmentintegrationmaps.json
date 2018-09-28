@@ -1,0 +1,442 @@
+[
+    {
+        "EquipmentId": 10005,
+        "ExternalEquipmentKey": "DMS10005",
+        "ExternalEquipmentName": "DMS10005",
+        "ExternalSystemId": 2,
+        "Id": 1,
+        "Version": 44242
+    },
+    {
+        "EquipmentId": 62,
+        "ExternalEquipmentKey": "DMS62",
+        "ExternalEquipmentName": "DMS62",
+        "ExternalSystemId": 2,
+        "Id": 2,
+        "Version": 44243
+    },
+    {
+        "EquipmentId": 78,
+        "ExternalEquipmentKey": "DMS78",
+        "ExternalEquipmentName": "DMS78",
+        "ExternalSystemId": 2,
+        "Id": 3,
+        "Version": 44244
+    },
+    {
+        "EquipmentId": 55,
+        "ExternalEquipmentKey": "DMS55",
+        "ExternalEquipmentName": "DMS55",
+        "ExternalSystemId": 2,
+        "Id": 4,
+        "Version": 44245
+    },
+    {
+        "EquipmentId": 87,
+        "ExternalEquipmentKey": "DMS87",
+        "ExternalEquipmentName": "DMS87",
+        "ExternalSystemId": 2,
+        "Id": 5,
+        "Version": 44246
+    },
+    {
+        "EquipmentId": 10131,
+        "ExternalEquipmentKey": "DMS10131",
+        "ExternalEquipmentName": "DMS10131",
+        "ExternalSystemId": 2,
+        "Id": 6,
+        "Version": 44247
+    },
+    {
+        "EquipmentId": 10132,
+        "ExternalEquipmentKey": "DMS10132",
+        "ExternalEquipmentName": "DMS10132",
+        "ExternalSystemId": 2,
+        "Id": 7,
+        "Version": 44248
+    },
+    {
+        "EquipmentId": 10111,
+        "ExternalEquipmentKey": "DMS10111",
+        "ExternalEquipmentName": "DMS10111",
+        "ExternalSystemId": 2,
+        "Id": 8,
+        "Version": 44249
+    },
+    {
+        "EquipmentId": 10112,
+        "ExternalEquipmentKey": "DMS10112",
+        "ExternalEquipmentName": "DMS10112",
+        "ExternalSystemId": 2,
+        "Id": 9,
+        "Version": 44250
+    },
+    {
+        "EquipmentId": 10113,
+        "ExternalEquipmentKey": "DMS10113",
+        "ExternalEquipmentName": "DMS10113",
+        "ExternalSystemId": 2,
+        "Id": 10,
+        "Version": 44251
+    },
+    {
+        "EquipmentId": 10114,
+        "ExternalEquipmentKey": "DMS10114",
+        "ExternalEquipmentName": "DMS10114",
+        "ExternalSystemId": 2,
+        "Id": 11,
+        "Version": 44252
+    },
+    {
+        "EquipmentId": 10106,
+        "ExternalEquipmentKey": "DMS10106",
+        "ExternalEquipmentName": "DMS10106",
+        "ExternalSystemId": 2,
+        "Id": 12,
+        "Version": 44253
+    },
+    {
+        "EquipmentId": 10107,
+        "ExternalEquipmentKey": "DMS10107",
+        "ExternalEquipmentName": "DMS10107",
+        "ExternalSystemId": 2,
+        "Id": 13,
+        "Version": 44254
+    },
+    {
+        "EquipmentId": 10108,
+        "ExternalEquipmentKey": "DMS10108",
+        "ExternalEquipmentName": "DMS10108",
+        "ExternalSystemId": 2,
+        "Id": 14,
+        "Version": 44255
+    },
+    {
+        "EquipmentId": 10109,
+        "ExternalEquipmentKey": "DMS10109",
+        "ExternalEquipmentName": "DMS10109",
+        "ExternalSystemId": 2,
+        "Id": 15,
+        "Version": 44256
+    },
+    {
+        "EquipmentId": 10110,
+        "ExternalEquipmentKey": "DMS10110",
+        "ExternalEquipmentName": "DMS10110",
+        "ExternalSystemId": 2,
+        "Id": 16,
+        "Version": 44257
+    },
+    {
+        "EquipmentId": 85,
+        "ExternalEquipmentKey": "DMS85",
+        "ExternalEquipmentName": "DMS85",
+        "ExternalSystemId": 2,
+        "Id": 17,
+        "Version": 44258
+    },
+    {
+        "EquipmentId": 92,
+        "ExternalEquipmentKey": "DMS92",
+        "ExternalEquipmentName": "DMS92",
+        "ExternalSystemId": 2,
+        "Id": 18,
+        "Version": 44259
+    },
+    {
+        "EquipmentId": 93,
+        "ExternalEquipmentKey": "DMS93",
+        "ExternalEquipmentName": "DMS93",
+        "ExternalSystemId": 2,
+        "Id": 19,
+        "Version": 44260
+    },
+    {
+        "EquipmentId": 47,
+        "ExternalEquipmentKey": "DMS47",
+        "ExternalEquipmentName": "DMS47",
+        "ExternalSystemId": 2,
+        "Id": 20,
+        "Version": 44261
+    },
+    {
+        "EquipmentId": 48,
+        "ExternalEquipmentKey": "DMS48",
+        "ExternalEquipmentName": "DMS48",
+        "ExternalSystemId": 2,
+        "Id": 21,
+        "Version": 44262
+    },
+    {
+        "EquipmentId": 58,
+        "ExternalEquipmentKey": "DMS58",
+        "ExternalEquipmentName": "DMS58",
+        "ExternalSystemId": 2,
+        "Id": 22,
+        "Version": 44263
+    },
+    {
+        "EquipmentId": 135,
+        "ExternalEquipmentKey": "DMS135",
+        "ExternalEquipmentName": "DMS135",
+        "ExternalSystemId": 2,
+        "Id": 23,
+        "Version": 44264
+    },
+    {
+        "EquipmentId": 133,
+        "ExternalEquipmentKey": "DMS133",
+        "ExternalEquipmentName": "DMS133",
+        "ExternalSystemId": 2,
+        "Id": 24,
+        "Version": 44265
+    },
+    {
+        "EquipmentId": 10115,
+        "ExternalEquipmentKey": "DMS10115",
+        "ExternalEquipmentName": "DMS10115",
+        "ExternalSystemId": 2,
+        "Id": 25,
+        "Version": 44266
+    },
+    {
+        "EquipmentId": 10116,
+        "ExternalEquipmentKey": "DMS10116",
+        "ExternalEquipmentName": "DMS10116",
+        "ExternalSystemId": 2,
+        "Id": 26,
+        "Version": 44267
+    },
+    {
+        "EquipmentId": 10117,
+        "ExternalEquipmentKey": "DMS10117",
+        "ExternalEquipmentName": "DMS10117",
+        "ExternalSystemId": 2,
+        "Id": 27,
+        "Version": 44268
+    },
+    {
+        "EquipmentId": 10118,
+        "ExternalEquipmentKey": "DMS10118",
+        "ExternalEquipmentName": "DMS10118",
+        "ExternalSystemId": 2,
+        "Id": 28,
+        "Version": 44269
+    },
+    {
+        "EquipmentId": 10119,
+        "ExternalEquipmentKey": "DMS10119",
+        "ExternalEquipmentName": "DMS10119",
+        "ExternalSystemId": 2,
+        "Id": 29,
+        "Version": 44270
+    },
+    {
+        "EquipmentId": 10120,
+        "ExternalEquipmentKey": "DMS10120",
+        "ExternalEquipmentName": "DMS10120",
+        "ExternalSystemId": 2,
+        "Id": 30,
+        "Version": 44271
+    },
+    {
+        "EquipmentId": 138,
+        "ExternalEquipmentKey": "DMS138",
+        "ExternalEquipmentName": "DMS138",
+        "ExternalSystemId": 2,
+        "Id": 31,
+        "Version": 44272
+    },
+    {
+        "EquipmentId": 139,
+        "ExternalEquipmentKey": "DMS139",
+        "ExternalEquipmentName": "DMS139",
+        "ExternalSystemId": 2,
+        "Id": 32,
+        "Version": 44273
+    },
+    {
+        "EquipmentId": 142,
+        "ExternalEquipmentKey": "DMS142",
+        "ExternalEquipmentName": "DMS142",
+        "ExternalSystemId": 2,
+        "Id": 33,
+        "Version": 44274
+    },
+    {
+        "EquipmentId": 143,
+        "ExternalEquipmentKey": "DMS143",
+        "ExternalEquipmentName": "DMS143",
+        "ExternalSystemId": 2,
+        "Id": 34,
+        "Version": 44275
+    },
+    {
+        "EquipmentId": 145,
+        "ExternalEquipmentKey": "DMS145",
+        "ExternalEquipmentName": "DMS145",
+        "ExternalSystemId": 2,
+        "Id": 35,
+        "Version": 44276
+    },
+    {
+        "EquipmentId": 10103,
+        "ExternalEquipmentKey": "DMS10103",
+        "ExternalEquipmentName": "DMS10103",
+        "ExternalSystemId": 2,
+        "Id": 36,
+        "Version": 44277
+    },
+    {
+        "EquipmentId": 10105,
+        "ExternalEquipmentKey": "DMS10105",
+        "ExternalEquipmentName": "DMS10105",
+        "ExternalSystemId": 2,
+        "Id": 37,
+        "Version": 44278
+    },
+    {
+        "EquipmentId": 10099,
+        "ExternalEquipmentKey": "DMS10099",
+        "ExternalEquipmentName": "DMS10099",
+        "ExternalSystemId": 2,
+        "Id": 38,
+        "Version": 44279
+    },
+    {
+        "EquipmentId": 10104,
+        "ExternalEquipmentKey": "DMS10104",
+        "ExternalEquipmentName": "DMS10104",
+        "ExternalSystemId": 2,
+        "Id": 39,
+        "Version": 44280
+    },
+    {
+        "EquipmentId": 10101,
+        "ExternalEquipmentKey": "DMS10101",
+        "ExternalEquipmentName": "DMS10101",
+        "ExternalSystemId": 2,
+        "Id": 40,
+        "Version": 44281
+    },
+    {
+        "EquipmentId": 10102,
+        "ExternalEquipmentKey": "DMS10102",
+        "ExternalEquipmentName": "DMS10102",
+        "ExternalSystemId": 2,
+        "Id": 41,
+        "Version": 44282
+    },
+    {
+        "EquipmentId": 10100,
+        "ExternalEquipmentKey": "DMS10100",
+        "ExternalEquipmentName": "DMS10100",
+        "ExternalSystemId": 2,
+        "Id": 42,
+        "Version": 44283
+    },
+    {
+        "EquipmentId": 10098,
+        "ExternalEquipmentKey": "DMS10098",
+        "ExternalEquipmentName": "DMS10098",
+        "ExternalSystemId": 2,
+        "Id": 43,
+        "Version": 44284
+    },
+    {
+        "EquipmentId": 34,
+        "ExternalEquipmentKey": "DMS34",
+        "ExternalEquipmentName": "DMS34",
+        "ExternalSystemId": 2,
+        "Id": 44,
+        "Version": 44285
+    },
+    {
+        "EquipmentId": 10002,
+        "ExternalEquipmentKey": "DMS10002",
+        "ExternalEquipmentName": "DMS10002",
+        "ExternalSystemId": 2,
+        "Id": 45,
+        "Version": 44286
+    },
+    {
+        "EquipmentId": 19,
+        "ExternalEquipmentKey": "DMS19",
+        "ExternalEquipmentName": "DMS19",
+        "ExternalSystemId": 2,
+        "Id": 46,
+        "Version": 44287
+    },
+    {
+        "EquipmentId": 10133,
+        "ExternalEquipmentKey": "DMS10133",
+        "ExternalEquipmentName": "DMS10133",
+        "ExternalSystemId": 2,
+        "Id": 47,
+        "Version": 44289
+    },
+    {
+        "EquipmentId": 86,
+        "ExternalEquipmentKey": "DMS86",
+        "ExternalEquipmentName": "DMS86",
+        "ExternalSystemId": 2,
+        "Id": 48,
+        "Version": 44290
+    },
+    {
+        "EquipmentId": null,
+        "ExternalEquipmentKey": "DMS10140",
+        "ExternalEquipmentName": "DMS10140",
+        "ExternalSystemId": 2,
+        "Id": 49,
+        "Version": 12104
+    },
+    {
+        "EquipmentId": null,
+        "ExternalEquipmentKey": "DMS10141",
+        "ExternalEquipmentName": "DMS10141",
+        "ExternalSystemId": 2,
+        "Id": 50,
+        "Version": 12106
+    },
+    {
+        "EquipmentId": 20,
+        "ExternalEquipmentKey": "DMS20",
+        "ExternalEquipmentName": "DMS20",
+        "ExternalSystemId": 2,
+        "Id": 51,
+        "Version": 44291
+    },
+    {
+        "EquipmentId": 140,
+        "ExternalEquipmentKey": "DMS140",
+        "ExternalEquipmentName": "DMS140",
+        "ExternalSystemId": 2,
+        "Id": 52,
+        "Version": 44292
+    },
+    {
+        "EquipmentId": 84,
+        "ExternalEquipmentKey": "DMS84",
+        "ExternalEquipmentName": "DMS84",
+        "ExternalSystemId": 2,
+        "Id": 53,
+        "Version": 44293
+    },
+    {
+        "EquipmentId": 10134,
+        "ExternalEquipmentKey": "DMS10134",
+        "ExternalEquipmentName": "DMS10134",
+        "ExternalSystemId": 2,
+        "Id": 54,
+        "Version": 44294
+    },
+    {
+        "EquipmentId": 10135,
+        "ExternalEquipmentKey": "DMS10135",
+        "ExternalEquipmentName": "DMS10135",
+        "ExternalSystemId": 2,
+        "Id": 55,
+        "Version": 44295
+    }
+]

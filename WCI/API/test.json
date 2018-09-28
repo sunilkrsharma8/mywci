@@ -1,0 +1,3560 @@
+[
+    {
+        "Code": "WBC",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "WBC"
+    },
+    {
+        "Code": "RBC",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "RBC"
+    },
+    {
+        "Code": "HGB",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "HGB"
+    },
+    {
+        "Code": "HCT",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "HCT"
+    },
+    {
+        "Code": "MCV",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "MCV"
+    },
+    {
+        "Code": "MCH",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "MCH"
+    },
+    {
+        "Code": "MCHC",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "MCHC"
+    },
+    {
+        "Code": "CHCM",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "CHCM"
+    },
+    {
+        "Code": "RDW",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "RDW"
+    },
+    {
+        "Code": "CH",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "CH"
+    },
+    {
+        "Code": "RDWg",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "RDWg"
+    },
+    {
+        "Code": "RDWr",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "RDWr"
+    },
+    {
+        "Code": "HDW",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "HDW"
+    },
+    {
+        "Code": "HDWg",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "HDWg"
+    },
+    {
+        "Code": "HDWr",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "HDWr"
+    },
+    {
+        "Code": "CHDWg",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "CHDWg"
+    },
+    {
+        "Code": "CHDWr",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "CHDWr"
+    },
+    {
+        "Code": "PLT",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "PLT"
+    },
+    {
+        "Code": "MPV",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "MPV"
+    },
+    {
+        "Code": "PDW",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "PDW"
+    },
+    {
+        "Code": "PCT",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "PCT"
+    },
+    {
+        "Code": "NEUTp",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "NEUTp"
+    },
+    {
+        "Code": "LYMp",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "LYMp"
+    },
+    {
+        "Code": "MONOp",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "MONOp"
+    },
+    {
+        "Code": "EOSp",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "EOSp"
+    },
+    {
+        "Code": "BASOp",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "BASOp"
+    },
+    {
+        "Code": "LUCp",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "LUCp"
+    },
+    {
+        "Code": "NEUTc",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "NEUTc"
+    },
+    {
+        "Code": "LYMc",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "LYMc"
+    },
+    {
+        "Code": "MONOc",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "MONOc"
+    },
+    {
+        "Code": "EOSc",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "EOSc"
+    },
+    {
+        "Code": "BASOc",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "BASOc"
+    },
+    {
+        "Code": "LUCc",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "LUCc"
+    },
+    {
+        "Code": "WBCP",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "WBCP"
+    },
+    {
+        "Code": "WBCB",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "WBCB"
+    },
+    {
+        "Code": "LI",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "LI"
+    },
+    {
+        "Code": "MPXI",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "MPXI"
+    },
+    {
+        "Code": "RETICp",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "RETICp"
+    },
+    {
+        "Code": "RETICc",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "RETICc"
+    },
+    {
+        "Code": "RTCRBC",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "RTCRBC"
+    },
+    {
+        "Code": "MCVg",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "MCVg"
+    },
+    {
+        "Code": "MCVr",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "MCVr"
+    },
+    {
+        "Code": "CHCMg",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "CHCMg"
+    },
+    {
+        "Code": "CHCMr",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "CHCMr"
+    },
+    {
+        "Code": "CHg",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "CHg"
+    },
+    {
+        "Code": "CHr",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "CHr"
+    },
+    {
+        "Code": "NEUTx",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "NEUTx"
+    },
+    {
+        "Code": "NEUTy",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "NEUTy"
+    },
+    {
+        "Code": "TOP",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "TOP"
+    },
+    {
+        "Code": "ECP",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "ECP"
+    },
+    {
+        "Code": "EPO",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "EPO"
+    },
+    {
+        "Code": "CAL",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "CAL"
+    },
+    {
+        "Code": "ANISO",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "ANISO"
+    },
+    {
+        "Code": "RPT",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "RPT"
+    },
+    {
+        "Code": "OCN",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "OCN"
+    },
+    {
+        "Code": "RCK",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "RCK"
+    },
+    {
+        "Code": "RDI",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "RDI"
+    },
+    {
+        "Code": "MICRO",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "MICRO"
+    },
+    {
+        "Code": "RMY",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "RMY"
+    },
+    {
+        "Code": "NTP",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "NTP"
+    },
+    {
+        "Code": "RTI",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "RTI"
+    },
+    {
+        "Code": "GH",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "GH"
+    },
+    {
+        "Code": "MACRO",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "MACRO"
+    },
+    {
+        "Code": "BP3",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "BP3"
+    },
+    {
+        "Code": "IG1",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "IG1"
+    },
+    {
+        "Code": "CMV",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "CMV"
+    },
+    {
+        "Code": "CMM",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "CMM"
+    },
+    {
+        "Code": "HCVAR",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "HCVAR"
+    },
+    {
+        "Code": "HER",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "HER"
+    },
+    {
+        "Code": "HPG",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "HPG"
+    },
+    {
+        "Code": "HYPO",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "HYPO"
+    },
+    {
+        "Code": "HYPER",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "HYPER"
+    },
+    {
+        "Code": "RBCF",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "RBCF"
+    },
+    {
+        "Code": "RBCG",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "RBCG"
+    },
+    {
+        "Code": "LPLT",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "LPLT"
+    },
+    {
+        "Code": "PLTCLM",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "PLTCLM"
+    },
+    {
+        "Code": "NRBC",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "NRBC"
+    },
+    {
+        "Code": "NRBCc",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "NRBCc"
+    },
+    {
+        "Code": "NRBCp",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "NRBCp"
+    },
+    {
+        "Code": "Slide",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "Slide"
+    },
+    {
+        "Code": "IG",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "IG"
+    },
+    {
+        "Code": "LS",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "LS"
+    },
+    {
+        "Code": "ATYPS",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "ATYPS"
+    },
+    {
+        "Code": "BLASTS",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "BLASTS"
+    },
+    {
+        "Code": "MPO",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "MPO"
+    },
+    {
+        "Code": "HemImage",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "HemImage"
+    },
+    {
+        "Code": "ALPDEA",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "ALPDEA"
+    },
+    {
+        "Code": "AMYLAS U",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "AMYLAS U"
+    },
+    {
+        "Code": "ALT",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "ALT"
+    },
+    {
+        "Code": "CA U",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "CA U"
+    },
+    {
+        "Code": "CKNAC",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "CKNAC"
+    },
+    {
+        "Code": "CHOL",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "CHOL"
+    },
+    {
+        "Code": "HDL 11",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "HDL 11"
+    },
+    {
+        "Code": "CREAT",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "CREAT"
+    },
+    {
+        "Code": "CREAT U",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "CREAT U"
+    },
+    {
+        "Code": "D BILI",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "D BILI"
+    },
+    {
+        "Code": "GLUC H11",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "GLUC H11"
+    },
+    {
+        "Code": "GLUC H U11",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "GLUC H U11"
+    },
+    {
+        "Code": "GLUC O",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "GLUC O"
+    },
+    {
+        "Code": "GLUC O U",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "GLUC O U"
+    },
+    {
+        "Code": "I PHOS",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "I PHOS"
+    },
+    {
+        "Code": "I PHOS U",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "I PHOS U"
+    },
+    {
+        "Code": "LDL",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "LDL"
+    },
+    {
+        "Code": "THEO",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "THEO"
+    },
+    {
+        "Code": "DIG",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "DIG"
+    },
+    {
+        "Code": "PHNY",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "PHNY"
+    },
+    {
+        "Code": "CARB",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "CARB"
+    },
+    {
+        "Code": "LD-LP",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "LD-LP"
+    },
+    {
+        "Code": "MAG U",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "MAG U"
+    },
+    {
+        "Code": "T BILI",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "T BILI"
+    },
+    {
+        "Code": "UN",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "UN"
+    },
+    {
+        "Code": "UN U",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "UN U"
+    },
+    {
+        "Code": "UA",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "UA"
+    },
+    {
+        "Code": "UA U",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "UA U"
+    },
+    {
+        "Code": "NA",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "NA"
+    },
+    {
+        "Code": "Cl",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "Cl"
+    },
+    {
+        "Code": "IRON",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "IRON"
+    },
+    {
+        "Code": "LD-PL",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "LD-PL"
+    },
+    {
+        "Code": "TP",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "TP"
+    },
+    {
+        "Code": "CREA_E",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "CREA_E"
+    },
+    {
+        "Code": "MALB U",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "MALB U"
+    },
+    {
+        "Code": "IGM",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "IGM"
+    },
+    {
+        "Code": "IGG",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "IGG"
+    },
+    {
+        "Code": "IGA",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "IGA"
+    },
+    {
+        "Code": "APO-B",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "APO-B"
+    },
+    {
+        "Code": "APO-A",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "APO-A"
+    },
+    {
+        "Code": "CRP",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "CRP"
+    },
+    {
+        "Code": "CO2",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "CO2"
+    },
+    {
+        "Code": "CHE",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "CHE"
+    },
+    {
+        "Code": "Cortisol U",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "Cortisol U"
+    },
+    {
+        "Code": "ICTE",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "ICTE"
+    },
+    {
+        "Code": "LIPE",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "LIPE"
+    },
+    {
+        "Code": "HEMO",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "HEMO"
+    },
+    {
+        "Code": "GLOB",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "GLOB"
+    },
+    {
+        "Code": "A\/G",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "A\/G"
+    },
+    {
+        "Code": "GAP",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "GAP"
+    },
+    {
+        "Code": "Total IgE",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "Total IgE"
+    },
+    {
+        "Code": "SIgE",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "SIgE"
+    },
+    {
+        "Code": "FER",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "FER"
+    },
+    {
+        "Code": "FOL",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "FOL"
+    },
+    {
+        "Code": "RFO",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "RFO"
+    },
+    {
+        "Code": "VB12",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "VB12"
+    },
+    {
+        "Code": "CKMB",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "CKMB"
+    },
+    {
+        "Code": "CKMBJ",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "CKMBJ"
+    },
+    {
+        "Code": "CTNI",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "CTNI"
+    },
+    {
+        "Code": "MYO",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "MYO"
+    },
+    {
+        "Code": "E26",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "E26"
+    },
+    {
+        "Code": "FSH",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "FSH"
+    },
+    {
+        "Code": "LH",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "LH"
+    },
+    {
+        "Code": "PRGE",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "PRGE"
+    },
+    {
+        "Code": "PRL",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "PRL"
+    },
+    {
+        "Code": "TSTO",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "TSTO"
+    },
+    {
+        "Code": "ThCG",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "ThCG"
+    },
+    {
+        "Code": "AFP",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "AFP"
+    },
+    {
+        "Code": "BR",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "BR"
+    },
+    {
+        "Code": "CEA",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "CEA"
+    },
+    {
+        "Code": "CA199",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "CA199"
+    },
+    {
+        "Code": "KM199",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "KM199"
+    },
+    {
+        "Code": "OV",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "OV"
+    },
+    {
+        "Code": "CA 125",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "CA 125"
+    },
+    {
+        "Code": "PSA",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "PSA"
+    },
+    {
+        "Code": "cPSA",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "cPSA"
+    },
+    {
+        "Code": "DGTN",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "DGTN"
+    },
+    {
+        "Code": "PHNB",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "PHNB"
+    },
+    {
+        "Code": "TOBR",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "TOBR"
+    },
+    {
+        "Code": "FrT4",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "FrT4"
+    },
+    {
+        "Code": "FT3",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "FT3"
+    },
+    {
+        "Code": "T3",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "T3"
+    },
+    {
+        "Code": "T4",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "T4"
+    },
+    {
+        "Code": "TSH",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "TSH"
+    },
+    {
+        "Code": "TSH-3",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "TSH-3"
+    },
+    {
+        "Code": "TUp",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "TUp"
+    },
+    {
+        "Code": "aTPO",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "aTPO"
+    },
+    {
+        "Code": "FTI",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "FTI"
+    },
+    {
+        "Code": "PHTN",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "PHTN"
+    },
+    {
+        "Code": "THE",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "THE"
+    },
+    {
+        "Code": "THEO 2",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "THEO 2"
+    },
+    {
+        "Code": "VANC",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "VANC"
+    },
+    {
+        "Code": "aHBs",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "aHBs"
+    },
+    {
+        "Code": "HCY",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "HCY"
+    },
+    {
+        "Code": "EST",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "EST"
+    },
+    {
+        "Code": "IRI",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "IRI"
+    },
+    {
+        "Code": "VALP",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "VALP"
+    },
+    {
+        "Code": "CA 125II",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "CA 125II"
+    },
+    {
+        "Code": "CpS",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "CpS"
+    },
+    {
+        "Code": "RubG",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "RubG"
+    },
+    {
+        "Code": "aTG",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "aTG"
+    },
+    {
+        "Code": "iPTH",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "iPTH"
+    },
+    {
+        "Code": "CA15-3",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "CA15-3"
+    },
+    {
+        "Code": "CA19-9",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "CA19-9"
+    },
+    {
+        "Code": "FolateBA",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "FolateBA"
+    },
+    {
+        "Code": "ToxG",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "ToxG"
+    },
+    {
+        "Code": "ALSCRN",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "ALSCRN"
+    },
+    {
+        "Code": "RubM",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "RubM"
+    },
+    {
+        "Code": "ToxM",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "ToxM"
+    },
+    {
+        "Code": "TXP",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "TXP"
+    },
+    {
+        "Code": "H2N",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "H2N"
+    },
+    {
+        "Code": "HCG-ER",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "HCG-ER"
+    },
+    {
+        "Code": "CA72-4",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "CA72-4"
+    },
+    {
+        "Code": "aHBcM",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "aHBcM"
+    },
+    {
+        "Code": "aHBcT",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "aHBcT"
+    },
+    {
+        "Code": "BNP",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "BNP"
+    },
+    {
+        "Code": "E26 111",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "E26 111"
+    },
+    {
+        "Code": "HIV",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "HIV"
+    },
+    {
+        "Code": "aHAVM",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "aHAVM"
+    },
+    {
+        "Code": "aHAVT",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "aHAVT"
+    },
+    {
+        "Code": "HBcT",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "HBcT"
+    },
+    {
+        "Code": "HCV",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "HCV"
+    },
+    {
+        "Code": "HBs",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "HBs"
+    },
+    {
+        "Code": "Conf",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "Conf"
+    },
+    {
+        "Code": "DPD",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "DPD"
+    },
+    {
+        "Code": "B2S",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "B2S"
+    },
+    {
+        "Code": "B2U",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "B2U"
+    },
+    {
+        "Code": "NAPA",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "NAPA"
+    },
+    {
+        "Code": "PROC",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "PROC"
+    },
+    {
+        "Code": "QUIN",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "QUIN"
+    },
+    {
+        "Code": "uE3",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "uE3"
+    },
+    {
+        "Code": "VPA",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "VPA"
+    },
+    {
+        "Code": "VAN",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "VAN"
+    },
+    {
+        "Code": "COL",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "COL"
+    },
+    {
+        "Code": "CLA",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "CLA"
+    },
+    {
+        "Code": "GLU",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "GLU"
+    },
+    {
+        "Code": "BIL",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "BIL"
+    },
+    {
+        "Code": "KET",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "KET"
+    },
+    {
+        "Code": "SG",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "SG"
+    },
+    {
+        "Code": "BLO",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "BLO"
+    },
+    {
+        "Code": "pH",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "pH"
+    },
+    {
+        "Code": "PRO",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "PRO"
+    },
+    {
+        "Code": "URO",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "URO"
+    },
+    {
+        "Code": "NIT",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "NIT"
+    },
+    {
+        "Code": "LEU",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "LEU"
+    },
+    {
+        "Code": "RefAllgn",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "RefAllgn"
+    },
+    {
+        "Code": "wrCRP",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "wrCRP"
+    },
+    {
+        "Code": "uALB",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "uALB"
+    },
+    {
+        "Code": "TIBC",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "TIBC"
+    },
+    {
+        "Code": "SAL",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "SAL"
+    },
+    {
+        "Code": "PREALB",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "PREALB"
+    },
+    {
+        "Code": "RF",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "RF"
+    },
+    {
+        "Code": "PAMY",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "PAMY"
+    },
+    {
+        "Code": "HbA1C",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "HbA1C"
+    },
+    {
+        "Code": "MG",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "MG"
+    },
+    {
+        "Code": "LIP",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "LIP"
+    },
+    {
+        "Code": "LAC",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "LAC"
+    },
+    {
+        "Code": "IP",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "IP"
+    },
+    {
+        "Code": "HAPT",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "HAPT"
+    },
+    {
+        "Code": "ETOH",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "ETOH"
+    },
+    {
+        "Code": "D LDL",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "D LDL"
+    },
+    {
+        "Code": "C4",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "C4"
+    },
+    {
+        "Code": "C3",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "C3"
+    },
+    {
+        "Code": "CO2_L",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "CO2_L"
+    },
+    {
+        "Code": "ASO",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "ASO"
+    },
+    {
+        "Code": "AMM",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "AMM"
+    },
+    {
+        "Code": "ACP",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "ACP"
+    },
+    {
+        "Code": "AAT",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "AAT"
+    },
+    {
+        "Code": "ACET",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "ACET"
+    },
+    {
+        "Code": "GENT",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "GENT"
+    },
+    {
+        "Code": "ACTMN",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "ACTMN"
+    },
+    {
+        "Code": "ALP-A",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "ALP-A"
+    },
+    {
+        "Code": "ALP-D",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "ALP-D"
+    },
+    {
+        "Code": "AMON",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "AMON"
+    },
+    {
+        "Code": "AMY",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "AMY"
+    },
+    {
+        "Code": "APO-A1",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "APO-A1"
+    },
+    {
+        "Code": "B2M",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "B2M"
+    },
+    {
+        "Code": "CA 125ll",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "CA 125ll"
+    },
+    {
+        "Code": "CA 15-3",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "CA 15-3"
+    },
+    {
+        "Code": "CA 19-9",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "CA 19-9"
+    },
+    {
+        "Code": "CA 72-4",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "CA 72-4"
+    },
+    {
+        "Code": "CK",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "CK"
+    },
+    {
+        "Code": "CORT",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "CORT"
+    },
+    {
+        "Code": "CREA",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "CREA"
+    },
+    {
+        "Code": "DBIL",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "DBIL"
+    },
+    {
+        "Code": "FERR",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "FERR"
+    },
+    {
+        "Code": "FT4",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "FT4"
+    },
+    {
+        "Code": "GENTA",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "GENTA"
+    },
+    {
+        "Code": "hCG",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "hCG"
+    },
+    {
+        "Code": "HDL",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "HDL"
+    },
+    {
+        "Code": "PHB",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "PHB"
+    },
+    {
+        "Code": "PHOS",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "PHOS"
+    },
+    {
+        "Code": "PHY",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "PHY"
+    },
+    {
+        "Code": "PROL",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "PROL"
+    },
+    {
+        "Code": "TBIL",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "TBIL"
+    },
+    {
+        "Code": "TEST",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "TEST"
+    },
+    {
+        "Code": "Tnl",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "Tnl"
+    },
+    {
+        "Code": "TOBRA",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "TOBRA"
+    },
+    {
+        "Code": "3Gen TSH",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "3Gen TSH"
+    },
+    {
+        "Code": "UIBC",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "UIBC"
+    },
+    {
+        "Code": "PT",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "PT"
+    },
+    {
+        "Code": "APTT",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "APTT"
+    },
+    {
+        "Code": "Fib",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "Fib"
+    },
+    {
+        "Code": "TT",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "TT"
+    },
+    {
+        "Code": "Reptilase",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "Reptilase"
+    },
+    {
+        "Code": "Factor II",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "Factor II"
+    },
+    {
+        "Code": "Factor V",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "Factor V"
+    },
+    {
+        "Code": "Factor VII",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "Factor VII"
+    },
+    {
+        "Code": "Factor X",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "Factor X"
+    },
+    {
+        "Code": "Factor VIII",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "Factor VIII"
+    },
+    {
+        "Code": "Factor IX",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "Factor IX"
+    },
+    {
+        "Code": "Factor XI",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "Factor XI"
+    },
+    {
+        "Code": "Factor XII",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "Factor XII"
+    },
+    {
+        "Code": "Protein C",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "Protein C"
+    },
+    {
+        "Code": "Protein S",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "Protein S"
+    },
+    {
+        "Code": "APC-R",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "APC-R"
+    },
+    {
+        "Code": "ATIII",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "ATIII"
+    },
+    {
+        "Code": "UFH",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "UFH"
+    },
+    {
+        "Code": "LMWH",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "LMWH"
+    },
+    {
+        "Code": "PLG",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "PLG"
+    },
+    {
+        "Code": "AP",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "AP"
+    },
+    {
+        "Code": "Free PS",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "Free PS"
+    },
+    {
+        "Code": "D-Di",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "D-Di"
+    },
+    {
+        "Code": "vWF",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "vWF"
+    },
+    {
+        "Code": "sfWBC",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "sfWBC"
+    },
+    {
+        "Code": "sf%PMN",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "sf%PMN"
+    },
+    {
+        "Code": "sf%MN",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "sf%MN"
+    },
+    {
+        "Code": "sf%NEU",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "sf%NEU"
+    },
+    {
+        "Code": "sf%LYM",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "sf%LYM"
+    },
+    {
+        "Code": "sf%MON",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "sf%MON"
+    },
+    {
+        "Code": "sf%EOS",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "sf%EOS"
+    },
+    {
+        "Code": "sf#PMN",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "sf#PMN"
+    },
+    {
+        "Code": "sf#MN",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "sf#MN"
+    },
+    {
+        "Code": "sf#NEU",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "sf#NEU"
+    },
+    {
+        "Code": "sf#LYM",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "sf#LYM"
+    },
+    {
+        "Code": "sf#MON",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "sf#MON"
+    },
+    {
+        "Code": "sf#EOS",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "sf#EOS"
+    },
+    {
+        "Code": "sfRBC",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "sfRBC"
+    },
+    {
+        "Code": "LBP",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "LBP"
+    },
+    {
+        "Code": "TNA",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "TNA"
+    },
+    {
+        "Code": "ACT",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "ACT"
+    },
+    {
+        "Code": "AND",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "AND"
+    },
+    {
+        "Code": "DHS",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "DHS"
+    },
+    {
+        "Code": "RHC",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "RHC"
+    },
+    {
+        "Code": "FBC",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "FBC"
+    },
+    {
+        "Code": "PAA",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "PAA"
+    },
+    {
+        "Code": "SBG",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "SBG"
+    },
+    {
+        "Code": "ATA",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "ATA"
+    },
+    {
+        "Code": "T3F",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "T3F"
+    },
+    {
+        "Code": "T4F",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "T4F"
+    },
+    {
+        "Code": "RTH",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "RTH"
+    },
+    {
+        "Code": "TBG",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "TBG"
+    },
+    {
+        "Code": "TG",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "TG"
+    },
+    {
+        "Code": "TU",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "TU"
+    },
+    {
+        "Code": "PAP",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "PAP"
+    },
+    {
+        "Code": "fPS",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "fPS"
+    },
+    {
+        "Code": "sPS",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "sPS"
+    },
+    {
+        "Code": "TPS",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "TPS"
+    },
+    {
+        "Code": "BMG",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "BMG"
+    },
+    {
+        "Code": "THC",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "THC"
+    },
+    {
+        "Code": "GAS",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "GAS"
+    },
+    {
+        "Code": "NM",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "NM"
+    },
+    {
+        "Code": "cTL",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "cTL"
+    },
+    {
+        "Code": "KT4",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "KT4"
+    },
+    {
+        "Code": "TK9",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "TK9"
+    },
+    {
+        "Code": "SPG",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "SPG"
+    },
+    {
+        "Code": "DDI",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "DDI"
+    },
+    {
+        "Code": "CVG",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "CVG"
+    },
+    {
+        "Code": "BcM",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "BcM"
+    },
+    {
+        "Code": "TXU",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "TXU"
+    },
+    {
+        "Code": "TOB",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "TOB"
+    },
+    {
+        "Code": "TT4",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "TT4"
+    },
+    {
+        "Code": "CT",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "CT"
+    },
+    {
+        "Code": "CTGC",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "CTGC"
+    },
+    {
+        "Code": "HIV RNA 3.0",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "HIV RNA 3.0"
+    },
+    {
+        "Code": "HBV DNA 3.0",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "HBV DNA 3.0"
+    },
+    {
+        "Code": "HCV RNA 3.0",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "HCV RNA 3.0"
+    },
+    {
+        "Code": "CMB",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "CMB"
+    },
+    {
+        "Code": "aBC",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "aBC"
+    },
+    {
+        "Code": "A1AG",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "A1AG"
+    },
+    {
+        "Code": "A1AT",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "A1AT"
+    },
+    {
+        "Code": "A1MIC",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "A1MIC"
+    },
+    {
+        "Code": "ACTM",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "ACTM"
+    },
+    {
+        "Code": "ALP",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "ALP"
+    },
+    {
+        "Code": "AMPH1000",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "AMPH1000"
+    },
+    {
+        "Code": "AMPH300",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "AMPH300"
+    },
+    {
+        "Code": "AMPH500",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "AMPH500"
+    },
+    {
+        "Code": "ASL",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "ASL"
+    },
+    {
+        "Code": "B12",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "B12"
+    },
+    {
+        "Code": "B2MIC",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "B2MIC"
+    },
+    {
+        "Code": "BARB",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "BARB"
+    },
+    {
+        "Code": "BENZ",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "BENZ"
+    },
+    {
+        "Code": "BHCG",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "BHCG"
+    },
+    {
+        "Code": "CER",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "CER"
+    },
+    {
+        "Code": "COC150",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "COC150"
+    },
+    {
+        "Code": "COC300",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "COC300"
+    },
+    {
+        "Code": "CRBM",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "CRBM"
+    },
+    {
+        "Code": "CYSC",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "CYSC"
+    },
+    {
+        "Code": "DGTX",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "DGTX"
+    },
+    {
+        "Code": "EXT300",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "EXT300"
+    },
+    {
+        "Code": "EXT500",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "EXT500"
+    },
+    {
+        "Code": "FPSA",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "FPSA"
+    },
+    {
+        "Code": "HA1C",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "HA1C"
+    },
+    {
+        "Code": "HDLC",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "HDLC"
+    },
+    {
+        "Code": "hsCRP",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "hsCRP"
+    },
+    {
+        "Code": "IGE",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "IGE"
+    },
+    {
+        "Code": "K",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "K"
+    },
+    {
+        "Code": "LA",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "LA"
+    },
+    {
+        "Code": "LDH",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "LDH"
+    },
+    {
+        "Code": "LDLC",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "LDLC"
+    },
+    {
+        "Code": "LIDO",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "LIDO"
+    },
+    {
+        "Code": "LIPL",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "LIPL"
+    },
+    {
+        "Code": "MALB",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "MALB"
+    },
+    {
+        "Code": "METH",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "METH"
+    },
+    {
+        "Code": "OPI2K",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "OPI2K"
+    },
+    {
+        "Code": "OPI300",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "OPI300"
+    },
+    {
+        "Code": "PBNP",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "PBNP"
+    },
+    {
+        "Code": "PCHE",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "PCHE"
+    },
+    {
+        "Code": "PCP",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "PCP"
+    },
+    {
+        "Code": "PTN",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "PTN"
+    },
+    {
+        "Code": "STFR",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "STFR"
+    },
+    {
+        "Code": "UCFP",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "UCFP"
+    },
+    {
+        "Code": "URCA",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "URCA"
+    },
+    {
+        "Code": "U08_1",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "U08_1"
+    },
+    {
+        "Code": "U08_2",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "U08_2"
+    },
+    {
+        "Code": "U08_3",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "U08_3"
+    },
+    {
+        "Code": "Manual Dilution",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "Manual Dilution"
+    },
+    {
+        "Code": "Hold1_1",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "Hold1_1"
+    },
+    {
+        "Code": "Hold1_2",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "Hold1_2"
+    },
+    {
+        "Code": "Hold1_3",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "Hold1_3"
+    },
+    {
+        "Code": "Hold2_3",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "Hold2_3"
+    },
+    {
+        "Code": "Hold2_2",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "Hold2_2"
+    },
+    {
+        "Code": "Hold2_1",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "Hold2_1"
+    },
+    {
+        "Code": "Hold_Skip_1",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "Hold_Skip_1"
+    },
+    {
+        "Code": "Hold_Skip_2",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "Hold_Skip_2"
+    },
+    {
+        "Code": "Hold_Skip_3",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "Hold_Skip_3"
+    },
+    {
+        "Code": "_Hold_Skip_3",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "_Hold_Skip_3"
+    },
+    {
+        "Code": "_Hold_Skip_2",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "_Hold_Skip_2"
+    },
+    {
+        "Code": "_Hold_Skip_1",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "_Hold_Skip_1"
+    },
+    {
+        "Code": "_Hold_Primary_1",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "_Hold_Primary_1"
+    },
+    {
+        "Code": "_Hold_Primary_2",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "_Hold_Primary_2"
+    },
+    {
+        "Code": "_Hold_Primary_3",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "_Hold_Primary_3"
+    },
+    {
+        "Code": "Hold_Primary_3",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "Hold_Primary_3"
+    },
+    {
+        "Code": "Hold_Primary_2",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "Hold_Primary_2"
+    },
+    {
+        "Code": "Hold_Primary_1",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "Hold_Primary_1"
+    },
+    {
+        "Code": "ALBv_S",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "ALBv_S"
+    },
+    {
+        "Code": "ALBa_S",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "ALBa_S"
+    },
+    {
+        "Code": "ALBe_S",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "ALBe_S"
+    },
+    {
+        "Code": "BUNv_S",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "BUNv_S"
+    },
+    {
+        "Code": "BUNa_S",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "BUNa_S"
+    },
+    {
+        "Code": "BUNe_S",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "BUNe_S"
+    },
+    {
+        "Code": "CAa_S",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "CAa_S"
+    },
+    {
+        "Code": "CAe_S",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "CAe_S"
+    },
+    {
+        "Code": "CLa_S",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "CLa_S"
+    },
+    {
+        "Code": "CLe_S",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "CLe_S"
+    },
+    {
+        "Code": "CLv_S",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "CLv_S"
+    },
+    {
+        "Code": "CO2a_S",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "CO2a_S"
+    },
+    {
+        "Code": "CO2e_S",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "CO2e_S"
+    },
+    {
+        "Code": "CO2v_S",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "CO2v_S"
+    },
+    {
+        "Code": "NAv_S",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "NAv_S"
+    },
+    {
+        "Code": "NAe_S",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "NAe_S"
+    },
+    {
+        "Code": "NAa_S",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "NAa_S"
+    },
+    {
+        "Code": "Kv_S",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "Kv_S"
+    },
+    {
+        "Code": "Ka_S",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "Ka_S"
+    },
+    {
+        "Code": "Ke_S",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "Ke_S"
+    },
+    {
+        "Code": "GLUv_S",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "GLUv_S"
+    },
+    {
+        "Code": "GLUa_S",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "GLUa_S"
+    },
+    {
+        "Code": "GLUe_S",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "GLUe_S"
+    },
+    {
+        "Code": "CREATv_S",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "CREATv_S"
+    },
+    {
+        "Code": "CREATe_S",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "CREATe_S"
+    },
+    {
+        "Code": "CREATa_S",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "CREATa_S"
+    },
+    {
+        "Code": "SORT_1",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "SORT_1"
+    },
+    {
+        "Code": "TRIGGER_1",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "TRIGGER_1"
+    },
+    {
+        "Code": "GLU_U",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "GLU_U"
+    },
+    {
+        "Code": "test1",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "test1"
+    },
+    {
+        "Code": "LostTube",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "LostTube"
+    },
+    {
+        "Code": "SORT-CO2",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "SORT-CO2"
+    },
+    {
+        "Code": "GLUH_3",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "GLUH_3"
+    },
+    {
+        "Code": "INS",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "INS"
+    },
+    {
+        "Code": "EHIV",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "EHIV"
+    },
+    {
+        "Code": "AGAP",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "AGAP"
+    },
+    {
+        "Code": "CAa_U",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "CAa_U"
+    },
+    {
+        "Code": "THEO2",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "THEO2"
+    },
+    {
+        "Code": "AQM1",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "AQM1"
+    },
+    {
+        "Code": "AQM2",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "AQM2"
+    },
+    {
+        "Code": "AQM3",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "AQM3"
+    },
+    {
+        "Code": "AQM4",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "AQM4"
+    },
+    {
+        "Code": "AQM5",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "AQM5"
+    },
+    {
+        "Code": "CA",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "CA_P"
+    },
+    {
+        "Code": "BUN",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "BUN"
+    },
+    {
+        "Code": "CA_U",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "CA_U"
+    },
+    {
+        "Code": "CREA_2",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "CREA_2"
+    },
+    {
+        "Code": "GLUH_3_U30",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "GLUH_3_U30"
+    },
+    {
+        "Code": "GLUH_3_U60",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "GLUH_3_U60"
+    },
+    {
+        "Code": "UN_c_U",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "UN_c_U"
+    },
+    {
+        "Code": "Saline",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "Saline"
+    },
+    {
+        "Code": "CA_2",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "CA_2"
+    },
+    {
+        "Code": "ALBP",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "ALBP"
+    },
+    {
+        "Code": "CO2_c",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "CO2_c"
+    },
+    {
+        "Code": "CRE_2c",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "CRE_2c"
+    },
+    {
+        "Code": "AAG",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "AAG"
+    },
+    {
+        "Code": "CHOL_c",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "CHOL_c"
+    },
+    {
+        "Code": "CRP_2",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "CRP_2"
+    },
+    {
+        "Code": "CA_2c",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "CA_2c"
+    },
+    {
+        "Code": "ALPAMP",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "ALPAMP"
+    },
+    {
+        "Code": "AMYLAS",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "AMYLAS"
+    },
+    {
+        "Code": "AST",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "AST"
+    },
+    {
+        "Code": "DHDL",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "DHDL"
+    },
+    {
+        "Code": "ECRE_2",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "ECRE_2"
+    },
+    {
+        "Code": "GGT",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "GGT"
+    },
+    {
+        "Code": "GLUH_c",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "GLUH_c"
+    },
+    {
+        "Code": "IGA_2",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "IGA_2"
+    },
+    {
+        "Code": "IGG_2",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "IGG_2"
+    },
+    {
+        "Code": "IGM_2",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "IGM_2"
+    },
+    {
+        "Code": "IP_c",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "IP_c"
+    },
+    {
+        "Code": "IRON_2",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "IRON_2"
+    },
+    {
+        "Code": "LDLP",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "LDLP"
+    },
+    {
+        "Code": "LITH",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "LITH"
+    },
+    {
+        "Code": "TBIL_2",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "TBIL_2"
+    },
+    {
+        "Code": "TP_c",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "TP_c"
+    },
+    {
+        "Code": "TRF",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "TRF"
+    },
+    {
+        "Code": "TRIG",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "TRIG"
+    },
+    {
+        "Code": "UA_c",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "UA_c"
+    },
+    {
+        "Code": "uALB_2",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "uALB_2"
+    },
+    {
+        "Code": "UN_c",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "UN_c"
+    },
+    {
+        "Code": "ALB",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "ALB_S"
+    },
+    {
+        "Code": "ALQV",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "ALQV"
+    },
+    {
+        "Code": "ALQW",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "ALQW"
+    },
+    {
+        "Code": "ALT_",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "ALT_"
+    },
+    {
+        "Code": "GLUC",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "GLUC"
+    },
+    {
+        "Code": "EIW",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "EIW"
+    },
+    {
+        "Code": "PT sec",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "PT sec"
+    },
+    {
+        "Code": "PT %",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "PT %"
+    },
+    {
+        "Code": "PT INR",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "PT INR"
+    },
+    {
+        "Code": "DFbg g\/L",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "DFbg g\/L"
+    },
+    {
+        "Code": "APTT sec",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "APTT sec"
+    },
+    {
+        "Code": "Fbg DT sec",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "Fbg DT sec"
+    },
+    {
+        "Code": "Fbg DT",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "Fbg DT"
+    },
+    {
+        "Code": "PT ext sec",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "PT ext sec"
+    },
+    {
+        "Code": "PT ext INR",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "PT ext INR"
+    },
+    {
+        "Code": "APTT ext sec",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "APTT ext sec"
+    },
+    {
+        "Code": "II sec",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "II sec"
+    },
+    {
+        "Code": "II %",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "II %"
+    },
+    {
+        "Code": "V sec",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "V sec"
+    },
+    {
+        "Code": "V %",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "V %"
+    },
+    {
+        "Code": "VII sec",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "VII sec"
+    },
+    {
+        "Code": "VII %",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "VII %"
+    },
+    {
+        "Code": "VIII sec",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "VIII sec"
+    },
+    {
+        "Code": "VIII %",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "VIII %"
+    },
+    {
+        "Code": "IX sec",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "IX sec"
+    },
+    {
+        "Code": "IX %",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "IX %"
+    },
+    {
+        "Code": "X sec",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "X sec"
+    },
+    {
+        "Code": "X %",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "X %"
+    },
+    {
+        "Code": "XI sec",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "XI sec"
+    },
+    {
+        "Code": "XI %",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "XI %"
+    },
+    {
+        "Code": "XII sec",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "XII sec"
+    },
+    {
+        "Code": "XII %",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "XII %"
+    },
+    {
+        "Code": "PC-cl sec",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "PC-cl sec"
+    },
+    {
+        "Code": "PC-cl %",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "PC-cl %"
+    },
+    {
+        "Code": "BXT sec",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "BXT sec"
+    },
+    {
+        "Code": "LA1 sec",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "LA1 sec"
+    },
+    {
+        "Code": "LA2 sec",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "LA2 sec"
+    },
+    {
+        "Code": "PS Ac sec",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "PS Ac sec"
+    },
+    {
+        "Code": "PS AC %",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "PS AC %"
+    },
+    {
+        "Code": "AT3 dOD",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "AT3 dOD"
+    },
+    {
+        "Code": "AT3 %",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "AT3 %"
+    },
+    {
+        "Code": "APL dOD",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "APL dOD"
+    },
+    {
+        "Code": "APL %",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "APL %"
+    },
+    {
+        "Code": "Plg dOD",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "Plg dOD"
+    },
+    {
+        "Code": "Plg %",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "Plg %"
+    },
+    {
+        "Code": "PC dOD",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "PC dOD"
+    },
+    {
+        "Code": "PC %",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "PC %"
+    },
+    {
+        "Code": "Hep dOD",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "Hep dOD"
+    },
+    {
+        "Code": "Hep IU\/mL",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "Hep IU\/mL"
+    },
+    {
+        "Code": "C1 Inh dOD",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "C1 Inh dOD"
+    },
+    {
+        "Code": "C1 Inh %",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "C1 Inh %"
+    },
+    {
+        "Code": "VIII ch dOD",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "VIII ch dOD"
+    },
+    {
+        "Code": "VIII ch %",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "VIII ch %"
+    },
+    {
+        "Code": "XIII ch dOD",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "XIII ch dOD"
+    },
+    {
+        "Code": "XIII ch %",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "XIII ch %"
+    },
+    {
+        "Code": "LA R",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "LA R"
+    },
+    {
+        "Code": "PCAT NR",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "PCAT NR"
+    },
+    {
+        "Code": "PCAT sec",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "PCAT sec"
+    },
+    {
+        "Code": "PCAT0 sec",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "PCAT0 sec"
+    },
+    {
+        "Code": "FVPCAT NR",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "FVPCAT NR"
+    },
+    {
+        "Code": "FVPCAT sec",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "FVPCAT sec"
+    },
+    {
+        "Code": "FVPCAT0 sec",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "FVPCAT0 sec"
+    },
+    {
+        "Code": "TT sec",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "TT sec"
+    },
+    {
+        "Code": "DDi dOD",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "DDi dOD"
+    },
+    {
+        "Code": "vWF-Ag med dOD",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "vWF-Ag med dOD"
+    },
+    {
+        "Code": "vWF-Ag med %",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "vWF-Ag med %"
+    },
+    {
+        "Code": "vWF-Ag low dOD",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "vWF-Ag low dOD"
+    },
+    {
+        "Code": "vWF-Ag low %",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "vWF-Ag low %"
+    },
+    {
+        "Code": "vWF RCo dOD",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "vWF RCo dOD"
+    },
+    {
+        "Code": "vWF RCo %",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "vWF RCo %"
+    },
+    {
+        "Code": "AcR R",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "AcR R"
+    },
+    {
+        "Code": "AcR Act sec",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "AcR Act sec"
+    },
+    {
+        "Code": "AcR OVB sec",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "AcR OVB sec"
+    },
+    {
+        "Code": "FVL R",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "FVL R"
+    },
+    {
+        "Code": "FVL Act sec",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "FVL Act sec"
+    },
+    {
+        "Code": "FVL OVB sec",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "FVL OVB sec"
+    },
+    {
+        "Code": "Hemolytic Sample",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "Hemolytic Sample"
+    },
+    {
+        "Code": "Icterous Sample",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "Icterous Sample"
+    },
+    {
+        "Code": "Lipemic Sample",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "Lipemic Sample"
+    },
+    {
+        "Code": "Defective Sample Volume",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "Defective Sample Volume"
+    },
+    {
+        "Code": "OG21",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "OG21"
+    },
+    {
+        "Code": "OG3",
+        "Description": "Standard",
+        "Ignore": false,
+        "Name": "OG3"
+    }
+]

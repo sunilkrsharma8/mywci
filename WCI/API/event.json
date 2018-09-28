@@ -1,0 +1,83 @@
+[
+    {
+        "Code": "ER1001",
+        "EquipmentModelId": 22,
+        "FilterState": 0,
+        "Id": 1,
+        "Message": "Device event [ER1001].",
+        "Severity": 100,
+        "Version": 42343
+    },
+    {
+        "Code": "ER1011",
+        "EquipmentModelId": 10001,
+        "FilterState": 1,
+        "Id": 2,
+        "Message": "Device event [ER1011].",
+        "Severity": 200,
+        "Version": 42338
+    },
+    {
+        "Code": "ER1111",
+        "EquipmentModelId": 10001,
+        "FilterState": 0,
+        "Id": 3,
+        "Message": "Device event [ER1111].",
+        "Severity": 100,
+        "Version": 12810
+    },
+    {
+        "Code": "ER1002",
+        "EquipmentModelId": 3,
+        "FilterState": 0,
+        "Id": 4,
+        "Message": "Device event [ER1002].",
+        "Severity": 100,
+        "Version": 12812
+    },
+    {
+        "Code": "E1009",
+        "EquipmentModelId": 22,
+        "FilterState": 0,
+        "Id": 5,
+        "Message": "Device event [E1009].",
+        "Severity": 200,
+        "Version": 42345
+    },
+    {
+        "Code": "E1006",
+        "EquipmentModelId": 22,
+        "FilterState": 1,
+        "Id": 6,
+        "Message": "Device event [E1006].",
+        "Severity": 100,
+        "Version": 14753
+    },
+    {
+        "Code": "E1003",
+        "EquipmentModelId": 22,
+        "FilterState": 1,
+        "Id": 7,
+        "Message": "Device event [E1003].",
+        "Severity": 100,
+        "Version": 14755
+    },
+    {
+        "Code": "E1001",
+        "EquipmentModelId": 22,
+        "FilterState": 0,
+        "Id": 8,
+        "Message": "Device event [E1001].",
+        "Severity": 200,
+        "Version": 42018
+    },
+    {
+        "Code": "E1001",
+        "EquipmentModelId": 22,
+        "FilterState": 1,
+        "Id": 9,
+        "Message": "Device event [E1001].",
+        "Severity": 100,
+        "Version": 42336
+    }
+]

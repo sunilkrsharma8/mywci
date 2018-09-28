@@ -1,0 +1,134 @@
+[
+    {
+        "Details": "Emergency Room",
+        "Id": 1,
+        "Name": "ER",
+        "Version": 11024
+    },
+    {
+        "Details": "Cardiac Care Unit",
+        "Id": 2,
+        "Name": "CCU",
+        "Version": 11025
+    },
+    {
+        "Details": "Pediatrics",
+        "Id": 3,
+        "Name": "Pediatrics",
+        "Version": 11026
+    },
+    {
+        "Details": "Operating Room",
+        "Id": 4,
+        "Name": "OR",
+        "Version": 11027
+    },
+    {
+        "Details": "Intensive Care Unit",
+        "Id": 5,
+        "Name": "ICU",
+        "Version": 11028
+    },
+    {
+        "Details": "Urology",
+        "Id": 6,
+        "Name": "Urology",
+        "Version": 11029
+    },
+    {
+        "Details": "Neurology",
+        "Id": 7,
+        "Name": "Neurology",
+        "Version": 11030
+    },
+    {
+        "Details": "Radiology",
+        "Id": 8,
+        "Name": "Radiology",
+        "Version": 11031
+    },
+    {
+        "Details": "Southeast Medical Services Inc",
+        "Id": 9,
+        "Name": "Southeast Medical Services",
+        "Version": 11032
+    },
+    {
+        "Details": "Women's Health Clinic of Oregon",
+        "Id": 10,
+        "Name": "Women's Health Clinic",
+        "Version": 11033
+    },
+    {
+        "Details": "Smith Medical Partners LLC",
+        "Id": 11,
+        "Name": "Smith Medical Partners",
+        "Version": 11034
+    },
+    {
+        "Details": "Johnson Nephrology Associates PA",
+        "Id": 12,
+        "Name": "Johnson Nephrology Associates PA",
+        "Version": 11035
+    },
+    {
+        "Details": "Ultra Room",
+        "Id": 13,
+        "Name": "Ultra Rm",
+        "Version": 11036
+    },
+    {
+        "Details": "MRI Room",
+        "Id": 14,
+        "Name": "MRI Rm",
+        "Version": 11037
+    },
+    {
+        "Details": "DW Room",
+        "Id": 15,
+        "Name": "DW Room",
+        "Version": 11038
+    },
+    {
+        "Details": "Emergency Room 2",
+        "Id": 16,
+        "Name": "Emer Room",
+        "Version": 11039
+    },
+    {
+        "Details": "Room 200",
+        "Id": 17,
+        "Name": "Room 200",
+        "Version": 11040
+    },
+    {
+        "Details": "Room 300",
+        "Id": 18,
+        "Name": "Room 300",
+        "Version": 11041
+    },
+    {
+        "Details": "CSCAN Room",
+        "Id": 19,
+        "Name": "CSCAN Rm",
+        "Version": 11042
+    },
+    {
+        "Details": "Room 100",
+        "Id": 20,
+        "Name": "Room 100",
+        "Version": 11043
+    },
+    {
+        "Details": "Blood Bank",
+        "Id": 21,
+        "Name": "Blood Bk",
+        "Version": 11044
+    },
+    {
+        "Details": "X-Ray Room",
+        "Id": 22,
+        "Name": "X-Ray Rm",
+        "Version": 11045
+    }
+]

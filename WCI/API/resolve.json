@@ -1,0 +1,54 @@
+{
+    "AcknowledgedBy": "0",
+    "AcknowledgedTime": "\/Date(1130832000000-0700)\/",
+    "AlertEscalation": {
+        "AckThreshold": 0,
+        "EmailOnResolution": false,
+        "EscalationEmail": "",
+        "Id": 0,
+        "ResolveThreshold": 0,
+        "Version": 0
+    },
+    "AlertType": {
+        "AlertCategory": 1,
+        "AutoCloseable": false,
+        "Id": 10,
+        "Name": "AlertType_Sample",
+        "UserAckable": true,
+        "UserCloseable": true,
+        "Version": 10507
+    },
+    "AutoCloseable": false,
+    "AutoFilter": false,
+    "EquipmentId": null,
+    "Escalation": 0,
+    "ExternalAlert": null,
+    "HasBeenEscalated": false,
+    "Id": 0,
+    "ItemId": null,
+    "Message": "Unknown alert",
+    "Notes": [
+        {
+            "CreatedBy": "Administrator",
+            "Id": 70414,
+            "Note": "Status changed from Open to Resolved by Administrator",
+            "Param": "Administrator",
+            "Time": "\/Date(1538170606566-0700)\/",
+            "Type": 0,
+            "Version": 58347
+        }
+    ],
+    "ResolvedBy": "Administrator",
+    "ResolvedTime": "\/Date(1538170606569-0700)\/",
+    "RuleId": null,
+    "Severity": 50,
+    "SourceId": 0,
+    "SourceType": 0,
+    "Status": 2,
+    "Tag": 0,
+    "Time": "\/Date(1130832000000-0700)\/",
+    "Type": 10,
+    "UserAckable": false,
+    "UserCloseable": false,
+    "Version": 58346
+}

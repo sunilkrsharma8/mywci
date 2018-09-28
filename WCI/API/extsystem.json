@@ -1,0 +1,32 @@
+[
+    {
+        "Address": "10.207.147.27",
+        "Channel": "\/ws\/lcm\/all",
+        "CharacterEncoding": null,
+        "Connected": false,
+        "Id": 1,
+        "IsServer": false,
+        "Name": "LCM",
+        "NavigationUrl": null,
+        "Port": 8003,
+        "Status": 1,
+        "System": true,
+        "Type": 1,
+        "Version": 44433
+    },
+    {
+        "Address": "10.207.147.27",
+        "Channel": "\/ws\/dms\/typedRaw\/all",
+        "CharacterEncoding": "UTF-8",
+        "Connected": false,
+        "Id": 2,
+        "IsServer": false,
+        "Name": "DMS",
+        "NavigationUrl": "http:\/\/localhost",
+        "Port": 8003,
+        "Status": 1,
+        "System": true,
+        "Type": 6,
+        "Version": 41278
+    }
+]

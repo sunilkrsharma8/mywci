@@ -1,0 +1,38 @@
+[
+    {
+        "Alert": true,
+        "Code": "SRI",
+        "Id": 1,
+        "Result": false,
+        "Text": "Sample re-loaded on instrument",
+        "Type": 0,
+        "Version": 19737
+    },
+    {
+        "Alert": true,
+        "Code": "ISM",
+        "Id": 2,
+        "Result": false,
+        "Text": "Instrument stopped for maintenance",
+        "Type": 0,
+        "Version": 20073
+    },
+    {
+        "Alert": true,
+        "Code": "IRM",
+        "Id": 3,
+        "Result": false,
+        "Text": "Instrument re-started after maintenance",
+        "Type": 0,
+        "Version": 11699
+    },
+    {
+        "Alert": true,
+        "Code": "IEC",
+        "Id": 4,
+        "Result": false,
+        "Text": "Instrument error cleared22",
+        "Type": 0,
+        "Version": 20316
+    }
+]
